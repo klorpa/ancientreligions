@@ -11,9 +11,9 @@
 
 # These events are about showing that the character
 # has the support of the gods in some way. Whether
-# this be through good omens, or some kind of 
-# (percieved) divine intervention, this character
-# is being smiled on by one, or more, of the gods.
+# this be through good omens, extreme piety, or
+# some kind of (percieved) divine intervention, this
+# character is being smiled on by one, or more, of the gods.
 
 namespace = ancrel
 
@@ -28,7 +28,17 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 
-	trigger = { 
+	trigger = {
+		OR = {
+			has_character_modifier = emulating_paris
+			has_character_modifier = emulating_aeneas
+			has_character_modifier = emulating_hector
+
+			has_character_modifier = emulating_achilles
+			has_character_modifier = emulating_odysseus
+			has_character_modifier = emulating_nestor
+		}
+		NOT = { has_character_flag = personal_legend_1 }
 		has_dlc = "The Old Gods"
 
 		piety = 500
@@ -75,6 +85,154 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.3020
 		set_character_flag = personal_legend_1
-		
+		add_character_modifier = revieved_good_omens
+	}
+}
+
+#Theologian
+character_event = {
+	id = ancrel.3021
+	desc = EVTDESCancrel.3021
+	picture = 
+	border = 
+
+	is_capable = yes
+	min_age = 16
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_dlc = "Way of Life"
+		trait = theologian
+		religion = hellenic_pagan
+
+		NOT = { has_character_flag = personal_legend_1 }
+		OR = {
+			has_character_modifier = emulating_paris
+			has_character_modifier = emulating_aeneas
+			has_character_modifier = emulating_hector
+
+			has_character_modifier = emulating_achilles
+			has_character_modifier = emulating_odysseus
+			has_character_modifier = emulating_nestor
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 90 # give it time for the legend to build
+	}
+
+	option = {
+		name = EVTOPTAancrel.3021
+		set_character_flag = personal_legend_1
+	}
+}
+
+#Scholar
+character_event = {
+	id = ancrel.3022
+	desc = EVTDESCancrel.3022
+	picture = 
+	border = 
+
+	is_capable = yes
+	min_age = 16
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		trait = scholar
+		religion = hellenic_pagan
+
+		NOT = { has_character_flag = personal_legend_1 }
+		OR = {
+			has_character_modifier = emulating_paris
+			has_character_modifier = emulating_aeneas
+			has_character_modifier = emulating_hector
+
+			has_character_modifier = emulating_achilles
+			has_character_modifier = emulating_odysseus
+			has_character_modifier = emulating_nestor
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = EVTOPTAancrel.3022
+		set_character_flag = personal_legend_1
+		prestige = 100
+	}
+}
+
+#Mystic
+character_event = {
+	id = ancrel.3023
+	desc = EVTDESCancrel.3023
+	picture = 
+	border =
+
+	is_capable = yes
+	min_age = 16
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		trait = mystic
+		religion = hellenic_pagan
+
+		NOT = { has_character_flag = personal_legend_1 }
+		OR = {
+			has_character_modifier = emulating_paris
+			has_character_modifier = emulating_aeneas
+			has_character_modifier = emulating_hector
+
+			has_character_modifier = emulating_achilles
+			has_character_modifier = emulating_odysseus
+			has_character_modifier = emulating_nestor
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = EVTOPTAancrel.3023
+		set_character_flag = personal_legend_1
+		piety = 100
+	}
+}
+
+#Enemy weapon shatters on your shield
+character_event = {
+	id = ancrel.3024
+	desc = EVTDESCancrel.3024
+	picture = 
+	border = 
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		religion = hellenic_pagan
+
+		NOT = { has_character_flag = personal_legend_1 }
+		OR = {
+			has_character_modifier = emulating_paris
+			has_character_modifier = emulating_aeneas
+			has_character_modifier = emulating_hector
+
+			has_character_modifier = emulating_achilles
+			has_character_modifier = emulating_odysseus
+			has_character_modifier = emulating_nestor
+		}
+
+		piety = 250
+		martial = 8
+	}
+
+	option = {
+		name = EVTOPTAancrel.3024
+		prestige = 50
+		piety = 50
+		set_character_flag = personal_legend_1
 	}
 }

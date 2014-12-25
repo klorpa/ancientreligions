@@ -23,8 +23,6 @@ character_event = {
 
 	capable_only = yes
 	prisoner = no
-	
-	always = no #disabled for now
 
 	trigger = {
 		has_dlc = "The Old Gods"
@@ -97,8 +95,6 @@ character_event = {
 	triggered_only = yes
 	capable_only = yes
 	
-	always = no #disabled for now
-	
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_odysseus
@@ -129,7 +125,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	capable_only = yes
-	always = no #disabled for now
+
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_nestor
@@ -210,7 +206,7 @@ character_event = {
 
 	triggered_only = yes
 	capable_only = yes
-	always = no #disabled for now
+
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_achilles
@@ -239,7 +235,7 @@ character_event = {
 	desc = EVTDESCancrel.3013
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
-	always = no #disabled for now
+
 	triggered_only = yes
 	capable_only = yes
 
