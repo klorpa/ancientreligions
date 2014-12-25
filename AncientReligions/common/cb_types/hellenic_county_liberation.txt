@@ -53,7 +53,7 @@ hellenic_county_liberation = {
 
 	is_valid_title = {
 		ROOT = {
-			religion_group = pagan_group
+			religion = hellenic_pagan
 			NOT = { same_realm = FROM }
 		}
 		FROM = {
@@ -437,10 +437,7 @@ hellenic_reconquest = {
 	is_valid = {
 		ROOT = {
 			independent = yes
-			OR = {
-				religion_group = christian
-				religion_group = pagan_group
-			}
+			religion = hellenic_pagan
 			NOT = { same_realm = FROM }
 		}
 	}

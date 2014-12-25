@@ -1,3 +1,19 @@
+###################################################
+#
+# ANCIENT RELIGIONS
+# - Events to trace ancestry to ancient heroes
+#
+# Event ID ancrel.3010 - ancrel.3019 reserved
+#
+###################################################
+
+# Written by Adam 'theStormWeaver/xirsoi' Chevalier
+
+# These events are specific to the hero being emulated.
+# Every emulateable hero should have one of these events.
+
+namespace = ancrel
+
 #Lover Remarks of your Paris-like sexual prowess
 character_event = {
 	id = ancrel.3010
@@ -72,6 +88,7 @@ character_event = {
 
 #Your Odyssian cleverness becomes renowned after your 
 #involvement in a successfull assassination becomes known
+#this is an on action event
 character_event = {
 	id = ancrel.3011
 	desc = EVTDESCancrel.3011
@@ -100,7 +117,7 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.3011
 		set_character_flag = personal_legend_5
-		prestige = 10
+		prestige = 100
 	}
 }
 
@@ -184,6 +201,7 @@ character_event = {
 }
 
 #Your Achilles-like valor is on display for all to see as you take an enemy holding
+#this is an on action event
 character_event = {
 	id = ancrel.3013
 	desc = EVTDESCancrel.3013
@@ -215,6 +233,7 @@ character_event = {
 }
 
 #Your Hector-ish bravery is plainly seen while defending your land against an enemy army
+#this is an on action event
 character_event = {
 	id = ancrel.3013
 	desc = EVTDESCancrel.3013
@@ -240,6 +259,73 @@ character_event = {
 
 	option = {
 		name = EVTOPTAancrel.3013
+		set_character_flag = personal_legend_5
+	}
+}
+
+#Aeneas
+character_event = {
+	id = ancrel.3014
+	desc = EVTDESCancrel.3014
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+	capable_only = yes
+	min_age = 16
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_modifier = emulating_aeneas
+		religion = hellenic_pagan
+
+		stewardship = 10
+
+		NOT = {
+			has_character_flag = personal_legend_5
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 50
+
+		modifier = {
+			factor = 0.95
+			stewardship = 14
+		}
+		modifier = {
+			factor = 0.95
+			stewardship = 15
+		}
+		modifier = {
+			factor = 0.95
+			stewardship = 16
+		}
+		modifier = {
+			factor = 0.95
+			stewardship = 17
+		}
+		modifier = {
+			factor = 0.90
+			stewardship = 18
+		}
+		modifier = {
+			factor = 0.90
+			stewardship = 19
+		}
+		modifier = {
+			factor = 0.90
+			stewardship = 20
+		}
+		modifier = {
+			factor = 0.95
+			OR = {
+				trait = midas_touched
+				trait = fortune_builder
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.3014
 		set_character_flag = personal_legend_5
 	}
 }

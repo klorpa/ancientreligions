@@ -1,0 +1,80 @@
+###################################################
+#
+# ANCIENT RELIGIONS
+# - Events to trace ancestry to ancient heroes
+#
+# Event ID ancrel.3020 - ancrel.3034 reserved
+#
+###################################################
+
+# Written by Adam 'theStormWeaver/xirsoi' Chevalier
+
+# These events are about showing that the character
+# has the support of the gods in some way. Whether
+# this be through good omens, or some kind of 
+# (percieved) divine intervention, this character
+# is being smiled on by one, or more, of the gods.
+
+namespace = ancrel
+
+#Good Omens
+character_event = {
+	id = ancrel.3020
+	desc = EVTDESCancrel.3020
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+
+	trigger = { 
+		has_dlc = "The Old Gods"
+
+		piety = 500
+		religion = hellenic_pagan
+	}
+
+	mean_time_to_happen = {
+		years = 100
+
+		modifier = {
+			factor = 0.90
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.90
+			trait = mystic
+		}
+		modifier = {
+			factor = 0.95
+			piety = 600
+		}
+		modifier = {
+			factor = 0.95
+			piety = 700
+		}
+		modifier = {
+			factor = 0.95
+			piety = 800
+		}
+		modifier = {
+			factor = 0.95
+			piety = 900
+		}
+		modifier = {
+			factor = 0.90
+			piety = 1000
+		}
+		modifier = {
+			factor = 0.90
+			has_character_flag = became_exalted
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.3020
+		set_character_flag = personal_legend_1
+		
+	}
+}

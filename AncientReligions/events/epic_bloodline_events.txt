@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Events to trace ancestry to ancient heroes
 #
-# Event ID ancrel.3000 - ancrel.3050 reserved
+# Event ID ancrel.3000 - ancrel.3009 reserved
 #
 ###################################################
 
@@ -31,7 +31,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		years = 20 # this should be fairly rare
+		years = 20
 		
 		modifier = {
 			factor = 1.25
@@ -50,7 +50,7 @@ character_event = {
 			trait = proud
 		}
 		modifier = {
-			factor = 0.9
+			factor = 0.8
 			trait = ambitious
 		}
 		modifier = {

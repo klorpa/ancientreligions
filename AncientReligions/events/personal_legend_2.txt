@@ -1,0 +1,15 @@
+###################################################
+#
+# ANCIENT RELIGIONS
+# - Events to trace ancestry to ancient heroes
+#
+# Event ID ancrel.3025 - ancrel.3039 reserved
+#
+###################################################
+
+# Written by Adam 'theStormWeaver/xirsoi' Chevalier
+
+# These events are about culture. Finding, sponsoring,
+# and creating works of art and literature.
+
+namespace = ancrel

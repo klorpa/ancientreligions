@@ -26,6 +26,8 @@ EVTDESCancrel.3012;After treating with hundreds of foreign dignataries and resol
 EVTOPTAancrel.3012;It's nice to be recognized! I once knew a man who...;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.3013;In the final battle to take the enemy town you found yourself overwhelmed with the thrill of combat and charged headlong into the enemy ranks. Before long you were surrounded, far from your personal guard. But this did not deter you. Instead, you single-handedly cut down thirty men. But, if you were to listen to the rumors that have been circulating through [From.GetBaseName] it was more like 300! Some say that you were the image of Achilles himself.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.3013;All I can remember is the exhileration...;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.3014;Leadership and stuff! You're like Aeneas!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.3014;Wow, this event text is lame...;;;;;;;;;;;;;;;;;;;;;;;;x
 
 #Epic Bloodline Modifiers
 emulating_achilles;Emulating Achilles;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -55,7 +57,7 @@ descendant_of_hector_desc;This character is recognized as a direct descendant of
 descendant_of_aeneas;Blood of Aeneas;;;;;;;;;;;;;;;;;;;;;;;;x
 descendant_of_aeneas_desc;This character is recognized as a direct descendant of Aeneas. Their vassals are more confident in their rule.;;;;;;;;;;;;;;;;;;;;;;;;x
 descendant_of_paris;Blood of Paris;;;;;;;;;;;;;;;;;;;;;;;;x
-descendant_of_paris_desc;This character is recognized as a direct descendant of Paris of Troy. They are considered more sexually appealing, being descended from two of the most attractive mortals of the mythic era, Paris and Helen.;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_paris_desc;This character is recognized as a direct descendant of Paris of Troy. They are considered more sexually appealing, being descended from one of the most attractive mortals of the mythic era.;;;;;;;;;;;;;;;;;;;;;;;;x
 
 achilles_reborn;Achilles Reborn;;;;;;;;;;;;;;;;;;;;;;;;x
 achilles_reborn_desc;This character is the reincarnation of Achilles, the mythic hero of The Illiad. Enemy armies tremble at the mention of their name.;;;;;;;;;;;;;;;;;;;;;;;;x
