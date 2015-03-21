@@ -89,7 +89,7 @@ fian = {
 	
 	same_opinion = 20
 	
-	fertility = 5.0
+	fertility = 0.05
 	
 	customizer = no
 	
@@ -103,7 +103,7 @@ fian = {
 celtic_knight = {
 
 	potential = {
-		religion = druidic_reformed
+		religion = celtic_pagan_reformed
 	}
 	
 	martial = 2
@@ -118,7 +118,7 @@ celtic_knight = {
 	cannot_inherit = yes
 	
 	sex_appeal_opinion = 5
-	fertility = 15.0
+	fertility = 0.15
 	
 	command_modifier = {
 		religious_enemy = 0.25
@@ -130,8 +130,8 @@ celtic_knight = {
 wolf = {
 	potential = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 	}
 	martial = 2
@@ -152,7 +152,7 @@ learning_druidic_arts = {
 	
 	monthly_character_piety = 0.5
 	same_religion_opinion = 10
-	fertility = -50.0
+	fertility = -0.5
 	
 	stewardship = -2
 	intrigue = -2
