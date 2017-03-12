@@ -493,3 +493,311 @@ ancrel.2619.title;The Value of Chastity;;;;;;;;;;;;;x
 ancrel.2619.desc;Diana seems impatient with your outburst and rubs the bridge of her nose.\n\n"Please... don't. Mutilating yourself will not impress me. I do not value blind zeal like Mars, nor do I find madness an appealing quality in my companions.";;;;;;;;;;;;;x
 ancrel.2619.a;Ah, well, then I shall follow you into celebacy.;;;;;;;;;;;;;x
 ancrel.2619.b;Yes, maybe self-control is something I should work on...;;;;;;;;;;;;;x
+VIET_book_of_thoth_power;Book of Thoth;;;;;;;;;;;x
+VIET_book_of_thoth_power_desc;This character has somehow acquired the mythical Book of Thoth, a powerful tome written by the god Thoth himself! He or she who keeps the book, though, must beware, for the gods' knowledge is not meant for humans to possess!;;;;;;;;;;;x
+VIET_curse_of_thoth_relative;Cursed by Thoth;;;;;;;;;;;x
+VIET_curse_of_thoth_relative_desc;Somehow, this character or one of their relatives as angered Thoth, the Egyptian god of learning.;;;;;;;;;;;x
+VIET_curse_of_thoth;Cursed by Thoth;;;;;;;;;;;x
+VIET_curse_of_thoth_desc;Somehow, this character or one of their relatives as angered Thoth, the Egyptian god of learning.;;;;;;;;;;;x
+VIET_blessings_of_thoth;Blessings of Thoth;;;;;;;;;;;x
+VIET_blessings_of_thoth_desc;This character is believed to be protected by Thoth, the Egyptian god of learning.;;;;;;;;;;;x
+VIET_thoth_scrolls_relationships;Thoth's Knowledge (Relationships);;;;;;;;;;;x
+VIET_thoth_scrolls_relationships_desc;This character is using the wisdom written down by the god Thoth to improve their relationships with others.;;;;;;;;;;;x
+VIET_thoth_scrolls_realm;Thoth's Knowledge (Realm);;;;;;;;;;;x
+VIET_thoth_scrolls_realm_desc;This character is using the wisdom written down by the god Thoth to improve their realm.;;;;;;;;;;;x
+VIET_thoth_scrolls_vassals;Thoth's Knowledge (Politics);;;;;;;;;;;x
+VIET_thoth_scrolls_vassals_desc;This character is using the wisdom written down by the god Thoth to improve their abilty to navigate politics.;;;;;;;;;;;x
+VIET_thoth_scrolls_military;Thoth's Knowledge (Military);;;;;;;;;;;x
+VIET_thoth_scrolls_military_desc;This character is using the wisdom written down by the god Thoth to improve the capability of their soldiers.;;;;;;;;;;;x
+VIET_thoth_scrolls_stars;Thoth's Knowledge (Stars);;;;;;;;;;;x
+VIET_thoth_scrolls_stars_desc;This character is using the wisdom written down by the god Thoth to watch the heavens and chart the stars.;;;;;;;;;;;x
+VIET_thoth_scrolls_ancient_temples;Ancient Temples to Thoth;;;;;;;;;;;x
+VIET_thoth_scrolls_ancient_temples_desc;Several ancient temples dedicated to the god Thoth have been discovered in this province.;;;;;;;;;;;x
+VIET_khaemwaset_library;Khaemwaset's Library;;;;;;;;;;;x
+VIET_khaemwaset_library_desc;A library built by the legendary Egyptian prince and sorcerer-priest Khaemwaset, son of the mighty pharaoh Ramses, has been discovered in this province.;;;;;;;;;;;x
+VIET_amulet_of_khaemwaset;Amulet of Khaemwaset;;;;;;;;;;;x
+VIET_amulet_of_khaemwaset_desc;An amulet belonging to the Egyptian prince and sorcerer-priest Khaemwaset, son of the mighty pharaoh Ramses, renowned even in his lifetime for his brilliant mind and just spirit.;;;;;;;;;;;x
+VIET_scrolls_of_thoth;Scrolls of Thoth;;;;;;;;;;;x
+VIET_scrolls_of_thoth_desc;A mysterious collection of ancient scrolls, supposedly written down by the ancient Egyptian god Thoth himself. These scrolls are filled ;;;;;;;;;;;x
+VIET_blessings_of_horus;Blessings of Horus;;;;;;;;;;;x
+VIET_blessings_of_horus_desc;This character is believed to be protected by Horus, the Egyptian god, son of Osiris and Isis.;;;;;;;;;;;x
+ancrel.4200.desc;Not too far from my residence is an old, abandoned temple, that some say is as ancient as the gods. It sits by the shoreline of a lake, alone and isolated. I, like most people, have always avoided it. There is something to be said about avoiding mysterious ruins. One day, however, as I am talking with a local noble, he says tells me a most interesting story about that temple....;;;;;;;;;;;x
+ancrel.4200.a;“Did you ever hear the tragedy of Neferkaptah the Scholar?”;;;;;;;;;;;;;x
+ancrel.4201.desc;The nobleman telling the story is old and frail, yet carries himself in a dignified manner. In a deep, authoritative voice, he tells a story about one of his ancestors, passed down from father to son through the ages. Long ago, his ancestor, a prince named Neferkaptah, heard of a legendary tome of knowledge hidden in the temple. He visited the ruins, and found a large pool, where the book lay, guarded by massive serpents. He slew the serpents after a lengthy battle, and took the book.;;;;;;;;;;;x
+ancrel.4201.a;What happened after?;;;;;;;;;;;;;x
+ancrel.4202.desc;The old man says that the book turned out to be the very Book of Thoth, written by the great god himself, an arcane tome filled with infinite knowledge and wisdom. But something went wrong afterwards and Neferkaptah, his wife, and his eldest son died, and the book was nowhere to be found. Maybe an unscrupulous scholar stole the book and murdered him and his family in the process. Maybe a rival prince was jealous of Neferkaptah's newfound powers. Maybe it was even the punishment of the gods.;;;;;;;;;;;x
+ancrel.4202.a;A mysterious tale indeed.;;;;;;;;;;;;;x
+ancrel.4203.title;The Temple;;;;;;;;;;;x
+ancrel.4203.desc;I am taking a stroll with some companions when we got separated and I got lost. Not only that, but it seems like a thunderstorm of epic proportions is brewing. There is a building up ahead, and I decide to seek shelter there for now. It's rare to get a storm like this here, of all places.\n\nCurses! The building turns out to be that abandoned temple. I assure myself there is nothing to be afraid of and that the gods are protecting me, and I decide to wait inside just as the storm is beginning. I take a few steps in -;;;;;;;;;;;x
+ancrel.4203.a;WHAT THE?;;;;;;;;;;;;;x
+ancrel.4204.tooltip;xxxxx;;;;;;;;;;;x
+ancrel.4204.desc;xxxxx;;;;;;;;;;;x
+ancrel.4204.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4205.tooltip;AAHHHHH!;;;;;;;;;;;x
+ancrel.4205.desc;It seems I've fallen down some sort of trap door or hole. I glance around. It seems like I’m inside some corridor. I see ancient wall carvings, statues, and lit torches. Wait… lit torches? Who lit them? Why are they still here? I must find a way to get out, this doesn't feel right!;;;;;;;;;;;x
+ancrel.4205.a;Go left.;;;;;;;;;;;;;x
+ancrel.4205.b;Go right.;;;;;;;;;;;;;x
+ancrel.4206.tooltip;\n\nLet's hope this is the way out.;;;;;;;;;;;x
+ancrel.4206.desc;I decide to go left. As I walk through the corridor, I read some of the hieroglyphics on the wall. They tell the story of how Thoth invented and taught men the basics of writing and mathematics. Interesting.;;;;;;;;;;;x
+ancrel.4206.a;You continue onwards.;;;;;;;;;;;;;x
+ancrel.4207.desc;I decide to go right. As I walk through the corridor, I read some of the hieroglyphics on the wall. They tell the story of how Thoth taught men the principles of magic, philosophy, and religion. Fascinating.;;;;;;;;;;;x
+ancrel.4207.a;You continue onwards.;;;;;;;;;;;;;x
+ancrel.4208.desc;Finally, I reach a giant open space, and there, in the middle of this underground courtyard, is a giant pool. And there, in the middle of the pool, is a book! It emanates a pale light, and glows in an unnatural manner. I suddenly remember the story the old man told me about his ancestor, Prince Neferkaptah. Could this be that very book? Why is it still here?;;;;;;;;;;;x
+ancrel.4208.a;“Mortal!”;;;;;;;;;;;;;x
+ancrel.4209.tooltip;\n\n“Who's there?” you shout on instinct.;;;;;;;;;;;x
+ancrel.4209.desc;I scream as some person suddenly appears before me. It turns out he is some sort of spirit, transparent in appearance with a faint glowing aura. He wears the clothing of the ancients, and speaks in a melancholy, tired manner: “Beware, mortal! Do not claim the Book of Thoth. If you do, you will meet the same fate as I, Prince Neferkaptah!”;;;;;;;;;;;x
+ancrel.4209.a;Oh heavens, I must be going insane!;;;;;;;;;;;;;x
+ancrel.4210.tooltip;\n\nHe scowls, “You're not insane.”;;;;;;;;;;;x
+ancrel.4210.title;The Book of Thoth;;;;;;;;;;;x
+ancrel.4210.desc;“What is the Book of Thoth, anyways?” I ask.\n\n“The Book of Thoth holds many secrets, indescribable knowledge of the gods. Magic rituals to extend life. Mathematical formulas to control the stars and the fate men, and to build everlasting monuments. Recipes for potions that bottle fame, brew glory, even put a stopper on death. Or increase your stamina in bed, if that's your thing. Unlimited power, basically.”  Neferkaptah pauses. “Wait. I'm supposed to be discouraging you from taking the Book.”;;;;;;;;;;;x
+ancrel.4210.a;You're doing a bad job of it.;;;;;;;;;;;;;x
+ancrel.4211.tooltip;\n\n“It's been a while since someone visited,” he explains, “so I'm out of practice.”;;;;;;;;;;;x
+ancrel.4211.title;Neferkaptah's Warning;;;;;;;;;;;x
+ancrel.4211.desc;He clears his throat. “Anyways, I was once like you, and stumbled on here. I could not resist the allure of the book, and fought and killed the book's previous guardians. The gods warned me in a dream to return the book, but I did not heed them. Through divine means they killed my wife, and then my firstborn son, and then me, myself. They have now condemned my spirit to guard the book for all eternity, to warn others not to repeat my mistakes. And that's my whole speech. I advise you leave now. I can't hurt you if you take the book but the consequences will be severe.”;;;;;;;;;;;x
+ancrel.4211.a;But the book is just lying there… imagine the unlimited power!;;;;;;;;;;;;;x
+ancrel.4211.b;Neferkaptah is right. It is best not to tempt fate.;;;;;;;;;;;;;x
+ancrel.4212.tooltip;I will take the book and learn its secrets. Neferkaptah is probably just jealously guarding a treasure he has no use for. Even from here, I can already feel the power brimming from within!;;;;;;;;;;;x
+ancrel.4212.title;Tempting Fate;;;;;;;;;;;x
+ancrel.4212.desc;Neferkaptah shakes his head as I jump into the pool and take the book. “Not the first one and not the last either. Don't say I didn't warn you. But since you were kind enough to chat with me instead of trying to exorcise me like the last few fellows that came here, I'll give you some advice - read page 42 first, it might have some useful information. Anyways, if you were wondering how to get out, it's through that hallway, fifth door to the right, then two doors down and make a left.”;;;;;;;;;;;x
+ancrel.4212.a;Uh… thanks?;;;;;;;;;;;;;x
+ancrel.4213.tooltip;\n\nSuch a pity, though.;;;;;;;;;;;x
+ancrel.4213.title;Khaemwaset's Amulet;;;;;;;;;;;x
+ancrel.4213.desc;I sigh. Unlimited power! But I cannot be tempted and tell Neferkaptah I shall leave the book where it is.\n\nHe looks at me with a surprised expression. “Huh. That's something. Of all the men and women who came here, only one other was able to resist the temptation - his name was Khaemwaset, the magician and scholar, son of the mighty Pharaoh Ramses. Wise fellow. He left me this amulet. Here, take it - I have no use for it. Anyways, if you were wondering how to get out, it's through that hallway, fifth door to the right, then two doors down and make a left.”;;;;;;;;;;;x
+ancrel.4213.a;If you say so...;;;;;;;;;;;;;x
+ancrel.4214.tooltip;\n\nYou hold onto the Book of Thoth tightly as you make your way out.;;;;;;;;;;;x
+ancrel.4214.desc;As I step outside, the rain continues to fall. I search through the contents of the book, and come across a page listing several magical spells related to weather. There's one that supposedly would clear the rain. With nothing better to do, I mutter the incantation and perform the hand gesture indicated in the book. Immediately, the rain clears.;;;;;;;;;;;x
+ancrel.4214.a;By the gods… could it be?;;;;;;;;;;;;;x
+ancrel.4215.tooltip;\n\nThis is unlimited power!;;;;;;;;;;;x
+ancrel.4215.desc;Eagerly I rush home, and tell my servants not to let anyone enter my study. I put the book on my desk and muse over where to start. Extend my life? Increase the power of my armies? Make myself a harem? The possibilities are endless! But I suddenly remember what Neferkaptah said about page 42. I idly turn to it and see the heading, “How to Negotiate with the Gods.” It seems like instructions on what to do if the Gods are angry or frustrated, and tips on how to deal with each one.;;;;;;;;;;;x
+ancrel.4215.a;Looks boring, I should focus on more important things first!;;;;;;;;;;;;;x
+ancrel.4215.b;Maybe I should read this just in case.;;;;;;;;;;;;;x
+ancrel.4216.tooltip;\n\nThis book is huge at any rate. So many pages to read....;;;;;;;;;;;x
+ancrel.4216.desc;The powers the book grants me are amazing beyond belief! Most of them are harder to learn than that simple rain spell I first attempted, as it takes a lot of work to decipher most of them. Still, the first great thing I managed to do, at any rate, was to…;;;;;;;;;;;x
+ancrel.4216.a;Grant myself great strength;;;;;;;;;;;;;x
+ancrel.4216.b;Increase my knowledge and abilities;;;;;;;;;;;;;x
+ancrel.4216.c;Give myself a bunch of gold and gems;;;;;;;;;;;;;x
+ancrel.4216.d;Summon a lusty spirit to be my lover;;;;;;;;;;;;;x
+VIET_UNLIMITED_POWER;All in all, you’re glad you didn't listen to Neferkaptah back there in the temple. Who knows what could have happened if you had? Certainly you wouldn’t have the unlimited power you have now!;;;;;;;;;;;x
+ancrel.4217.desc;One night while studying another page of the Book of Thoth, I suddenly feel really tired. If only I could figure out how to make that potion I saw on page 1081 to keep myself awake! But alas. I finish reading the page I was on, page 1453, and decide to call it a night.Is it me or is it too quiet, anyways? ;;;;;;;;;;;x
+ancrel.4217.a;No matter. Good night and sweet dreams.;;;;;;;;;;;;;x
+ancrel.4218.desc;In my dreams, a dark shadow approaches me. “I am Thoth, master of that book you have stolen. You have angered the gods in your lust for forbidden knowledge and you shall pay for your hubris!”;;;;;;;;;;;x
+ancrel.4218.a;What? No! NOOOOO -;;;;;;;;;;;;;x
+ancrel.4218.tooltip.2;\n\nI should focus on furthering my unlimited power!;;;;;;;;;;;;;x
+ancrel.4219.title;Thoth’s Deal;;;;;;;;;;;x
+ancrel.4219.desc;In my dreams that night, a dark shadow approaches me. “I am Thoth, master of that book you have stolen. You have angered the gods in your lust for forbidden knowledge and you shall pay for your hubris!”\n\nIn my panic, I almost forgot the tips from page 42! I try to negotiate with Thoth using the book's advice, and he calms down, and tells me that if I return the book to its proper location by sunset today, he will reduce my punishment and not kill me.\n\nWhen I wake up, I wonder if that was just a silly dream. Perhaps I should just ignore it. On the other hand….;;;;;;;;;;;x
+ancrel.4219.a;Ignore the dream.;;;;;;;;;;;;;x
+ancrel.4219.b;I'll go and return the book before it’s too late!;;;;;;;;;;;;;x
+ancrel.4220.tooltip;\n\nSince Thoth gave you until sunset, you leave immediately.;;;;;;;;;;;x
+ancrel.4220.title;Told You So;;;;;;;;;;;x
+ancrel.4220.desc;As I return to the same pool in that abandoned temple, I see Neferkaptah rolling his eyes at me. “You got off the hook easy, friend. I'm sure Thoth will punish you somehow, but at least you and your family won't die.”\n\nWith a heavy heart, I set the book back down into the pool. As I leave, however, Neferkaptah says, “I feel bad for you, though. Tell you what. To make up for all the trouble you've been through, I'll give you this map. It'll lead you to a chest where great scrolls of knowledge are buried. Not as powerful as the Book of Thoth, of course, but still worthwhile. Follow the instructions and you shan't be disappointed.”;;;;;;;;;;;x
+ancrel.4220.a;Thank you friend. I am very fortunate to not be dead.;;;;;;;;;;;;;x
+ancrel.4221.tooltip;\n\nWhen you return home, you realize that everything you did through the Book of Thoth has been undone. Such are the powers of the gods!;;;;;;;;;;;x
+ancrel.4221.desc;Since it seems the spot marked on the treasure map isn't too far away, I decide to travel there with some trusted servants. After taking a few days to prepare, we set off towards our destination. There, we spend several hours digging. We're about to give up when lo and behold, it is a chest, just as I was told! We excitedly open it, and find many scrolls inside, and even some treasure.;;;;;;;;;;;x
+ancrel.4221.a;Amazing.;;;;;;;;;;;;;x
+ancrel.4222.desc;xxxxx;;;;;;;;;;;x
+ancrel.4222.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4223.tooltip;\n\nWhat a day.;;;;;;;;;;;x
+ancrel.4223.desc;As I step outside, the rain begins to clear. Maybe I was just hallucinating the entire incident, yet I still feel the amulet of Khaemwaset in my hands. Oh well! I manage to find my way home, and spend the rest of the day contemplating my adventure. I fall asleep that night, still unsure of what has transpired earlier.;;;;;;;;;;;x
+ancrel.4223.a;I have a strange dream that night.;;;;;;;;;;;;;x
+ancrel.4224.tooltip;\n\nHuh… what's this?;;;;;;;;;;;x
+ancrel.4224.desc;Up ahead is some figure, surrounded by light, so bright that I cannot make out the figure's features. “I am Thoth, master of that book you almost stole. You were wise to resist the temptation of forbidden knowledge, and for that I shall reward you. I shall give you this map. It will lead you to a chest filled with scrolls of knowledge. These scrolls are not as powerful as my book, but I am sure you will find them helpful. Until we meet again, mortal….”;;;;;;;;;;;x
+ancrel.4224.a;When I wake up, I notice a map lying next to your head.;;;;;;;;;;;;;x
+ancrel.4221.tooltip.2;\n\nHow did it get there?;;;;;;;;;;;x
+ancrel.4225.tooltip;\n\nYou and your servants bring the contents of the chest back to your residence.;;;;;;;;;;;x
+ancrel.4225.desc;Once home, I pour over the scrolls I found. They are written in an ancient language and extremely hard to decipher, but I manage to do it after a few days of study. Though my ancient scrolls aren't as powerful as the Book of Thoth, they are still useful in teaching me various things. The knowledge from the scrolls I mastered best was…;;;;;;;;;;;x
+ancrel.4225.a;Learning to live, and learning to love.;;;;;;;;;;;;;x
+ancrel.4225.b;How to be a better ruler.;;;;;;;;;;;;;x
+ancrel.4225.c;Sacred knowledge of the heavens, and natural philosophy.;;;;;;;;;;;;;x
+ancrel.4226.desc;In particular, with the knowledge I learned, I even managed to…;;;;;;;;;;;x
+ancrel.4226.a;Seduce a maid I had my eye on.;;;;;;;;;;;;;x
+ancrel.4226.b;Seduce a servant I had my eye on.;;;;;;;;;;;;;x
+ancrel.4226.c;Improve my relationships with others.;;;;;;;;;;;;;x
+ancrel.4226.d;Relax and be happy with life.;;;;;;;;;;;;;x
+ancrel.4227.desc;In particular, with the knowledge I learned, I even managed to…;;;;;;;;;;;x
+ancrel.4227.a;Improve my realm's agriculture and economy.;;;;;;;;;;;;;x
+ancrel.4227.b;Impress my vassals and those around me.;;;;;;;;;;;;;x
+ancrel.4227.c;Maintain a better fighting force.;;;;;;;;;;;;;x
+ancrel.4228.desc;In particular, with the knowledge I learned, I even managed to…;;;;;;;;;;;x
+ancrel.4228.a;Read the stars and understand the fate of men.;;;;;;;;;;;;;x
+ancrel.4228.b;Discover the sites of several ancient temples.;;;;;;;;;;;;;x
+ancrel.4228.c;Help provide local scholars with new ideas.;;;;;;;;;;;;;x
+ancrel.4229.desc;News of my powerful scrolls of knowledge has spread far and wide. Even foreigners from faraway land brave many dangers just for the chance to read the contents within. I have to be careful not to let just about anyone access them, but today, a famous thinker has visited from afar and is interested in the knowledge I possess! He wishes to purchase some of the scrolls for a price.;;;;;;;;;;;x
+ancrel.4229.a;I am sorry friend, but these scrolls are not for sale.;;;;;;;;;;;;;x
+ancrel.4229.b;Get lost! These scrolls are under my protection.;;;;;;;;;;;;;x
+ancrel.4229.c;Why don’t you stay in my court instead?;;;;;;;;;;;;;x
+ancrel.4230.tooltip;\n\nYou could use someone wise like him, after all, and he’ll be able to study your scrolls indefinitely.;;;;;;;;;;;x
+ancrel.4230.desc;The man is intrigued with my suggestion and ponders it over. After some deliberation, he accepts. I am sure that he will make a fine addition to my court, for he is one of the world’s foremost…;;;;;;;;;;;x
+ancrel.4230.a;Translators, skilled in many languages and deciphering ancient texts.;;;;;;;;;;;;;x
+ancrel.4230.b;Poets, who sings ballads so beautiful even stone-hearted men weep.;;;;;;;;;;;;;x
+ancrel.4230.c;Philosophers, renowned for his intellectual prowess.;;;;;;;;;;;;;x
+ancrel.4230.d;Historians, with knowledge of the past and sociological theories unrivaled.;;;;;;;;;;;;;x
+ancrel.4231.tooltip;\n\nThey are too precious to be given away like that.;;;;;;;;;;;x
+ancrel.4231.desc;The scholar apologizes, and says he will learn as much as he can from them while he is still here. In his discussions with other learned men at my court, he has exposed them to a number of ideas and new ways of interpreting the scrolls.;;;;;;;;;;;x
+ancrel.4231.a;Thank you, and safe travels.;;;;;;;;;;;;;x
+ancrel.4232.desc;A sound causes me to wake up in the middle of the night. Is someone there? I look around, alarmed. Wait, who’s that? A hooded figure stands at the foot of my bed! I scream for my guards yet no noise comes out of my mouth!;;;;;;;;;;;x
+ancrel.4232.a;It’s a demon!;;;;;;;;;;;;;x
+ancrel.4233.tooltip;\n\nNOOO!!!!!;;;;;;;;;;;x
+ancrel.4233.desc;“I won’t hurt you,” the hooded figure says as he removes his hood. A handsome man of regal bearing and posture stands before me, and a slight glowing aura surrounds him. “Sorry for the rude interruption, but let me introduce myself. I am the spirit of Khaemwaset, son of the pharaoh Ramses, and I once quested for the knowledge of Thoth like you. I thought I would pay a visit to a kindred spirit.”;;;;;;;;;;;x
+ancrel.4233.a;Was that a pun?;;;;;;;;;;;;;x
+ancrel.4234.tooltip;\n\nHe chuckles.;;;;;;;;;;;x
+ancrel.4234.title;Khaemwaset's Gift;;;;;;;;;;;x
+ancrel.4234.desc;“By the gods! Do spirits and such just dance into my room and wake me in the middle of the night like it was no big deal?” I complain.\n\n“Don’t worry, friend,” Khaemwaset says. “I mean no harm, and I will be gone shortly. I actually wanted to give you a gift.”\n\n“A gift?”\n\n“When you wake up, you will see. Or hear, rather.”;;;;;;;;;;;x
+ancrel.4234.a;What is he talking about?;;;;;;;;;;;;;x
+ancrel.4235.tooltip;\n\nHis voice grows faint. “Farewell, friend. I shall be waiting for you in Duat.”;;;;;;;;;;;x
+ancrel.4235.desc;The next morning, as I begin to hold court, a messenger comes into my room,sent by the elder of a nearby village. Yesterday, some villagers stumbled on the remains of an old library. The village scribe determined that it was built by none other than the ancient Egyptian prince, Khaemwaset. Why it was built here of all places, no one knows, but when the village elder sent a team of men to investigate, they found hundreds if not thousands of scrolls, full of knowledge and wisdom.;;;;;;;;;;;x
+ancrel.4235.a;I remember what Khaemwaset told me. Thank you, my friend!;;;;;;;;;;;;;x
+ancrel.4236.desc;xxxxx;;;;;;;;;;;x
+ancrel.4236.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4237.desc;xxxxx;;;;;;;;;;;x
+ancrel.4237.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4238.desc;xxxxx;;;;;;;;;;;x
+ancrel.4238.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4239.desc;xxxxx;;;;;;;;;;;x
+ancrel.4239.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4240.desc;xxxxx;;;;;;;;;;;x
+ancrel.4240.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4241.desc;xxxxx;;;;;;;;;;;x
+ancrel.4241.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4242.desc;xxxxx;;;;;;;;;;;x
+ancrel.4242.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4243.desc;xxxxx;;;;;;;;;;;x
+ancrel.4243.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4244.desc;xxxxx;;;;;;;;;;;x
+ancrel.4244.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4245.desc;xxxxx;;;;;;;;;;;x
+ancrel.4245.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4246.desc;xxxxx;;;;;;;;;;;x
+ancrel.4246.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4247.desc;xxxxx;;;;;;;;;;;x
+ancrel.4247.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4248.desc;xxxxx;;;;;;;;;;;x
+ancrel.4248.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4249.desc;xxxxx;;;;;;;;;;;x
+ancrel.4249.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4250.desc;One day, I am sitting idly with a few of my courtiers in my courtyard, engaging in polite conversation. It is honestly pretty dull. Suddenly, someone points up to the sky - a bird approaches us! A wild falcon flies into the garden, drops a glass slipper onto my lap, and then soars away. Everyone looks at the slipper in surprise. ;;;;;;;;;;;x
+ancrel.4250.a;What is this?;;;;;;;;;;;;;x
+ancrel.4251.tooltip;\n\nThe falcon is the animal of the great god Horus. Perhaps it is a divine sign? Not to mention the slipper doesn’t show any cracks.;;;;;;;;;;;x
+ancrel.4251.title;A Glass Slipper;;;;;;;;;;;x
+ancrel.4251.desc;Holding the glass slipper in my hand, I see that it is of excellent quality. It is also rather small, as if it were made for a child, but the style is undoubtedly that of an adult woman’s slipper.\n\n“The falcon must have taken that from someone, and the woman who owns that slipper must be quite wealthy,” one of my courtiers remarks. “We should see if anyone has reported a missing slipper.”\n\nI muse over it for a bit, and nod in agreement. “Good idea. This isn’t an urgent matter, but I’m sure the owner of this slipper will greatly appreciate it. We’ll do what we can to locate her.”;;;;;;;;;;;x
+ancrel.4251.a;In the meanwhile, I’ll keep this slipper with me, just in case.;;;;;;;;;;;;;x
+ancrel.4252.title;The Slipper’s Owner?;;;;;;;;;;;x
+ancrel.4252.desc;I hear news from one of my lesser officials who went out searching for the owner of the glass slipper. He reports that the owner is a poor slave girl owned by a wealthy widow of foreign origin who lives in a mansion in my capital. Odd. How could a slave own such a beautiful slipper? Perhaps I should see to the matter myself. If the girl is lying, then she will be duly punished. I have a feeling she is lying, but I’ll give her a chance to prove herself.;;;;;;;;;;;x
+ancrel.4252.a;I make arrangements to visit as soon as is convenient.;;;;;;;;;;;;;x
+ancrel.4253.title;The Mansion;;;;;;;;;;;x
+ancrel.4253.desc;When I arrive at the widow’s mansion, she rushes out to greet me. She appears quite nervous, but then again, it’s not everyday that someone important like me barges into someone’s house. The lady says in her heavy foreign accent that her slave is probably lying, and that I shouldn’t waste my time. However, I want to make sure. As I walk through her mansion, I notice how opulent and extravagant it is. The decor, the furniture, the plants and statues, they must cost a fortune. It’s luxurious to the point where I am a little disgusted.;;;;;;;;;;;x
+ancrel.4253.a;Perhaps the slave stole the slippers from her mistress?;;;;;;;;;;;;;x
+ancrel.4254.title;The Widow;;;;;;;;;;;x
+ancrel.4254.desc;As I make my way to the slave quarters, the widow introduces me to her two plain-looking girls, her daughters. It’s clear she is trying to parade them around, hoping I’ll marry them or have one of my relatives marry them. The girls try too hard to flatter me.\n\nAs we continue along, the widow explains that the daughters are from her first marriage to a wealthy merchant from her homeland. Her second marriage was to another wealthy merchant, also from her homeland, who passed away many years ago, and she inherited much of his fortune and has since lived here, continuing her late husbands’ businesses.;;;;;;;;;;;x
+ancrel.4254.a;Perhaps the slave stole the slippers from her mistress?;;;;;;;;;;;;;x
+ancrel.4255.title;The Slave;;;;;;;;;;;x
+ancrel.4255.desc;Finally, I arrive at the slave quarters, and meet the supposed owner of the slippers. She is a young girl, barely an adult, quite pretty with an angelic face. I notice various scars and bruises on her skin - no doubt her mistress is not kind. She looks so timid in my presence, like a frightened rabbit, that I feel an odd protectiveness towards her, but I have business to take care of. I hold out the slipper, and ask the slave if she is indeed its owner. She nods timidly, but at that moment the widow goes into a rage and slaps the girl. “You stole that from me, didn’t you! You good for nothing, stealing from your mother! You’re wasting the time of our great - ”;;;;;;;;;;;x
+ancrel.4255.a;I shout and raise my hand, silencing her.;;;;;;;;;;;;;x
+ancrel.4256.tooltip;\n\nWait a moment… did you say you were her mother?;;;;;;;;;;;x
+ancrel.4256.title;Family Drama;;;;;;;;;;;x
+ancrel.4256.desc;The widow, stuttering, explains that this girl was the only child of her second husband, and then suggests I waste my time here no longer. Interesting. It is not unheard of, for a parent or stepparent to sell a child into slavery, but to keep them as slaves? How unusual. Before I can ponder the matter further, the noblewoman takes the slipper from my hand, and says, “I am sure this slipper belonged to my daughters and not that whore. Girls! Come over here, try the slipper.”\n\nThe two girls hurry over and try putting the slipper on, but it is so tiny their feet cannot fit. I try my best not to look exasperated as I take the slipper back.;;;;;;;;;;;x
+ancrel.4256.a;Well, let’s have the slave girl try it on then.;;;;;;;;;;;;;x
+ancrel.4257.tooltip;She steps forward.;;;;;;;;;;;x
+ancrel.4257.title;Broken!;;;;;;;;;;;x
+ancrel.4257.desc;The girl cautiously approaches you as you hold the slipper out, but before you can give it to her, the widow, in trying to get a better look, trips and bumps into me, knocking the slipper out of my hand. It falls to the ground and breaks into many little shards of glass. I have a feeling that might have been on purpose, but before I can even consider that, what to do with the broken slipper? I half-expect the girl to start tearing up, but with a determined look, she tells us to wait a moment. Curious, we all wait as she goes into her room. Is she trying to run away or something?;;;;;;;;;;;x
+ancrel.4257.a;She returns with a smile on her face and another glass slipper in her hands.;;;;;;;;;;;;;x
+ancrel.4258.tooltip;\n\nNow this is something!;;;;;;;;;;;x
+ancrel.4258.title;The Other Slipper;;;;;;;;;;;x
+ancrel.4258.desc;“A falcon stole this slipper the other day while I was cleaning it outside, but I still have this one,” she explains, before giving it to me. I hold it in my hand and inspect it. Indeed it is exactly the same size, shape, and design as the slipper that had just broken. I give it back to her, and tell her to put it on. It fits her tiny feet perfectly! Plus, the fact that the girl says a falcon stole the slipper confirms her story to be true, as it was a falcon that delivered to me. ;;;;;;;;;;;x
+ancrel.4258.a;The girl is beaming at me, and I admit I find her innocent smile touching.;;;;;;;;;;;;;x
+ancrel.4259.tooltip;\n\nThere’s still something I don’t understand, though….;;;;;;;;;;;x
+ancrel.4259.title;Gods' Sign;;;;;;;;;;;x
+ancrel.4259.desc;“But how can a slave own such an exquisite pair of slippers?” I ask.\n\n“It was my father’s present from when I was young,” the girl explains. “When he died, my stepmother took everything he owned, but I hid these slippers from her. He always told me they would bring me good luck.”\n\nI think for a moment. “Clearly this was a sign from the gods! Horus, the son of Isis and Osiris, sent me a message through his falcon. You are coming with me back to my palace. I shall give you a new life as a - ”\n\n“But she is my stepdaughter! My slave!” the widow protests.;;;;;;;;;;;x
+ancrel.4259.a;“Enough!” I shout.;;;;;;;;;;;;;x
+ancrel.4260.tooltip;\n\nI take a deep breath.;;;;;;;;;;;x
+ancrel.4260.title;Pure of Heart;;;;;;;;;;;x
+ancrel.4260.desc;“You have abused this poor girl long enough. Look at the bruises and wounds on her. What sort of mother, even a stepmother, treats her own child like this? To make them a slave simply out of spite? I should have you and your two daughters punished for your - ”\n\nThe girl interrupts and prostrates before me. “Please, take pity on them. Though they are cruel and not of my blood, they are still my mother and sisters. If they are to be punished, so should I.”;;;;;;;;;;;x
+ancrel.4260.a;Amazing! This girl is truly pure of heart! ;;;;;;;;;;;;;x
+ancrel.4261.tooltip;\n\nEither that or she’s gullible to the point where she’s utterly idiotic.;;;;;;;;;;;x
+ancrel.4261.title;Small Price;;;;;;;;;;;x
+ancrel.4261.desc;“Very well,” I say. I take one of the gold rings on my finger, and casually toss it on the floor at the stepmother’s feet. “Take this as compensation for your ‘slave.’ Be glad she is forgiving.” It is of course nowhere near how much a slave would cost, especially a young, healthy one like the girl, but the stepmother understands and prostrates before me.\n\n“Come with me,” I tell the slave girl. “I will send some servants to come pick up your belongings at a later time. Meanwhile, I will ask some of my maids to help find you some proper clothing, not these rags you are wearing.”;;;;;;;;;;;x
+ancrel.4261.a;She follows me timidly.;;;;;;;;;;;;;x
+ancrel.4262.title;A New Life;;;;;;;;;;;x
+ancrel.4262.desc;Following the incident with the glass slipper, I sent a few officials to investigate the girl’s family and history, just in case. Their findings confirmed what the girl said was true. Her father was a great merchant from a faraway land, supposedly a prince who had too much of an adventurer’s spirit and was disowned by his father the king. Renowned during his lifetime for his generosity and kindness, even I recall his name when I hear it. When he died, he left much of his inheritance to the girl, but the stepmother somehow manipulated the law to take the property meant for the girl. I wish to give the girl her rightful inheritance, but she says not to bother - she is happy enough to live at my palace.;;;;;;;;;;;x
+ancrel.4262.a;She asks if I will keep her as a maid.;;;;;;;;;;;;;x
+ancrel.4263.tooltip;\n\nI have something else in mind.;;;;;;;;;;;x
+ancrel.4263.title;Noble Lady;;;;;;;;;;;x
+ancrel.4263.desc;In the past few days I have gotten to know the girl better. Though she is admittedly a bit too naive and trustful, not to mention rather reserved, I’ve found her to be good company. She is intelligent and thoughtful, pleasant, of pure heart, and possesses a cheerful disposition that seems to lighten up even the most dour of men. Not to mention despite her foreign appearance, she is undoubtedly beautiful, clearly blessed by the gods. No. She cannot be a mere maid. Her father, after all, was a great man. She shall be a true noble lady of my court. In fact, I think I know the perfect man for her to marry...;;;;;;;;;;;x
+ancrel.4263.a;Myself. I admit, I have fallen in love with her.;;;;;;;;;;;;;x
+ancrel.4263.b;One of my sons, who seems to get along well with her.;;;;;;;;;;;;;x
+ancrel.4263.c;A relative, who is smitten with her.;;;;;;;;;;;;;x
+ancrel.4263.d;A courtier of mine, who has doted on her since she came to my court.;;;;;;;;;;;;;x
+ancrel.4263.e;A local nobleman of fine upbringing.;;;;;;;;;;;;;x
+ancrel.4264.tooltip;\n\nA great wedding shall be held!;;;;;;;;;;;x
+ancrel.4264.title;Happy Ending;;;;;;;;;;;x
+ancrel.4264.desc;The girl happily accepts my suggestion, and I immediately order my servants to make preparations for the wedding. All’s well that ends well, it seems! But I should make an offering to Horus first, before anything.;;;;;;;;;;;x
+ancrel.4264.a;It is truly He, son of Osiris and Isis, who we should thank.;;;;;;;;;;;;;x
+ancrel.4265.desc;xxxxx;;;;;;;;;;;x
+ancrel.4265.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4266.desc;xxxxx;;;;;;;;;;;x
+ancrel.4266.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4267.desc;xxxxx;;;;;;;;;;;x
+ancrel.4267.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4268.desc;xxxxx;;;;;;;;;;;x
+ancrel.4268.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4269.desc;xxxxx;;;;;;;;;;;x
+ancrel.4269.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4270.desc;xxxxx;;;;;;;;;;;x
+ancrel.4270.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4271.desc;xxxxx;;;;;;;;;;;x
+ancrel.4271.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4272.desc;xxxxx;;;;;;;;;;;x
+ancrel.4272.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4273.desc;xxxxx;;;;;;;;;;;x
+ancrel.4273.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4274.desc;xxxxx;;;;;;;;;;;x
+ancrel.4274.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4275.desc;xxxxx;;;;;;;;;;;x
+ancrel.4275.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4276.desc;xxxxx;;;;;;;;;;;x
+ancrel.4276.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4277.desc;xxxxx;;;;;;;;;;;x
+ancrel.4277.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4278.desc;xxxxx;;;;;;;;;;;x
+ancrel.4278.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4279.desc;xxxxx;;;;;;;;;;;x
+ancrel.4279.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4280.desc;xxxxx;;;;;;;;;;;x
+ancrel.4280.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4281.desc;xxxxx;;;;;;;;;;;x
+ancrel.4281.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4282.desc;xxxxx;;;;;;;;;;;x
+ancrel.4282.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4283.desc;xxxxx;;;;;;;;;;;x
+ancrel.4283.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4284.desc;xxxxx;;;;;;;;;;;x
+ancrel.4284.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4285.desc;xxxxx;;;;;;;;;;;x
+ancrel.4285.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4286.desc;xxxxx;;;;;;;;;;;x
+ancrel.4286.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4287.desc;xxxxx;;;;;;;;;;;x
+ancrel.4287.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4288.desc;xxxxx;;;;;;;;;;;x
+ancrel.4288.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4289.desc;xxxxx;;;;;;;;;;;x
+ancrel.4289.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4290.desc;xxxxx;;;;;;;;;;;x
+ancrel.4290.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4291.desc;xxxxx;;;;;;;;;;;x
+ancrel.4291.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4292.desc;xxxxx;;;;;;;;;;;x
+ancrel.4292.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4293.desc;xxxxx;;;;;;;;;;;x
+ancrel.4293.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4294.desc;xxxxx;;;;;;;;;;;x
+ancrel.4294.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4295.desc;xxxxx;;;;;;;;;;;x
+ancrel.4295.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4296.desc;xxxxx;;;;;;;;;;;x
+ancrel.4296.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4297.desc;xxxxx;;;;;;;;;;;x
+ancrel.4297.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4298.desc;xxxxx;;;;;;;;;;;x
+ancrel.4298.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4299.desc;xxxxx;;;;;;;;;;;x
+ancrel.4299.a;Xxxxxxffff;;;;;;;;;;;;;x

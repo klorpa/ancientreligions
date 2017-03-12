@@ -1,0 +1,18 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_scrolls_of_thoth"
+		texturefile = "gfx\\interface\\inventory\\items\\scrolls_of_thoth.dds"
+	}
+	spriteType = {
+		name = "GFX_scrolls_of_thoth_small"
+		texturefile = "gfx\\interface\\inventory\\items\\scrolls_of_thoth_small.dds"
+	}
+	spriteType = {
+		name = "GFX_amulet_of_khaemwaset"
+		texturefile = "gfx\\interface\\inventory\\items\\amulet_of_khaemwaset.dds"
+	}
+	spriteType = {
+		name = "GFX_amulet_of_khaemwaset_small"
+		texturefile = "gfx\\interface\\inventory\\items\\amulet_of_khaemwaset_small.dds"
+	}
+}

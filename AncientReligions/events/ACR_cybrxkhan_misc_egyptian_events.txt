@@ -1,0 +1,2463 @@
+###################################################
+#
+# ANCIENT RELIGIONS
+# - Egyptian events
+#
+# Extras by Cybrxkhan
+#
+# Event ID ancrel.4200 - ancrel.4299
+#
+# Book of Thoth 4200-4249
+# Red Slippers 4250-4259
+#
+#
+###################################################
+
+namespace = ancrel
+
+###############################
+# BOOK OF THOTH EVENT CHAIN
+###############################
+
+
+# the temple
+character_event = {
+	id = ancrel.4200
+	desc = ancrel.4200.desc
+	picture = GFX_evt_tropical_skyrim
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	ai = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+		NOT = { has_global_flag = VIET_book_of_thoth_done }
+		NOT = { has_character_flag = VIET_book_of_thoth_attempted }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = erudite
+		}
+		modifier = {
+			factor = 0.5
+			trait = stubborn
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_book_of_thoth_attempted
+	}
+
+	option = { # Ok
+		name = ancrel.4200.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4201 }
+		}
+	}
+}
+
+#  Did you ever hear the tragedy of Neferkaptah the Scholar?
+long_character_event = {
+	id = ancrel.4201
+	desc = ancrel.4201.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4201.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4202 }
+		}
+	}
+}
+
+# I thought not. It’s not a story the Abrahamics would tell you. It’s a pagan legend.
+long_character_event = {
+	id = ancrel.4202
+	desc = ancrel.4202.desc
+	picture = GFX_evt_nightmare
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4202.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4203 tooltip = ancrel.4203.tooltip days = 60 random = 10 }
+		}
+	}
+}
+
+# A storm!
+character_event = {
+	id = ancrel.4203
+	desc = ancrel.4203.desc
+	picture = GFX_evt_temple_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4203.a
+		character_event = { id = ancrel.4205 tooltip = ancrel.4205.tooltip days = 1 }
+	}
+}
+
+# Fell down a pit
+#narrative_event = {
+#	id = ancrel.4204
+#	title = ancrel.4204.title
+#	desc = ancrel.4204.desc
+#	picture = GFX_evt_ancient_egyptian_spoop
+#
+#	is_triggered_only = yes
+#
+#	option = { # Ok
+#		name = ancrel.4204.a
+#		character_event = { id = ancrel.4205 tooltip = ancrel.4205.tooltip days = 1 }
+#	}
+#}
+
+# Ancient wall
+character_event = {
+	id = ancrel.4205
+	desc = ancrel.4205.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # Left
+		name = ancrel.4205.a
+		character_event = { id = ancrel.4206 tooltip = ancrel.4206.tooltip days = 1 }
+	}
+
+	option = { # Right
+		name = ancrel.4205.b
+		character_event = { id = ancrel.4207 tooltip = ancrel.4206.tooltip days = 1 }
+	}
+}
+
+# Thoth story (left)
+character_event = {
+	id = ancrel.4206
+	desc = ancrel.4206.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4206.a
+		random_list = {
+			10 = { change_diplomacy = 1 }
+			20 = { change_stewardship = 1 }
+			20 = { change_learning = 1 }
+		}
+		character_event = { id = ancrel.4208 days = 1 }
+	}
+}
+
+# Thoth story (right)
+character_event = {
+	id = ancrel.4207
+	desc = ancrel.4207.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4207.a
+		random_list = {
+			10 = { change_diplomacy = 1 }
+			20 = { change_intrigue = 1 }
+			20 = { change_learning = 1 }
+		}
+		character_event = { id = ancrel.4208 days = 1 }
+	}
+}
+
+# The book!
+character_event = {
+	id = ancrel.4208
+	desc = ancrel.4208.desc
+	picture = GFX_evt_nightmare
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4208.a
+		character_event = { id = ancrel.4209 tooltip = ancrel.4209.tooltip days = 1 }
+	}
+}
+
+# The spirit of Neferkaptah
+character_event = {
+	id = ancrel.4209
+	desc = ancrel.4209.desc
+	picture = GFX_evt_nightmare
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4209.a
+		character_event = { id = ancrel.4210 tooltip = ancrel.4210.tooltip days = 1 }
+	}
+}
+
+# What is the Book of Thoth?
+narrative_event = {
+	id = ancrel.4210
+	title = ancrel.4210.title
+	desc = ancrel.4210.desc
+	picture = GFX_evt_ancient_egypt_scroll
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4210.a
+		character_event = { id = ancrel.4211 tooltip = ancrel.4211.tooltip days = 1 }
+	}
+}
+
+# Neferkaptah's warning
+narrative_event = {
+	id = ancrel.4211
+	title = ancrel.4211.title
+	desc = ancrel.4211.desc
+	picture = GFX_evt_nightmare
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = VIET_book_of_thoth_done
+	}
+
+	option = { # take the book!
+		name = ancrel.4211.a
+		set_character_flag = VIET_book_of_thoth_took_it
+		add_character_modifier = {
+			name = VIET_book_of_thoth_power
+			duration = -1
+		}
+		character_event = { id = ancrel.4212 tooltip = ancrel.4212.tooltip days = 1 }
+	}
+	option = { # leave it
+		name = ancrel.4211.b
+		piety = 10
+		set_character_flag = VIET_book_of_thoth_did_not_take_it
+		character_event = { id = ancrel.4213 tooltip = ancrel.4213.tooltip days = 1 }
+	}
+}
+
+# haha sucker
+narrative_event = {
+	id = ancrel.4212
+	title = ancrel.4212.title
+	desc = ancrel.4212.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # take the book!
+		name = ancrel.4212.a
+		character_event = { id = ancrel.4214 tooltip = ancrel.4214.tooltip days = 1 }
+	}
+}
+
+# very wise
+narrative_event = {
+	id = ancrel.4213
+	title = ancrel.4213.title
+	desc = ancrel.4213.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4213.a
+		add_artifact = VIET_amulet_of_khaemwaset
+		character_event = { id = ancrel.4223 tooltip = ancrel.4223.tooltip days = 1 }
+	}
+}
+
+# clear rain
+character_event = {
+	id = ancrel.4214
+	desc = ancrel.4214.desc
+	picture = GFX_evt_tropical_skyrim
+
+	is_triggered_only = yes
+
+	option = { # take the book!
+		name = ancrel.4214.a
+		character_event = { id = ancrel.4215 tooltip = ancrel.4215.tooltip days = 1 }
+	}
+}
+
+# read page 42 or not?
+long_character_event = {
+	id = ancrel.4215
+	desc = ancrel.4215.desc
+	picture = GFX_evt_ancient_egypt_scroll
+
+	is_triggered_only = yes
+
+	option = { # don't read page 42
+		name = ancrel.4215.a
+		set_character_flag = VIET_book_of_thoth_no_42
+		character_event = { id = ancrel.4216 tooltip = ancrel.4216.tooltip days = 10 random = 10 }
+		hidden_tooltip = {
+			character_event = { id = ancrel.4217 days = 300 }
+		}
+	}
+	option = { # read page 42
+		name = ancrel.4215.b
+		set_character_flag = VIET_book_of_thoth_yes_42
+		character_event = { id = ancrel.4216 tooltip = ancrel.4216.tooltip days = 10 random = 10 }
+		hidden_tooltip = {
+			character_event = { id = ancrel.4217 days = 300 }
+		}
+	}
+}
+
+# what did I learn?
+character_event = {
+	id = ancrel.4216
+	desc = ancrel.4216.desc
+	picture = GFX_evt_cathedral
+
+	is_triggered_only = yes
+
+	option = { # strength
+		name = ancrel.4216.a
+		set_character_flag = VIET_book_of_thoth_first_strength
+		health = 1.5
+		fertility = 0.5
+		custom_tooltip = { text = VIET_UNLIMITED_POWER }
+	}
+	option = { # knowledge
+		name = ancrel.4216.b
+		set_character_flag = VIET_book_of_thoth_first_ability
+		change_diplomacy = 3
+		change_martial = 3
+		change_stewardship = 3
+		change_intrigue = 3
+		change_learning = 3
+		custom_tooltip = { text = VIET_UNLIMITED_POWER }
+	}
+	option = { # gold and gems
+		name = ancrel.4216.c
+		set_character_flag = VIET_book_of_thoth_first_riches
+		wealth = 500
+		custom_tooltip = { text = VIET_UNLIMITED_POWER }
+	}
+}
+
+
+
+# hehehehe
+character_event = {
+	id = ancrel.4217
+	desc = ancrel.4217.desc
+	picture = GFX_evt_ancient_egypt_scroll
+
+	is_triggered_only = yes
+
+	option = { # you didn't read page 42
+		name = ancrel.4217.a
+		trigger = {
+			has_character_flag = VIET_book_of_thoth_no_42
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4218 days = 1 }
+		}
+	}
+	option = { # you read page 42
+		name = ancrel.4217.a
+		trigger = {
+			has_character_flag = VIET_book_of_thoth_yes_42
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4219 days = 1 }
+		}
+	}
+}
+
+# you dead
+character_event = {
+	id = ancrel.4218
+	desc = ancrel.4218.desc
+	picture = GFX_evt_nightmare
+
+	is_triggered_only = yes
+
+	option = { # good job
+		name = ancrel.4218.a
+		if = {
+			limit = {
+				has_character_flag = VIET_book_of_thoth_first_riches
+			}
+			wealth = -500
+		}
+		death = {
+			death_reason = death_natural
+		}
+		any_spouse = {
+			death = {
+				death_reason = death_natural
+			}
+		}
+		if = {
+			limit = {
+				has_character_flag = VIET_book_of_thoth_deceived_gods
+			}
+			any_child = {
+				limit = {
+					is_adult = no
+				}
+				death = {
+					death_reason = death_natural
+				}		
+			}
+			any_close_relative = {
+				add_character_modifier = {
+					name = VIET_curse_of_thoth_relative
+					duration = -1
+				}
+			}
+		}	
+	}
+}
+
+# you not dead!
+narrative_event = {
+	id = ancrel.4219
+	title = ancrel.4219.title
+	desc = ancrel.4219.desc
+	picture = GFX_evt_thoth
+
+	is_triggered_only = yes
+
+	option = { # ignore the dream
+		name = ancrel.4219.a
+		piety = -50
+		set_character_flag = VIET_book_of_thoth_deceived_gods
+		character_event = { id = ancrel.4218 tooltip = ancrel.4218.tooltip.2 days = 7 random = 7 }
+	}
+	option = { # return the book
+		name = ancrel.4219.b
+		piety = -50
+		set_character_flag = VIET_book_of_thoth_deceived_gods
+		character_event = { id = ancrel.4220 tooltip = ancrel.4220.tooltip days = 1 }
+	}
+}
+
+# lol
+narrative_event = {
+	id = ancrel.4220
+	title = ancrel.4220.title
+	desc = ancrel.4220.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # get a treasure map
+		name = ancrel.4220.a
+		character_event = { id = ancrel.4221 tooltip = ancrel.4221.tooltip days = 2 }
+		add_character_modifier = {
+			name = VIET_curse_of_thoth
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_character_flag = VIET_book_of_thoth_first_riches
+			}
+			wealth = -500
+		}
+		if = {
+			limit = {
+				has_character_flag = VIET_book_of_thoth_first_ability
+			}
+			change_diplomacy = -3
+			change_martial = -3
+			change_stewardship = -3
+			change_intrigue = -3
+			change_learning = -3
+		}
+		if = {
+			limit = {
+				has_character_flag = VIET_book_of_thoth_first_strength
+			}
+			health = -1.5
+			fertility = -0.5
+		}
+	}
+}
+
+# finding the treasure
+character_event = {
+	id = ancrel.4221
+	desc = ancrel.4221.desc
+	picture = GFX_evt_ancient_egyptian_spoop
+
+	is_triggered_only = yes
+
+	option = { # yar har har
+		name = ancrel.4221.a
+		add_artifact = VIET_scrolls_of_thoth
+		character_event = { id = ancrel.4225 tooltip = ancrel.4225.tooltip days = 7 random = 7 }
+	}
+}
+
+# Neferkaptah's gift
+#narrative_event = {
+#	id = ancrel.4222
+#	title = ancrel.4222.title
+#	desc = ancrel.4222.desc
+#	picture = GFX_evt_ancient_egyptian_spoop
+#
+#	is_triggered_only = yes
+#
+#	option = { # ok
+#		name = ancrel.4222.a
+#		add_artifact = VIET_amulet_of_khaemwaset
+#		character_event = { id = ancrel.4223 tooltip = ancrel.4223.tooltip days = 1 }
+#	}
+#}
+
+# all's well that ends well?
+character_event = {
+	id = ancrel.4223
+	desc = ancrel.4223.desc
+	picture = GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4223.a
+		character_event = { id = ancrel.4224 tooltip = ancrel.4224.tooltip days = 1 }
+	}
+}
+
+# a map?
+long_character_event = {
+	id = ancrel.4224
+	desc = ancrel.4224.desc
+	picture = GFX_evt_thoth
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4224.a
+		add_character_modifier = {
+			name = VIET_blessings_of_thoth
+			duration = -1
+		}
+		character_event = { id = ancrel.4221 tooltip = ancrel.4221.tooltip.2 days = 1 }
+	}
+}
+
+# what did I learn?
+character_event = {
+	id = ancrel.4225
+	desc = ancrel.4225.desc
+	picture = GFX_evt_ancient_egypt_scroll
+
+	is_triggered_only = yes
+
+	option = { # life and love
+		name = ancrel.4225.a
+		character_event = { id = ancrel.4226 }
+	}
+	option = { # administration
+		name = ancrel.4225.b
+		character_event = { id = ancrel.4227 }
+	}
+	option = { # wisdom and knowledge
+		name = ancrel.4225.c
+		character_event = { id = ancrel.4228 }
+	}
+}
+
+# what did I learn? - life and love
+character_event = {
+	id = ancrel.4226
+	desc = ancrel.4226.desc
+	picture = GFX_evt_GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # seduction of maid
+		name = ancrel.4226.a
+		trigger = {
+			#has_focus = focus_seduction
+			is_ill = no
+			has_regent = no
+			has_lover = no
+			OR = {
+				AND = {
+					is_female = no
+					NOT = { trait = homosexual }
+				}
+				AND = {
+					is_female = yes
+					trait = homosexual
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = none
+			religion = ROOT
+			culture = ROOT
+			female = yes
+			age = 18
+			trait = fair
+		}		
+		hidden_tooltip = {
+			new_character = {
+				add_lover = ROOT
+				if = {
+					limit = { same_sex = ROOT }
+					add_trait = homosexual
+				}
+				
+				random = {
+					chance = 10
+					add_trait = fertile
+				}
+				random = {
+					chance = 10
+					add_trait = tall
+				}
+				random = {
+					chance = 5
+					add_trait = quick
+				}
+			}
+		}
+	}
+
+	option = { # seduction of servant
+		name = ancrel.4226.b
+		trigger = {
+			#has_focus = focus_seduction
+			is_ill = no
+			has_regent = no
+			has_lover = no
+			OR = {
+				AND = {
+					is_female = yes
+					NOT = { trait = homosexual }
+				}
+				AND = {
+					is_female = no
+					trait = homosexual
+				}
+			}
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = none
+			religion = ROOT
+			culture = ROOT
+			female = no
+			age = 18
+			trait = fair
+		}		
+		hidden_tooltip = {
+			new_character = {
+				add_lover = ROOT
+				if = {
+					limit = { same_sex = ROOT }
+					add_trait = homosexual
+				}
+				
+				random = {
+					chance = 10
+					add_trait = fertile
+				}
+				random = {
+					chance = 10
+					add_trait = tall
+				}
+				random = {
+					chance = 5
+					add_trait = quick
+				}
+			}
+		}
+	}
+	option = { # relations
+		name = ancrel.4226.c
+		add_character_modifier = {
+			name = VIET_thoth_scrolls_relationships
+			duration = -1
+		}
+	}
+	option = { # be happy with life
+		name = ancrel.4226.d
+		health = 0.6
+		fertility = 0.2
+		if = {
+			limit = {
+				trait = depressed
+			}
+			remove_trait = depressed
+		}
+		if = {
+			limit = {
+				trait = stressed
+			}
+			remove_trait = stressed
+		}
+		if = {
+			limit = {
+				trait = paranoid
+			}
+			remove_trait = paranoid
+		}
+		add_trait = content
+	}
+}
+
+# administration
+character_event = {
+	id = ancrel.4227
+	desc = ancrel.4227.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # improve realm
+		name = ancrel.4227.a
+		add_character_modifier = {
+			name = VIET_thoth_scrolls_realm
+			duration = -1
+		}
+	}
+	option = { # impress vassals
+		name = ancrel.4227.b
+		add_character_modifier = {
+			name = VIET_thoth_scrolls_vassals
+			duration = -1
+		}
+	}
+	option = { # better army
+		name = ancrel.4227.c
+		add_character_modifier = {
+			name = VIET_thoth_scrolls_military
+			duration = -1
+		}
+	}
+}
+
+# knowledge
+character_event = {
+	id = ancrel.4228
+	desc = ancrel.4228.desc
+	picture = GFX_evt_ancient_egypt
+
+	is_triggered_only = yes
+
+	option = { # read stars understand fate
+		name = ancrel.4228.a
+		add_character_modifier = {
+			name = VIET_thoth_scrolls_stars
+			duration = -1
+		}
+	}
+	option = { # discover temples
+		name = ancrel.4228.b
+		capital_scope = {
+			add_province_modifier = {
+				name = VIET_thoth_scrolls_ancient_temples
+				duration = -1
+			}		
+		}
+	}
+	option = { # local scholars new ideas
+		name = ancrel.4228.c
+		economy_techpoints = 250
+		culture_techpoints = 250
+		military_techpoints = 250
+	}
+}
+
+# scholar visits
+character_event = {
+	id = ancrel.4229
+	desc = ancrel.4229.desc
+	picture = GFX_evt_cathedral_soa_egyptian_pagan
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	ai = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+		has_global_flag = VIET_book_of_thoth_done
+		NOT = { has_character_flag = VIET_thoth_scrolls_scholar }
+		has_artifact = VIET_scrolls_of_thoth
+		NOT = {
+			any_courtier = {
+				has_character_flag = VIET_thoth_scrolls_courtier
+			}
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = erudite
+		}
+		modifier = {
+			factor = 0.5
+			trait = stubborn
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_thoth_scrolls_scholar
+	}
+
+	option = { # no it is not for sale
+		name = ancrel.4229.a
+		character_event = { id = ancrel.4231 tooltip = ancrel.4231.tooltip }
+	}
+	option = { # get lost!
+		name = ancrel.4229.b
+		random = {
+			add_trait = wroth
+			chance = 20
+		}
+		character_event = { id = ancrel.4231 tooltip = ancrel.4231.tooltip }
+	}
+	option = { # invite scholar to court
+		name = ancrel.4229.c
+		character_event = { id = ancrel.4230 tooltip = ancrel.4230.tooltip }
+	}
+}
+
+# scholar agrees to stay
+character_event = {
+	id = ancrel.4230
+	desc = ancrel.4230.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # translator
+		name = ancrel.4230.a
+		random_list = {
+			10 = {
+				create_character = { #tocharian
+					random_traits = yes
+					dynasty = random
+					religion = buddhist
+					culture = tocharian
+					female = no
+					age = 35
+					trait = grey_eminence
+					trait = genius
+					trait = diligent
+					trait = brave
+					attributes = {
+						diplomacy = 14
+						stewardship = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #sogdian
+					random_traits = yes
+					dynasty = random
+					religion = zoroastrian
+					culture = sogdian
+					female = no
+					age = 35
+					trait = grey_eminence
+					trait = genius
+					trait = diligent
+					trait = brave
+					attributes = {
+						diplomacy = 14
+						stewardship = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #italian
+					random_traits = yes
+					dynasty = random
+					religion = catholic
+					culture = italian
+					female = no
+					age = 35
+					trait = grey_eminence
+					trait = genius
+					trait = diligent
+					trait = brave
+					attributes = {
+						diplomacy = 14
+						stewardship = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #somali
+					random_traits = yes
+					dynasty = random
+					religion = sunni
+					culture = somali
+					female = no
+					age = 35
+					trait = grey_eminence
+					trait = genius
+					trait = diligent
+					trait = brave
+					attributes = {
+						diplomacy = 14
+						stewardship = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+		}
+	}
+	option = { # poet
+		name = ancrel.4230.b
+		random_list = {
+			10 = {
+				create_character = { #levantine_arabic
+					random_traits = yes
+					dynasty = random
+					religion = shiite
+					culture = levantine_arabic
+					female = no
+					age = 30
+					trait = grey_eminence
+					trait = fair
+					trait = genius
+					trait = diligent
+					trait = poet
+					attributes = {
+						diplomacy = 12
+						intrigue = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #norse
+					random_traits = yes
+					dynasty = random
+					religion = norse_pagan
+					culture = norse
+					female = no
+					age = 30
+					trait = grey_eminence
+					trait = fair
+					trait = genius
+					trait = diligent
+					trait = poet
+					attributes = {
+						diplomacy = 12
+						intrigue = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #manden
+					random_traits = yes
+					dynasty = random
+					religion = west_african_pagan 
+					culture = manden
+					female = no
+					age = 30
+					trait = grey_eminence
+					trait = fair
+					trait = genius
+					trait = diligent
+					trait = poet
+					attributes = {
+						diplomacy = 12
+						intrigue = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #occitan
+					random_traits = yes
+					dynasty = random
+					religion = catholic 
+					culture = occitan
+					female = no
+					age = 30
+					trait = grey_eminence
+					trait = fair
+					trait = genius
+					trait = diligent
+					trait = poet
+					attributes = {
+						diplomacy = 12
+						intrigue = 8
+						learning = 10
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+		}
+	}
+	option = { # philosopher
+		name = ancrel.4230.c
+		random_list = {
+			10 = {
+				create_character = { #hindustani
+					random_traits = yes
+					dynasty = random
+					religion = hindu
+					culture = hindustani
+					female = no
+					age = 40
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = gregarious
+					trait = erudite
+					trait = scholar
+					attributes = {
+						learning = 15
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #andalusian_arabic
+					random_traits = yes
+					dynasty = random
+					religion = sunni
+					culture = andalusian_arabic
+					female = no
+					age = 40
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = gregarious
+					trait = erudite
+					trait = scholar
+					attributes = {
+						learning = 15
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #greek
+					random_traits = yes
+					dynasty = random
+					religion = orthodox
+					culture = greek
+					female = no
+					age = 40
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = gregarious
+					trait = erudite
+					trait = scholar
+					attributes = {
+						learning = 15
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #german
+					random_traits = yes
+					dynasty = random
+					religion = catholic
+					culture = german
+					female = no
+					age = 40
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = gregarious
+					trait = erudite
+					trait = scholar
+					attributes = {
+						learning = 15
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+		}
+	}
+	option = { # historian
+		name = ancrel.4230.d
+		random_list = {
+			10 = {
+				create_character = { #khitan
+					random_traits = yes
+					dynasty = random
+					religion = buddhist
+					culture = khitan
+					female = no
+					age = 35
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = just
+					trait = erudite
+					trait = scholar
+					attributes = {
+						diplomacy = 8
+						stewardship = 10
+						learning = 12
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #persian
+					random_traits = yes
+					dynasty = random
+					religion = zoroastrian
+					culture = persian
+					female = no
+					age = 35
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = just
+					trait = erudite
+					trait = scholar
+					attributes = {
+						diplomacy = 8
+						stewardship = 10
+						learning = 12
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #saxon
+					random_traits = yes
+					dynasty = random
+					religion = catholic
+					culture = saxon
+					female = no
+					age = 35
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = just
+					trait = erudite
+					trait = scholar
+					attributes = {
+						diplomacy = 8
+						stewardship = 10
+						learning = 12
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+			10 = {
+				create_character = { #maghreb_arabic
+					random_traits = yes
+					dynasty = random
+					religion = ibadi
+					culture = maghreb_arabic
+					female = no
+					age = 35
+					trait = mastermind_theologian
+					trait = genius
+					trait = diligent
+					trait = just
+					trait = erudite
+					trait = scholar
+					attributes = {
+						diplomacy = 8
+						stewardship = 10
+						learning = 12
+					}
+				}	
+				new_character = {
+					set_character_flag = VIET_thoth_scrolls_courtier
+				}
+			}
+		}
+	}
+}
+
+# knowledge
+character_event = {
+	id = ancrel.4231
+	desc = ancrel.4231.desc
+	picture = GFX_evt_ancient_egypt
+
+	is_triggered_only = yes
+
+	option = { # new ideas
+		name = ancrel.4231.a
+		economy_techpoints = 75
+		culture_techpoints = 75
+		military_techpoints = 75
+	}
+}
+
+# khaemwaset visits
+character_event = {
+	id = ancrel.4232
+	desc = ancrel.4232.desc
+	picture = GFX_evt_nightmare
+	
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	ai = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+		has_global_flag = VIET_book_of_thoth_done
+		NOT = { has_character_flag = VIET_thoth_scrolls_khaemwaset }
+		has_artifact = VIET_scrolls_of_thoth
+		has_artifact = VIET_amulet_of_khaemwaset
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = erudite
+		}
+		modifier = {
+			factor = 0.5
+			trait = stubborn
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_thoth_scrolls_khaemwaset
+	}
+
+	option = { # noooes
+		name = ancrel.4232.a
+		character_event = { id = ancrel.4233 tooltip = ancrel.4233.tooltip }
+	}
+}
+
+# Khaemwaset's Gift
+long_character_event = {
+	id = ancrel.4233
+	desc = ancrel.4233.desc
+	picture = GFX_evt_nightmare
+	
+	is_triggered_only = yes
+
+	option = { # noooes
+		name = ancrel.4233.a
+		character_event = { id = ancrel.4234 tooltip = ancrel.4234.tooltip }
+	}
+}
+
+# Khaemwaset's Gift
+long_character_event = {
+	id = ancrel.4234
+	desc = ancrel.4234.desc
+	picture = GFX_evt_cathedral_soa_egyptian_pagan
+	
+	is_triggered_only = yes
+
+	option = { # noooes
+		name = ancrel.4234.a
+		character_event = { id = ancrel.4235 tooltip = ancrel.4235.tooltip }
+	}
+}
+
+
+# Khaemwaset's Gift
+long_character_event = {
+	id = ancrel.4235
+	desc = ancrel.4235.desc
+	picture = GFX_evt_cathedral_soa_egyptian_pagan
+	
+	is_triggered_only = yes
+
+	option = { # noooes
+		name = ancrel.4235.a
+		capital_scope = {
+			add_province_modifier = {
+				name = VIET_khaemwaset_library
+				duration = -1
+			}
+		}
+	}
+}
+
+
+
+
+
+###############################
+# RED SLIPPERS EVENT CHAIN (based on the oldest version of the Cinderella story)
+###############################
+
+
+# derping around
+character_event = {
+	id = ancrel.4250
+	desc = ancrel.4250.desc
+	picture = GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	ai = no
+	only_men = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+		NOT = { has_global_flag = VIET_red_slippers_done }
+		NOT = { has_character_flag = VIET_red_slippers_attempted }
+		NOT = { 
+			any_courtier = {
+				has_character_flag = VIET_red_slipper_girl
+			}
+		}
+		NOT = { 
+			any_spouse = {
+				has_character_flag = VIET_red_slipper_girl
+			}
+		}
+		NOT = { 
+			any_close_relative = {
+				any_spouse = {
+					has_character_flag = VIET_red_slipper_girl
+				}			
+			}
+		}
+		NOT = { trait = cruel }
+		NOT = { trait = greedy }
+		NOT = { trait = lustful }
+		NOT = { trait = celibate }
+		NOT = { trait = shy }
+		OR = {
+			trait = kind
+			trait = charitable
+			trait = just
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = temperate
+		}
+		modifier = {
+			factor = 0.5
+			trait = gluttonous
+		}
+		modifier = {
+			factor = 4
+			is_married = no
+			NOT = { num_of_spouses = 4 }
+			NOT = { age = 35 }
+		}
+		modifier = {
+			factor = 2
+			is_married = no
+			NOT = { age = 35 }
+		}
+		modifier = {
+			factor = 2
+			any_close_relative = {
+				NOT = { age = 35 }
+				is_female = no
+				is_married = no
+			}
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_red_slippers_attempted
+	}
+
+	option = { # Ok
+		name = ancrel.4250.a
+		character_event = { id = ancrel.4251 tooltip = ancrel.4251.tooltip }
+	}
+}
+
+
+# A Glass Slipper
+narrative_event = {
+	id = ancrel.4251
+	title = ancrel.4251.title
+	desc = ancrel.4251.desc
+	picture = GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4251.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4252 days = 10 random = 10 }
+		}
+	}
+}
+
+
+# The Slipper's Owner?
+narrative_event = {
+	id = ancrel.4252
+	title = ancrel.4252.title
+	desc = ancrel.4252.desc
+	picture = GFX_evt_cathedral_soa_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4252.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4253 days = 10 random = 10 }
+		}
+	}
+}
+
+# The Mansion
+narrative_event = {
+	id = ancrel.4253
+	title = ancrel.4253.title
+	desc = ancrel.4253.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4253.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4254 tooltip = ancrel.4254.tooltip days = 5 random = 3 }
+		}
+	}
+}
+
+
+# The Widow
+narrative_event = {
+	id = ancrel.4254
+	title = ancrel.4254.title
+	desc = ancrel.4254.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4254.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4255 days = 1 }
+		}
+	}
+}
+
+# The Slave
+narrative_event = {
+	id = ancrel.4255
+	title = ancrel.4255.title
+	desc = ancrel.4255.desc
+	picture = GFX_evt_maiden_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4255.a
+		character_event = { id = ancrel.4256 tooltip = ancrel.4256.tooltip days = 1 }
+	}
+}
+
+# Family Drama
+narrative_event = {
+	id = ancrel.4256
+	title = ancrel.4256.title
+	desc = ancrel.4256.desc
+	picture = GFX_evt_cathedral_soa_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4256.a
+		character_event = { id = ancrel.4257 tooltip = ancrel.4257.tooltip days = 1 }
+	}
+}
+
+# Broken!
+narrative_event = {
+	id = ancrel.4257
+	title = ancrel.4257.title
+	desc = ancrel.4257.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4257.a
+		character_event = { id = ancrel.4258 tooltip = ancrel.4258.tooltip days = 1 }
+	}
+}
+
+# The Other Slipper
+narrative_event = {
+	id = ancrel.4258
+	title = ancrel.4258.title
+	desc = ancrel.4258.desc
+	picture = GFX_evt_maiden_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4258.a
+		character_event = { id = ancrel.4259 tooltip = ancrel.4259.tooltip days = 1 }
+	}
+}
+
+
+# Gods' Sign
+narrative_event = {
+	id = ancrel.4259
+	title = ancrel.4259.title
+	desc = ancrel.4259.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4259.a
+		character_event = { id = ancrel.4260 tooltip = ancrel.4260.tooltip days = 1 }
+	}
+}
+
+# Pure of Heart
+narrative_event = {
+	id = ancrel.4260
+	title = ancrel.4260.title
+	desc = ancrel.4260.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4260.a
+		character_event = { id = ancrel.4261 tooltip = ancrel.4261.tooltip days = 1 }
+	}
+}
+
+# Small Price
+narrative_event = {
+	id = ancrel.4261
+	title = ancrel.4261.title
+	desc = ancrel.4261.desc
+	picture = GFX_evt_tropical_skyrim
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4261.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4262 days = 7 random = 5 }
+		}
+	}
+}
+
+# A New Life
+narrative_event = {
+	id = ancrel.4262
+	title = ancrel.4262.title
+	desc = ancrel.4262.desc
+	picture = GFX_evt_cathedral_soa_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok
+		name = ancrel.4262.a
+		character_event = { id = ancrel.4263 tooltip = ancrel.4263.tooltip days = 1 }
+	}
+}
+
+# Noble Lady
+narrative_event = {
+	id = ancrel.4263
+	title = ancrel.4263.title
+	desc = ancrel.4263.desc
+	picture = GFX_evt_maiden_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # marry her yourself
+		name = ancrel.4263.a
+		trigger = {
+			is_female = no
+			NOT = { num_of_spouses = 4 }
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4265 }	
+		}
+		character_event = { id = ancrel.4264 tooltip = ancrel.4264.tooltip }		
+	}
+	option = { # have one of your sons marry her
+		name = ancrel.4263.b
+		trigger = {
+			any_child = {
+				NOT = { num_of_spouses = 4 }
+				is_female = no
+				age = 13
+				NOT = { trait = incapable }
+				NOT = { trait = cruel }
+				NOT = { trait = lustful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = greedy }
+				NOT = { trait = possessed }
+				OR = {
+					trait = kind
+					trait = charitable
+					trait = humble
+					trait = zealous
+				}
+			}
+		}
+		random_child = {
+			limit = {
+				NOT = { num_of_spouses = 4 }
+				is_female = no
+				age = 13
+				NOT = { trait = incapable }
+				NOT = { trait = cruel }
+				NOT = { trait = lustful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = greedy }
+				NOT = { trait = possessed }
+				OR = {
+					trait = kind
+					trait = charitable
+					trait = humble
+					trait = zealous
+				}			
+			}
+			hidden_tooltip = {
+				character_event = { id = ancrel.4265 }	
+			}
+		}
+		character_event = { id = ancrel.4264 tooltip = ancrel.4264.tooltip }	
+	}
+	option = { # have a relative marry her
+		name = ancrel.4263.c
+		trigger = {
+			any_realm_character = {
+				NOT = { num_of_spouses = 4 }
+				is_female = no
+				is_close_relative = yes
+				age = 13
+				NOT = { trait = incapable }
+				NOT = { trait = cruel }
+				NOT = { trait = lustful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = greedy }
+				NOT = { trait = possessed }
+				OR = {
+					trait = kind
+					trait = charitable
+					trait = humble
+					trait = zealous
+				}
+			}
+		}
+		random_realm_character = {
+			limit = {
+				NOT = { num_of_spouses = 4 }
+				is_female = no
+				is_close_relative = yes
+				age = 13
+				NOT = { trait = incapable }
+				NOT = { trait = cruel }
+				NOT = { trait = lustful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = greedy }
+				NOT = { trait = possessed }
+				OR = {
+					trait = kind
+					trait = charitable
+					trait = humble
+					trait = zealous
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = ancrel.4265 }	
+			}		
+		}
+		character_event = { id = ancrel.4264 tooltip = ancrel.4264.tooltip }	
+	}
+	option = { # have a courtier marry her
+		name = ancrel.4263.d
+		trigger = {
+			any_courtier = {
+				NOT = { num_of_spouses = 4 }
+				is_female = no
+				is_close_relative = no
+				age = 13
+				NOT = { trait = incapable }
+				NOT = { trait = cruel }
+				NOT = { trait = lustful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = greedy }
+				NOT = { trait = possessed }
+				OR = {
+					trait = kind
+					trait = charitable
+					trait = humble
+					trait = zealous
+				}
+			}
+		}
+		random_courtier = {
+			limit = {
+				NOT = { num_of_spouses = 4 }
+				is_female = no
+				is_close_relative = no
+				age = 13
+				NOT = { trait = incapable }
+				NOT = { trait = cruel }
+				NOT = { trait = lustful }
+				NOT = { trait = arbitrary }
+				NOT = { trait = greedy }
+				NOT = { trait = possessed }
+				OR = {
+					trait = kind
+					trait = charitable
+					trait = humble
+					trait = zealous
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = ancrel.4265 }	
+			}		
+		}
+		character_event = { id = ancrel.4264 tooltip = ancrel.4264.tooltip }	
+	}
+	option = { # generate courtier if no other candidates are available
+		name = ancrel.4263.e
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = ROOT
+			culture = ROOT
+			female = no
+			age = 20
+			trait = shrewd
+			trait = fair
+			trait = kind
+			trait = trusting
+			trait = chaste
+			trait = humble
+			trait = just
+		}		
+		new_character = {			
+			hidden_tooltip = {
+				character_event = { id = ancrel.4265 }	
+			}
+		}
+		character_event = { id = ancrel.4264 tooltip = ancrel.4264.tooltip }	
+	}
+}
+
+# Girl thanks you and all ends well
+narrative_event = {
+	id = ancrel.4264
+	title = ancrel.4264.title
+	desc = ancrel.4264.desc
+	picture = GFX_evt_tropical_skyrim
+
+	is_triggered_only = yes
+
+	option = { # ok
+		name = ancrel.4264.a
+		add_character_modifier = {
+			name = VIET_blessings_of_horus
+			duration = -1
+		}
+	}
+}
+
+# hidden event for whoever
+narrative_event = {
+	id = ancrel.4265
+	title = ancrel.4265.title
+	desc = ancrel.4265.desc
+	picture = GFX_evt_maiden_egyptian_pagan
+
+	is_triggered_only = yes
+	
+	hide_window = yes
+
+	option = { # Ok
+		name = ancrel.4265.a
+
+		#she's a foreigner, I wonder where she's from!
+		hidden_tooltip = {
+			random_list = {
+				10 = { #western europe
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = frankish
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #northern europe
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = english
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #central europe
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = german
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #southern europe
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = catalan
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #eastern europe
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = finnish
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #balkans
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = greek
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #africa
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = somali
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #near east
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = levantine_arabic
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #iran
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = sogdian
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #india
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = tamil
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #central asia
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = karluk
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #xinjiang
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = tocharian
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+				10 = { #far east
+					create_character = {
+						random_traits = no
+						dynasty = random
+						religion = ROOT
+						culture = khitan
+						female = yes
+						age = 18
+						trait = charismatic_negotiator
+						trait = fair
+						trait = quick
+						trait = kind
+						trait = trusting
+						trait = chaste
+						trait = shy
+						trait = humble
+					}		
+					new_character = {
+						add_lover = ROOT
+						add_friend = ROOT
+						add_spouse = ROOT
+						set_character_flag = VIET_red_slipper_girl
+						random = {
+							chance = 10
+							add_trait = fertile
+						}
+						random = {
+							chance = 5
+							remove_trait = quick
+							add_trait = genius
+						}
+						add_character_modifier = {
+							name = VIET_blessings_of_horus
+							duration = -1
+						}
+					}				
+				}
+			}
+		}
+	}
+}

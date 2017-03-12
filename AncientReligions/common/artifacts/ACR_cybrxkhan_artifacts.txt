@@ -1,0 +1,27 @@
+
+VIET_scrolls_of_thoth = {
+	diplomacy = 3
+	martial = 3
+	stewardship = 3
+	intrigue = 3
+	learning = 4
+	health = 0.5
+	monthly_character_prestige = 0.5
+	same_religion_opinion = 10
+	quality = 4
+	monthly_character_piety = 0.5
+	flags = { thoth scrolls }
+	stacking = no
+	picture = "GFX_scrolls_of_thoth"
+}
+VIET_amulet_of_khaemwaset = {
+	learning = 2
+	health = 0.3
+	same_religion_opinion = 10
+	quality = 4
+	monthly_character_piety = 0.2
+	flags = { khaemwaset amulet }
+	stacking = no
+	picture = "GFX_amulet_of_khaemwaset"
+	slot = wrist
+}
