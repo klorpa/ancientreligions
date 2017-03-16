@@ -124,8 +124,10 @@ on_five_year_pulse = {
 		20 = ancrel.2520 # Theseus and Pirithuos
 		20 = ancrel.2523 # Who's the fairest of them all?
 		
-		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
-		5 = ancrel.2550 # Stumble upon Artemis naked
+		#Cybrxkhan Event Chains
+		5 = ancrel.2550 # Stumble upon Artemis naked (starts the I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob))
+		5 = ancrel.4200 # Book of Thoth Event Chain
+		5 = ancrel.4250 # Egyptian Cinderella Event Chain
 	}
 }
 
