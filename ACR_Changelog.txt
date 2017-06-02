@@ -1,4 +1,15 @@
-2017-06-?? v0.40 "Perses"
+2017-??-?? v0.41.0 "Dionysus"
+-------------------------
+> Dionysus blurb
+
+General:
+ - Wines
+ - Oils
+
+Hellenic:
+ - Dionysian Mysteries
+
+2017-06-?? v0.40.0 "Perses"
 -------------------------
 > Perses was the son of the Titans Krios and Eurybia. His name means Destroyer/Ravager, a fitting name for the Titan of devestation. He was married to the Titan Asteria, with whom he fathered Hecate, the goddess of magic.
 
