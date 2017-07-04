@@ -22,6 +22,7 @@ HEAD_PRIESTESS_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoa
 TITAN;Titanic;;;;;;;;;;;;;x
 EXP_RELIGION;Expansionist Religion;;;;;;;;;;;;;x
 EXP_RELIGION_HOME_TERRITORY;Expansionist Religion Home Territory;;;;;;;;;;;;;x
+DEATH_LOST_DESERT;became lost in the desert, and never returned;;;;;;;;;;;;;x
 ###### Misc keys for events;;;;;;;;;;;;;;x
 ancrel.damn;Damn!;;;;;;;;;;;;;;x
 ancrel.horrible;This is horrible!;;;;;;;;;;;;;;x
@@ -129,3 +130,6 @@ ancrel.9012.desc;Congrats! You're a Titan Cultist!;;;;;;;;;;;;;x
 ancrel.9013.desc;Congrats! You're an Aten Pagan!;;;;;;;;;;;;;x
 SUCCESSOR;Current Successor;;;;;;;;;;;;;x
 SUCCESSOR_TOOLTIP;This is the current expected successor of the religion head.;;;;;;;;;;;;;x
+MNM.70400.c;This is too much!;;;;;;;;;;;;;x
+MNM.70400.c.tt;You leave the [Root.GetSocietyName];;;;;;;;;;;;;x
+must_not_fear_persecution;This character is too afraid of persecution to join.;;;;;;;;;;;;;x
