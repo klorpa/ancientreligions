@@ -232,3 +232,10 @@ on_new_holder = {
 		ancrel.0256 # Pendragon nick
 	}
 }
+
+GIVE_ARTIFACT_INTERACTION_ACCEPT_EVENT = {
+	# giving wines and oils
+	events = {
+
+	}
+}

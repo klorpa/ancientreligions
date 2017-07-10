@@ -1,0 +1,159 @@
+# Content by Adam 'theStormWeaver/xirsoi' Chevalier
+
+### Wines ###
+wine_left_0 = {
+	flags = { wine left ancrel poison }
+	picture = "GFX_wine_left_0"
+	stacking = yes
+	quality = 3
+}
+wine_left_1 = {
+	flags = { wine left ancrel common }
+	picture = "GFX_wine_left_1"
+	stacking = yes
+	quality = 1
+}
+wine_left_2 = {
+	flags = { wine left ancrel uncommon }
+	picture = "GFX_wine_left_2"
+	stacking = yes
+	quality = 2
+}
+wine_left_3 = {
+	flags = { wine left ancrel rare }
+	picture = "GFX_wine_left_3"
+	stacking = yes
+	quality = 3
+}
+wine_left_4 = {
+	flags = { wine left ancrel epic }
+	picture = "GFX_wine_left_4"
+	stacking = yes
+	quality = 4
+}
+wine_left_5 = {
+	flags = { wine left ancrel legendary }
+	picture = "GFX_wine_left_5"
+	stacking = yes
+	quality = 5
+}
+
+wine_right_0 = {
+	flags = { wine right ancrel poison }
+	picture = "GFX_wine_right_0"
+	stacking = yes
+	quality = 3
+}
+wine_right_1 = {
+	flags = { wine right ancrel common }
+	picture = "GFX_wine_right_1"
+	stacking = yes
+	quality = 1
+}
+wine_right_2 = {
+	flags = { wine right ancrel uncommon }
+	picture = "GFX_wine_right_2"
+	stacking = yes
+	quality = 2
+}
+wine_right_3 = {
+	flags = { wine right ancrel rare }
+	picture = "GFX_wine_right_3"
+	stacking = yes
+	quality = 3
+}
+wine_right_4 = {
+	flags = { wine right ancrel epic }
+	picture = "GFX_wine_right_4"
+	stacking = yes
+	quality = 4
+}
+wine_right_5 = {
+	flags = { wine right ancrel legendary }
+	picture = "GFX_wine_right_5"
+	stacking = yes
+	quality = 5
+}
+
+
+### Oils ###
+oil_left_0 = {
+	flags = { oil left ancrel poison }
+	picture = "GFX_oil_left_0"
+	stacking = yes
+	quality = 3
+}
+
+oil_left_1 = {
+	flags = { oil left ancrel common }
+	picture = "GFX_oil_left_1"
+	stacking = yes
+	quality = 1
+}
+
+oil_left_2 = {
+	flags = { oil left ancrel uncommon }
+	picture = "GFX_oil_left_2"
+	stacking = yes
+	quality = 2
+}
+oil_left_3 = {
+	flags = { oil left ancrel rare }
+	picture = "GFX_oil_left_3"
+	stacking = yes
+	quality = 3
+}
+oil_left_4 = {
+	flags = { oil left ancrel epic }
+	picture = "GFX_oil_left_4"
+	stacking = yes
+	quality = 4
+}
+oil_left_5 = {
+	flags = { oil left ancrel legendary }
+	picture = "GFX_oil_left_5"
+	stacking = yes
+	quality = 5
+}
+
+oil_right_0 = {
+	flags = { oil right ancrel poison }
+	picture = "GFX_oil_right_0"
+	stacking = yes
+	quality = 3
+}
+
+oil_right_1 = {
+	flags = { oil right ancrel common }
+	picture = "GFX_oil_right_1"
+	stacking = yes
+	quality = 1
+}
+
+oil_right_2 = {
+	flags = { oil right ancrel uncommon }
+	picture = "GFX_oil_right_2"
+	stacking = yes
+	quality = 2
+}
+
+oil_right_3 = {
+	flags = { oil right ancrel rare }
+	picture = "GFX_oil_right_3"
+	stacking = yes
+	quality = 3
+}
+
+oil_right_4 = {
+	flags = { oil right ancrel epic }
+	picture = "GFX_oil_right_4"
+	stacking = yes
+	quality = 4
+}
+
+oil_right_5 = {
+	flags = { oil right ancrel legendary }
+	picture = "GFX_oil_right_5"
+	stacking = yes
+	quality = 5
+}
