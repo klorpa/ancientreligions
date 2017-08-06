@@ -4,6 +4,8 @@
 SHOW_COLLEGE_OF_CARDINALS;Religious head electors;;;;;;;;;;;;;x
 POPE_VOTE_SCORE;§YReligious head suitability: $SCORE$§!;;;;;;;;;;;;;x
 CANDIDATE_SCORE;§YCandidate appointment score§!;;;;;;;;;;;;;x
+SUCCESSOR;Current Successor;;;;;;;;;;;;;x
+SUCCESSOR_TOOLTIP;This is the current expected successor of the religion head.;;;;;;;;;;;;;x
 ###### Map;;;;;;;;;;;;;;x
 b_meir;Akhetaten;;;;;;;;;;;;;x
 ###### Vanilla religions;;;;;;;;;;;;;;x
