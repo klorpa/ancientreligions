@@ -814,6 +814,44 @@ decisions = {
 			}
 		}
 	}
+
+	hold_dionysia = { # public rites of dionysus
+		only_playable = yes
+
+		potential = {
+			tier = COUNT
+			religion = hellenic_pagan
+		}
+
+		allow = {
+			scaled_wealth = 0.1
+			custom_tooltip = {
+				text = not_already_holding_dionysia
+				hidden_tooltip = {
+					NOT = {
+						has_character_flag = ancrel_holding_dionysia
+					}
+				}
+			}
+			OR = {
+				month = 3
+				month = 12
+			}
+		}
+
+		effect = {
+			scaled_wealth = -0.1
+			set_character_flag = ancrel_holding_dionysia
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
 
 targetted_decisions = {

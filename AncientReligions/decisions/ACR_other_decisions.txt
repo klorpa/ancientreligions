@@ -46,12 +46,81 @@ decisions = {
 		effect = {
 			wealth = -200
 			add_character_modifier = { name = ancrel_winery days = -1 }
+			if = {
+				limit = {
+					society_member_of = shezmu_cult
+				}
+				add_society_currency_minor_effect = yes
+			}
 		}
 		revoke_allowed = {
 			always = no
 		}
 		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.001 # slow it down
+				always = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 400
+				}
+			}
+			modifier = {
+				factor = 10000
+				society_member_of = shezmu_cult
+			}
+		}
+	}
 
+	build_oilworks = {
+		is_high_prio = yes
+		potential = {
+			OR = {
+				has_focus = seduction
+				trait = hedonist
+				trait = lustful
+				society_member_of = shezmu_cult
+			}
+			NOR = {
+				has_character_modifier = ancrel_winery
+				has_character_modifier = ancrel_oilworks
+			}
+		}
+		allowed = { 
+			wealth = 200
+		}
+		effect = {
+			wealth = -200
+			add_character_modifier = { name = ancrel_oilworks days = -1 }
+			if = {
+				limit = {
+					society_member_of = shezmu_cult
+				}
+				add_society_currency_minor_effect = yes
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.001 # slow it down
+				always = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 400
+				}
+			}
+			modifier = {
+				factor = 10000
+				society_member_of = shezmu_cult
+			}
 		}
 	}
 }
