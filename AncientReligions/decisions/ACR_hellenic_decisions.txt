@@ -815,32 +815,67 @@ decisions = {
 		}
 	}
 
-	hold_dionysia = { # public rites of dionysus
+	hold_tristeria = { # secret rites of dionysus
 		only_playable = yes
 
 		potential = {
 			tier = COUNT
-			religion = hellenic_pagan
+			NOT = { has_character_modifier = ancrel_holding_tristeria }
+			society_rank = {
+				society = mysteries_dionysus
+				rank = 2
+			}
 		}
 
 		allow = {
-			scaled_wealth = 0.1
-			custom_tooltip = {
-				text = not_already_holding_dionysia
-				hidden_tooltip = {
-					NOT = {
-						has_character_flag = ancrel_holding_dionysia
-					}
-				}
+			society_currency >= 100
+		}
+
+		effect = {
+			change_society_currency = {
+				value = -100
 			}
+			set_character_flag = ancrel_hodling_tristeria
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0 # TODO: proper ai weighting
+		}
+	}
+
+	hold_dionysia = { # public rites of dionysus
+		only_playable = yes
+		is_high_prio = yes
+
+		potential = {
+			tier = COUNT
+			
+			society_rank = {
+				society = mysteries_dionysus
+				rank = 3
+			}
+		}
+
+		allow = {
+			society_currency >= 500
 			OR = {
-				month = 3
+				AND = {
+					month = 3
+					NOT = { month = 4 }
+				}
 				month = 12
 			}
 		}
 
 		effect = {
-			scaled_wealth = -0.1
+			change_society_currency = {
+				value = -500
+				scales_with_influence = yes
+			}
 			set_character_flag = ancrel_holding_dionysia
 		}
 
@@ -849,7 +884,7 @@ decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 0 # TODO: proper ai weighting
 		}
 	}
 }

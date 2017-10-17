@@ -1361,6 +1361,10 @@ defined_text = {
 		localisation_key = the_sand_snakes
 		trigger = { society_member_of = the_sand_snakes }
 	}
+	text = {
+		localisation_key = mysteries_dionysus
+		trigger = { society_member_of = mysteries_dionysus }
+	}
 }
 
 defined_text = {
@@ -1439,6 +1443,10 @@ defined_text = {
 	text = {
 		localisation_key = the_sand_snakes
 		trigger = { society_member_of = the_sand_snakes }
+	}
+	text = {
+		localisation_key = mysteries_dionysus
+		trigger = { society_member_of = mysteries_dionysus }
 	}
 }
 
