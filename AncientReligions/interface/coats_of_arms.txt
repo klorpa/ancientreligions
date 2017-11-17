@@ -366,6 +366,7 @@ culture = {
 	religion = {
 		"tengri_pagan_reformed"
 		"tengri_pagan"
+		"bon"
 	}
 	
 	templates = { 
@@ -601,7 +602,11 @@ culture = {
 }
 
 culture = {
-	religion_group = "indian_group"
+	religion = {
+		"buddhist"
+		"hindu"
+		"jain"
+	}
 	
 	templates = { 
 		"coa_plain_indian:1"

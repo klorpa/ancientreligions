@@ -878,6 +878,7 @@ decisions = {
 		potential = {
 			tier = COUNT
 			society_member_of = mysteries_dionysus
+			has_global_flag = ancrel_debug
 		}
 
 		allow = {

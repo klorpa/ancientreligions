@@ -115,6 +115,6 @@ character_event = {
 	
 	immediate = {
 		clr_character_flag = do_not_disturb
-		clr_character_flag = holding_diony
+		clr_character_flag = holding_dionysia
 	}
 }
