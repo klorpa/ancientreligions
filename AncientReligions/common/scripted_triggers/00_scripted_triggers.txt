@@ -1230,10 +1230,7 @@ can_be_spiritual_trigger = {
 	}
 	
 	OR = {
-		NOT = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		NOT = { religion_openly_in_celtic_subgroup_trigger = yes }
 
 		trait = druid
 		trait = bad_druid
