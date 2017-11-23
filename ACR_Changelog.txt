@@ -1,13 +1,8 @@
-2017-??-?? v0.41.0 "Dionysus"
+2017-11-23 v0.41.0 "Apheliotes"
 -------------------------
-> Dionysus, Bacchus among the Romans, was a god of many aspects. His domains included the grape harvest, winemaking and wine, ritual madness, fertility, theatre and religious ecstasy. Often referred to as "the Twice Born", Dionysus' was often the object of worship for soul-cults. Having died and been reborn, Dionysus was believed to possess mysterious knowledge about the afterlife and the nature of the soul.
 
 General:
- - Wines
- - Oils
-
-Hellenic:
- - Dionysian Mysteries
+ - Compatibility with CK2 2.8
 
 
 2017-09-03 v0.40.4 "Asteria 2"
