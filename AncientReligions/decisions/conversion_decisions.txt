@@ -631,8 +631,114 @@ targetted_decisions = {
 	}
 	
 	convert_to_swedish = {
-
+		only_playable = yes
+		
+		filter = self
+		ai_target_filter = self
+		
+		potential = {
+			is_playable = yes
+			culture = norse
+			capital_scope = {
+				region = custom_swedish
+			}
+			any_realm_province = {
+				culture = swedish
+			}
+			NOT = { government = chinese_imperial_government }
+		}
+		allow = {
+			culture = norse
+		}
+		effect = {
+			culture = swedish
+			any_courtier = {
+				limit = {
+					culture = norse
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = swedish
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.2 # Slow it down a bit
+			}
+			
+			modifier = { # Do not flip if we're in a huge Norse empire
+				factor = 0
+				top_liege = { culture = norse }
+				290 = { # Uppland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				272 = { # Akershus
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				266 = { # Sjaelland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = swedish }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = swedish }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 2
+					culture = swedish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 4
+					culture = swedish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 6
+					culture = swedish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 8
+					culture = swedish
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					value = 10
+					culture = swedish
+				}
+			}
+		}
 	}
+
 	convert_to_norwegian = {
 		only_playable = yes
 		

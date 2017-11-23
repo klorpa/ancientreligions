@@ -92,8 +92,10 @@ feudal_governments = {
 				NOT = { religion_group = muslim }
 				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
-			religion = aten_pagan
-			religion_group = muslim
+			OR = {
+				religion = aten_pagan
+				religion_group = muslim
+			}
 			NAND = { 
 				tier = EMPEROR
 				primary_title = { has_title_flag = pretender_chinese_empire }
