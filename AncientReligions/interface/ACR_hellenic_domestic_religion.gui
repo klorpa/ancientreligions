@@ -265,7 +265,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -338,7 +338,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -410,7 +410,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -482,7 +482,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -554,7 +554,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -626,7 +626,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -698,7 +698,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -770,7 +770,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
@@ -842,7 +842,7 @@ guiTypes = {
 			
 			iconType =
 			{
-				name = "pontiff_election_values"
+				name = "papal_election_values"
 				spriteType = "GFX_hellenic_election_values"
 				position = { x= 23 y = 85 }
 				Orientation = "UPPER_LEFT"
