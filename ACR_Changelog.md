@@ -1,3 +1,39 @@
+2019-08-24 v0.44.3 "Arianrhod"
+===========================
+
+> Arianrhod is the daughter of Don in Welsh legend. She plays an important role in the Fourth Branch of the Mabinogi when she magically gives birth to two sons while stepping over Math's staff to prove her virginity (and thus her fitness as footholder). The first son was Dylan ail Don, but the second was an amorphous blob of flesh. Eventually this blob would grow up to become "Lleu Llaw Gyffes", "Fair-haired One of the Skillfull Hand", but that's another story...
+
+General:
+
+- Fixes a bug in the Warrior Lodge hunting events where the new warrior lodges would default to the Norse event description and would not receive the correct rewards when choosing to take the quarry as a trophy.
+- Fixes a bug where Pagan County Conquest was no longer able to be used across one sea zone as intended.
+- Fixes a rare issue with the artifact hunt where the celtic and hellenic subgroup couldn't get their tier 1 artifacts.
+
+2019-08-04 v0.44.2 "Pryderi"
+===========================
+
+> Pryderi fab Pwyll is a major figure from Welsh myth. He was the King of Dyfed, son of Pwyll and the goddess Rhiannon, he is the only character to appear in all Four Branches of the Mabinogi. It is Pryderi's magical pigs that Gwydion steals in the Fourth Branch.
+
+General:
+
+- Resolves CTD bugs caused by problems in the interface code.
+
+Celtic:
+
+- Fixed issue with the Champions of Camulos society background.
+- Fixed issue with Children of Danu religion feature icon.
+- Improved tooltips for "Child Returns" Druidic Training events.
+
+Hellenic:
+
+- Fixed issue with Epicurean and Skeptic society backgrounds.
+
+Egyptian:
+
+- Fixed issue with the Champions of the Sun society background.
+- Added missing localisation for the "Declare Aai-Kemet" decision.
+- Removed the requirement to control the duchies of Alodia and Blemmiya for the "Declare Aai-Kemet" decision.
+
 2019-07-24 v0.44.1.1 "Goewin"
 ===========================
 
@@ -30,7 +66,7 @@ Promethean:
 - Fixes bug that caused an event to be fired ~13,000 times after the First Academy is restored.
 - Fixes issues with Promethean Prosperity feature.
 
-Kemetic:
+Egyptian:
 
 - If reformed with Hierocratic Leadership, will use a Xroj Council mechanic (College of Cardinals).
 
@@ -63,7 +99,7 @@ Promethean:
       2. The province reaches Prosperity 2.
       3. The province is no longer controlled by a Promethean.
 
-Kemetic:
+Egyptian:
 
 - Kemetic head of religion name is back to being Paragon, as the dynamic thing doesn't work.
 - Disabled the old "Build Pyramid" decision, as the new Great Works is a better feature.
