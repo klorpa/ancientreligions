@@ -11,13 +11,14 @@ You also need to ask the authors noted in the Disclaimers section about their co
 For more info, check the [Ancient Religions page on ckiiwiki](http://www.ckiiwiki.com/Ancient_Religions).
 
 Current Religions:
- - Hellenism
-   - Titan Cult
-   - Prometheanism
- - Celtic Paganism
- - Kemetism (Egyptian pagan)
-   - Atenism
- 
+
+- Hellenism
+  - Titan Cult
+  - Prometheanism
+- Celtic Paganism
+- Kemetism (Egyptian pagan)
+  - Atenism
+
  There are currently no plans to add more religions, and we are not taking suggestions.
 
 ## Players
@@ -35,11 +36,13 @@ Do note that you have to register your copy of Crusader Kings II in order to vie
 ## Developers & Testers
 
 To run the mod from a Git local repository:
+
 - Clone the repository to Git default location (for instance C:\Users\username\git\)
 - Run [create_symbolic_links.bat](create_symbolic_links.bat) to create symbolic links from CK2 mod folder to the actual folders in your Git working directory
 - Copy over the [AncientReligions.mod](AncientReligions.mod) file from Git folder to CKII mod folder (you will need to re-copy them occasionally when they change in Git)
 
 For improved maintainability and compatibility with other mods, the following conventions are used:
+
 - Mod files are prefixed with ACR_ (except for modified vanilla files).
 - Mod gfx assets are stored under an ACR sub-folder (except for modified vanilla gfx).
 - Changes are listed in a [Changelog](ACR_Changelog.txt).
@@ -48,6 +51,7 @@ For improved maintainability and compatibility with other mods, the following co
 ## Credits
 
 ### Modders
+
 - Superskierpat: Original author of the mod and contributor of tens of thousands of lines of code.
 - Jonseverinsson: Early contributor and responsible for most of the Romano-centric content.
 - Rylock, Schwarherz, et. al.: The CK2+ team provided the foundation of our Kemetic implementation with Pyramids, Luxor, and the Anubis and Horus Guards.
@@ -58,9 +62,11 @@ For improved maintainability and compatibility with other mods, the following co
 - theStormWeaver/xirsoi: Current mod maintainer and developer.
 
 ### Images
+
 - "The Favorite Poet"; Sir Lawrence Alma-Tadema
 
 ## Sounds
+
 - death_lost_desert is a 7 second sample of *Desert Simple* by Proxima4 and downloaded from [Freesounds.org](https://www.freesound.org/people/Proxima4/sounds/104320/)
 
 ## Disclaimers

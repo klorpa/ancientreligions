@@ -1,3 +1,14 @@
+2019-08-24 v0.44.3 "Arianrhod"
+===========================
+
+> Arianrhod is the daughter of Don in Welsh legend. She plays an important role in the Fourth Branch of the Mabinogi when she magically gives birth to two sons while stepping over Math's staff to prove her virginity (and thus her fitness as footholder). The first son was Dylan ail Don, but the second was an amorphous blob of flesh. Eventually this blob would grow up to become "Lleu Llaw Gyffes", "Fair-haired One of the Skillfull Hand", but that's another story...
+
+General:
+
+- Fixes a bug in the Warrior Lodge hunting events where the new warrior lodges would default to the Norse event description and would not receive the correct rewards when choosing to take the quarry as a trophy.
+- Fixes a bug where Pagan County Conquest was no longer able to be used across one sea zone as intended.
+- Fixes a rare issue with the artifact hunt where the celtic and hellenic subgroup couldn't get their tier 1 artifacts.
+
 2019-08-04 v0.44.2 "Pryderi"
 ===========================
 
