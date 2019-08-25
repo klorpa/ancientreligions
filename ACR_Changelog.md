@@ -1,3 +1,12 @@
+2019-08-24 v0.44.3.1 "Dylan ail Don"
+===========================
+
+> Dylan was immediately abandoned by his mother when born, she could not face the shame. His uncle Math, however, made sure the child was baptised. When the baptismal waters touched his skin, the boy immediately leapt into the water and began taking on it's form and gaining the ability to swim as well as any fish. He would meet his end when struck dead from an accidental blow by his uncle Gofannon.
+
+General:
+
+- Added missing localisation from Warrior Lodge hunting events.
+
 2019-08-24 v0.44.3 "Arianrhod"
 ===========================
 
