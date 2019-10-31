@@ -4132,7 +4132,7 @@ character_event = {
 character_event = {
 	id = promethean.473
 	desc = promethean.473.desc
-	picture = GFX_evt_diplomat
+	picture = GFX_evt_emissary
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
