@@ -200,6 +200,7 @@ character_event = {
 		piety = 50
 		remove_trait = sympathy_pagans
 		ai_chance = { factor = 50 }
+		remove_character_modifier = celtic_ways
 		religion_head = {
 			opinion = {
 				modifier = opinion_happy
@@ -207,11 +208,12 @@ character_event = {
 				years = 2
 			}
 		}
-		hidden_tooltip = { remove_character_modifier = celtic_ways }
 	}
 
 	option = {
 		name = celtic.2.c
+		trigger_info = intrigue
+		trigger = { intrigue > 8 }
 		ai_chance = { factor = 20 }
 		religion_head = {
 			opinion = {

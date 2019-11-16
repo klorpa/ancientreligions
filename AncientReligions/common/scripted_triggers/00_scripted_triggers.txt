@@ -201,6 +201,7 @@ has_impious_trait_trigger = {
 		trait = bad_priest_zoroastrian
 		trait = bad_priest_aztec
 		trait = bad_druid
+		trait = bad_dryad
 		trait = hedonist
 		trait = lustful
 		trait = cannibal_trait
@@ -697,6 +698,7 @@ has_lifestyle_learning_trigger = {
 		trait = mystic
 		trait = faqih
 		trait = druid
+		trait = dryad
 		is_neoplatonist_trigger = yes
 	}
 }
@@ -717,6 +719,7 @@ is_learned_trigger = {
 		trait = physician
 		trait = faqih
 		trait = druid
+		trait = dryad
 		is_neoplatonist_trigger = yes
 	}
 }
@@ -1043,16 +1046,6 @@ can_be_chancellor_trigger = {
 			} 
 		}
 	}
-	OR = {
-		NOT = { religion_openly_celtic_or_reformed_trigger = yes }
-
-		OR = {
-			trait = druid
-			trait = bad_druid
-
-			trait = poet
-		}
-	}
 }
 
 can_be_marshal_trigger = {
@@ -1074,15 +1067,9 @@ can_be_marshal_trigger = {
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
-				OR = {
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-					AND = {
-						religion = messalian
-						liege = { religion = messalian }
-					}
+				AND = {
+					is_feminist_religion_trigger = yes
+					liege = { religion = ROOT }
 				}
 				AND = {
 					liege = {
@@ -1438,7 +1425,7 @@ can_be_councilmember_king_trigger = {
 				OR = {
 					is_feminist_religion_trigger = yes
 				}
-				liege = { religion = PREV }
+				liege = { religion = ROOT }
 			}
 			AND = {
 				is_female = yes
@@ -1911,8 +1898,10 @@ male_can_hold_minor_title_trigger = {
 				has_religion_feature = religion_matriarchal
 				religion = britannic_pagan
 				liege = {
-					has_religion_feature = religion_matriarchal
-					religion = britannic_pagan
+					OR = {
+						has_religion_feature = religion_matriarchal
+						religion = britannic_pagan
+					}
 				}
 			}
 		}
@@ -6732,7 +6721,6 @@ silk_road_trade_post_trigger = {
 				province_id = 641
 				province_id = 630
 				province_id = 1180
-				province_id = 1297
 				province_id = 1127
 				province_id = 1220
 				province_id = 1114
@@ -6760,7 +6748,6 @@ silk_road_trade_post_trigger = {
 				province_id = 774
 				province_id = 620
 				province_id = 1794
-				province_id = 775
 				province_id = 775
 				province_id = 633
 				province_id = 664
@@ -9480,5 +9467,10 @@ is_mongol_empire_leader_trigger = {
 	}
 }
 
-
+is_single_player_observer_mode = {
+	AND = {
+		multiplayer = no
+		is_local_human_observer = yes
+	}
+}
 

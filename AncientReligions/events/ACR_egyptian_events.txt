@@ -792,7 +792,7 @@ character_event = {
 character_event = { #good
 	id = egyptian.101
 	desc = egyptian.101.desc
-	picture = GFX_evt_ancient_egypt
+	picture = GFX_evt_small_town_egyptian_pagan
 
 	notification = yes
 	
@@ -805,7 +805,7 @@ character_event = { #good
 character_event = { #great
 	id = egyptian.102
 	desc = egyptian.102.desc
-	picture = GFX_evt_ancient_egypt
+	picture = GFX_evt_small_town_egyptian_pagan
 
 	notification = yes
 	
@@ -818,7 +818,7 @@ character_event = { #great
 character_event = { #overflow
 	id = egyptian.103
 	desc = egyptian.103.desc
-	picture = GFX_evt_ancient_egypt
+	picture = GFX_evt_small_town_egyptian_pagan
 
 	notification = yes
 	
@@ -831,7 +831,7 @@ character_event = { #overflow
 character_event = { #poor
 	id = egyptian.104
 	desc = egyptian.104.desc
-	picture = GFX_evt_ancient_egypt
+	picture = GFX_evt_small_town_egyptian_pagan
 
 	notification = yes
 	

@@ -134,7 +134,6 @@ society_decisions = { # Society decisions are only evaluated by members of socie
 							trait = slothful
 							trait = envious
 							trait = wroth
-							trait = cruel
 							trait = proud
 						}
 					}
@@ -343,6 +342,7 @@ society_decisions = {
 			has_dlc = "Mystics"
 			is_christian_monastic_member_trigger = yes
 			has_quest = quest_monastic_order_penance
+			NOT = { has_character_modifier = doing_penance }
 		}
 
 		allow = {
@@ -404,6 +404,14 @@ society_decisions = {
 					had_character_flag = { flag = holy_seclusion_timer days = 1000 }
 				}
 			}
+			custom_tooltip = {
+				text = in_meditation_cooldown_tt
+				hidden_trigger = {
+					NOT = {
+						has_character_modifier = in_meditation
+					}
+				}
+			}
 		}
 
 		effect = {
@@ -443,6 +451,7 @@ society_decisions = {
 				has_character_modifier = doing_penance
 				has_character_modifier = in_meditation
 			}
+			
 		}
 
 		allow = {

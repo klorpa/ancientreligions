@@ -1,3 +1,21 @@
+2019-11-15 v0.45.0 "Nimue"
+===========================
+> Nimue, along with several other variant spellings, is given as the name of the Lady of the Lake in several Arthurian legends. Believed to be based on the multitude of goddessses and fairy queens associated with water in Celtic myth, she is the foster mother of Lancelot and his cousins and guides Merlin in his quest to make Arthur a great king of the Britons.
+
+General:
+
+- Fixed the descriptive text in various immortals events that didn't account for the randomn immortals introduced by this mod.
+  - There's like a million of them, I didn't get them all. I'll get back to them periodically when my will to live comes back :/
+- Fixed several missing event pictures.
+- Fixed some interface bugs.
+- Merged changes from latest CK2 version.
+
+Celtic:
+
+- Removed the Druid requirement from the Chancellor council position for Celtic/Druidic rulers. This was extremely difficult to fulfill for early rulers and was on shakey ground from a lore perspective.
+- Fixed some small issues with the Archdruid title showing up as ARCH_DRUID_FOA in places.
+- Fixed a bug where the Gold Smith would give rulers in the Celtic Pagan subgroup generic pagan crowns instead of Torques.
+
 2019-08-24 v0.44.3.1 "Dylan ail Don"
 ===========================
 
@@ -385,7 +403,7 @@ General:
     - For example, the Pope can call Crusades if there is a Catholic player.
   - Holy Orders are no longer vassalizable.
   - Most Holy Orders now have the standard mechanics from vanilla (making donations/loans, building castles, etc.)
-    - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla. 
+    - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla.
     - The decisions are now targeted, so right-click the grandmaster of the order to use them.
   - Added more possible immortal mystics, some of which will have ancient religions and/or cultures.
     - Nestor the Wise, Greek Hellenic Pagan, master of diplomacy
@@ -443,7 +461,6 @@ Hellenic:
     - Those with Holy Fury can still do the Roman Renaissance event chain that comes with the DLC.
   - The decision icon for organizing the Sacred Band should work properly now.
 
-
 Kemetic:
   - Kemetic Pagan is now unreformed and reformable.
     - The unreformed religion has no religious head, and will be referred to as Egyptian Pagan.
@@ -457,12 +474,11 @@ Atenic:
     - The Sunburst Crown is given to the Meryaten when the title is formed.
   - Added an icon for the "Organize the Burning Blades" decision
 
-
 2018-06-10 v0.41.3 "Cardea"
 -------------------------
 > Cardea was the ancient Roman goddess of the hinge, doors, and winds. She was closely associated with the fundemental Roman city planning concept of "cardo", which described the main north-south street of a settlement or army camp. This is where the English "cardinal" (as in directions) comes from.
 
-General: 
+General:
  - Fixes bug allowing an incomplete and in development decision to be visible, despite it doing nothing.
   - Characters who took this decision will be refunded their money when you load the game with this update!
 
