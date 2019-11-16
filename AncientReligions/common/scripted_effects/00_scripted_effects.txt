@@ -13156,7 +13156,7 @@ flip_secret_religious_community_provinces = {
 						has_province_modifier = secret_britannic_pagan_community
 					}
 					religion = britannic_pagan
-					remove_province_modifier = secret_britanic_pagan_community
+					remove_province_modifier = secret_britannic_pagan_community
 				}
 			}
 		}

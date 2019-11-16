@@ -5,6 +5,7 @@
 General:
 
 - Fixed the descriptive text in various immortals events that didn't account for the randomn immortals introduced by this mod.
+  - There's like a million of them, I didn't get them all. I'll get back to them periodically when my will to live comes back :/
 - Fixed several missing event pictures.
 - Fixed some interface bugs.
 - Merged changes from latest CK2 version.

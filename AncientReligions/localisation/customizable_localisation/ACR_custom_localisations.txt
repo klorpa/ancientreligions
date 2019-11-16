@@ -268,7 +268,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetImmortalMysticDescription
+	name = GetImmortalMysticIntroduction
 
 	# diplomacy mystic
 	text = {
@@ -293,7 +293,7 @@ defined_text = {
 		localisation_key = immortal_mystic_nestor_a
 		trigger = {
 			FROM = {
-				has_character_flag = immortal_mystic_nestor_a
+				has_character_flag = immortal_mystic_nestor
 				religion = ROOT
 			}
 		}
@@ -331,7 +331,7 @@ defined_text = {
 		localisation_key = EVTDSC_RIP_21019_MARTIAL_A
 		trigger = {
 			FROM = {
-				has_character_flag = immortal_mystic_amina_a
+				has_character_flag = immortal_mystic_amina
 				religion = ROOT
 			}
 		}
@@ -349,7 +349,7 @@ defined_text = {
 		localisation_key = immortal_mystic_gaul_a
 		trigger = {
 			FROM = {
-				has_character_flag = immortal_mystic_gaul_a
+				has_character_flag = immortal_mystic_gaul
 				religion = ROOT
 			}
 		}
