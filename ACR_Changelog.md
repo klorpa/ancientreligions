@@ -1,4 +1,4 @@
-2019-11-?? v0.45.0 "Nimue"
+2019-11-15 v0.45.0 "Nimue"
 ===========================
 > Nimue, along with several other variant spellings, is given as the name of the Lady of the Lake in several Arthurian legends. Believed to be based on the multitude of goddessses and fairy queens associated with water in Celtic myth, she is the foster mother of Lancelot and his cousins and guides Merlin in his quest to make Arthur a great king of the Britons.
 
