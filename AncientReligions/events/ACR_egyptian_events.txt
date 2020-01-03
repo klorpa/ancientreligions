@@ -9,6 +9,7 @@
 # Event ID egyptian.150 - egyptian.199 Egyptian flavor
 # Event ID egyptian.200 - egyptian.399 Kemetic Revival
 # Event ID egyptian.401 - egyptian.499 Greater Egypt
+# Event ID egyptian.500 - egyptian.699 Isiac Order
 ###################################################
 
 namespace = egyptian
@@ -4012,6 +4013,51 @@ narrative_event = {
 		trigger = {
 			NOT = {
 				true_religion = FROM
+			}
+		}
+	}
+}
+
+####################################
+## Restoration of the Isiac Order ##
+####################################
+
+narrative_event = {
+	id = egyptian.500
+	title = egyptian.500.title
+	desc = egyptian.500.desc
+	hide_from = yes
+	hide_new = yes
+
+	picture = GFX_evt_temple_egyptian_pagan
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = egyptian.500.a
+		trigger = {
+			OR = { 
+				society_member_of = monastic_order_isis
+				religion_openly_egyptian_or_reformed_trigger = yes
+				religion_secretly_egyptian_or_reformed_trigger = yes
+				can_join_society = monastic_order_isis
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = monastic_order_isis }
+				can_join_society = monastic_order_isis
+			}
+			join_society = monastic_order_isis
+		}
+	}
+	option = {
+		name = egyptian.500.b
+		trigger = {
+			NOR = { 
+				society_member_of = monastic_order_isis
+				can_join_society = monastic_order_isis
 			}
 		}
 	}
