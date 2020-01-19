@@ -252,6 +252,7 @@ monastic_order_isis_rank_1_male;Devotee;;;;;;;;;;;;x
 monastic_order_isis_rank_2_male;Initiate;;;;;;;;;;;;x
 monastic_order_isis_rank_3_male;Priest;;;;;;;;;;;;x
 monastic_order_isis_rank_4_male;Pastophoros;;;;;;;;;;;;x
+create_monastic_order_isis_tooltip;Restore the Isis cult as a society known as §GThe Isiac Order§!.;;;;;;;;;;;;x
 ############### Celtic Warrior Lodge ;;;;;;;;;;;;;x
 warrior_lodge_celtic;[GetCelticWarriorLodge];;;;;;;;;;;;;x
 warrior_lodge_celtic_desc;[GetCelticWarriorLodgeDesc];;;;;;;;;;;;;x
