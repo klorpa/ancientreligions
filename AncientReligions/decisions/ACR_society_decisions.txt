@@ -1232,9 +1232,9 @@ decisions = {
 		allow = {
 			is_in_society = no
 			NOT = { trait = incapable }
-			has_stewardship_learning_trigger = yes
+			has_education_stewardship_trigger = yes
 			higher_tier_than = DUKE
-			stewardship = 15
+			stewardship > 14
 			is_inaccessible_trigger = no
 			scaled_wealth = 0.75
 			piety = 1500

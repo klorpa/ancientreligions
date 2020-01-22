@@ -253,6 +253,12 @@ monastic_order_isis_rank_2_male;Initiate;;;;;;;;;;;;x
 monastic_order_isis_rank_3_male;Priest;;;;;;;;;;;;x
 monastic_order_isis_rank_4_male;Pastophoros;;;;;;;;;;;;x
 create_monastic_order_isis_tooltip;Restore the Isis cult as a society known as §GThe Isiac Order§!.;;;;;;;;;;;;x
+restore_isiac_order;Restore the Cult of Isis;;;;;;;;;;;;x
+restore_isiac_order_desc;Create a new monastic society dedicated to the Great Goddess Isis.;;;;;;;;;;;;x
+egyptian.500.title;Cult of Isis Returns;;;;;;;;;;;;x
+egyptian.500.desc;[Root.GetTitledName] has announced the creation of a new cult dedicated to the [Root.Religion.GetName] goddess Isis. This society, dubbed the Isiac Order, will be focused on promoting the worship of Isis and her ideals of pure mind and body. [From.GetFirstName] has put out the call for new members to the order.;;;;;;;;;;;;x
+egyptian.500.a;Praise the Great Goddess!;;;;;;;;;;;;x
+egyptian.500.b;Why should I care?;;;;;;;;;;;;x
 ############### Celtic Warrior Lodge ;;;;;;;;;;;;;x
 warrior_lodge_celtic;[GetCelticWarriorLodge];;;;;;;;;;;;;x
 warrior_lodge_celtic_desc;[GetCelticWarriorLodgeDesc];;;;;;;;;;;;;x
