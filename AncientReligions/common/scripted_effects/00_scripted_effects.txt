@@ -23000,6 +23000,7 @@ add_random_tattoo_effect = { #Tied to religion, used only for special events.
 			OR = { 
 				religion = norse_pagan
 				religion = norse_pagan_reformed
+				religion_openly_in_celtic_subgroup_trigger = yes
 			}
 			NOR = { 
 				trait = african_tattoo_1

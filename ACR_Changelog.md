@@ -1,11 +1,12 @@
-2020-01-22 v0.46.0 "Isis"
+2020-01-27 v0.46.0 "Isis"
 ===========================
 
-> Isis was originally a minor goddess of funerary rites and magical protection; a role mimicking her portrayal in the Osiris myth, where she resurrected her husband Osiris and protected their child Horus. Over the millenia she rose in prominence alongside her husband, eventually eclipsing him in popularity. By the time of the Roman Principate the worship of Isis could be found all over the Mediterranean, with local cults adapting her worship to their own customs. 
+> Isis was originally a minor goddess of funerary rites and magical protection; a role mimicking her portrayal in the Osiris myth, where she resurrected her husband Osiris and protected their child Horus. Over the millenia she rose in prominence alongside her husband, eventually eclipsing him in popularity. By the time of the Roman Principate the worship of Isis could be found all over the Mediterranean, with local cults adapting her worship to their own customs.
 
 Celtic:
 
 - Fixed an issue that prevented the correct background and "small symbol" for the Petitioners of the Unseelie Court.
+- Fixed an issue where Celtic characters would not always receive a tattoo trait when they should.
 
 Hellenic:
 
