@@ -7,6 +7,7 @@ Celtic:
 
 - Fixed an issue that prevented the correct background and "small symbol" for the Petitioners of the Unseelie Court.
 - Fixed an issue where Celtic characters would not always receive a tattoo trait when they should.
+- Fixed an issue where a bonus to Celtic Pagan/Druidic opinion wasn't defined.
 
 Hellenic:
 
