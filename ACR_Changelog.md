@@ -1,5 +1,34 @@
+2020-01-27 v0.46.0 "Isis"
+===========================
+
+> Isis was originally a minor goddess of funerary rites and magical protection; a role mimicking her portrayal in the Osiris myth, where she resurrected her husband Osiris and protected their child Horus. Over the millenia she rose in prominence alongside her husband, eventually eclipsing him in popularity. By the time of the Roman Principate the worship of Isis could be found all over the Mediterranean, with local cults adapting her worship to their own customs.
+
+Celtic:
+
+- Fixed an issue that prevented the correct background and "small symbol" for the Petitioners of the Unseelie Court.
+- Fixed an issue where Celtic characters would not always receive a tattoo trait when they should.
+
+Hellenic:
+
+- Fixed an issue where the Skeptic and Epicurean orders were not joinable.
+- Fixed a bug that prevented god names from showing in certain monastic order events.
+
+Promethean/Titan:
+
+- Fixed an issue that prevented the correct background and "small symbol" for The Coven.
+
+Egyptian:
+
+- Fixed a bug that prevented the Nile Flooding events from firing.
+- Fixed an issue that prevented the correct background and "small symbol" for the Fangs of Apep.
+- Added the Isiac Order, a stewardship focused monastic order.
+  - Formable by Egyptian/Kemetic characters, with similar criteria found in the Neoplatonist society decisions.
+  - Otherwise identical to other monastic orders.
+  - Joinable by Hellenic/Reformed Hellenic characters as well.
+
 2019-11-15 v0.45.0 "Nimue"
 ===========================
+
 > Nimue, along with several other variant spellings, is given as the name of the Lady of the Lake in several Arthurian legends. Believed to be based on the multitude of goddessses and fairy queens associated with water in Celtic myth, she is the foster mother of Lancelot and his cousins and guides Merlin in his quest to make Arthur a great king of the Britons.
 
 General:

@@ -5521,6 +5521,18 @@ join_prev_monastic_order_society = {
 		limit = { PREV = { society_member_of = monastic_order_stoics } }
 		join_society = monastic_order_stoics
 	}
+	if = {
+		limit = { PREV = { society_member_of = monastic_order_skeptics } }
+		join_society = monastic_order_skeptics
+	}
+	if = {
+		limit = { PREV = { society_member_of = monastic_order_epicureans } }
+		join_society = monastic_order_epicureans
+	}
+	if = {
+		limit = { PREV = { society_member_of = monastic_order_isis } }
+		join_society = monastic_order_isis
+	}
 }
 
 clr_artifact_flagsmodifiers_effect = {
@@ -22988,6 +23000,7 @@ add_random_tattoo_effect = { #Tied to religion, used only for special events.
 			OR = { 
 				religion = norse_pagan
 				religion = norse_pagan_reformed
+				religion_openly_in_celtic_subgroup_trigger = yes
 			}
 			NOR = { 
 				trait = african_tattoo_1
