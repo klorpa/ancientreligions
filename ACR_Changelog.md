@@ -1,3 +1,12 @@
+2020-01-28 v0.46.1 "Imentet"
+===========================
+
+> Imentet was a minor goddess in Ancient Egyptian religion representing the necropolises west of the Nile. She was the consort of Aqen, a god who guided Ra through parts of the underworld. Although she was never officially worshipped, she was mentioned in various hymns and passages of the Book of the Dead. In many cases she is merged with other, more important, goddesses like Isis or Hathor.
+
+General:
+
+- Disabled the god list modifications that occur during pagan reformation, as it causes a savegame bug that breaks the god lists.
+
 2020-01-27 v0.46.0 "Isis"
 ===========================
 
