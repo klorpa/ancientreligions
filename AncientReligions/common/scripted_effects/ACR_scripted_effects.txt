@@ -1457,3 +1457,7 @@ spawn_good_steward_effect = {
 		save_event_target_as = invited_character
 	}
 }
+
+prev_takes_this_head_as_trophy_effect = {
+	#to be developed
+}
