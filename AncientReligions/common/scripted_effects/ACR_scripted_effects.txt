@@ -1459,5 +1459,87 @@ spawn_good_steward_effect = {
 }
 
 prev_takes_this_head_as_trophy_effect = {
-	#to be developed
+	if = { # an honest-to-gods immortal person
+		limit = {
+			has_trait = immortal
+		}
+		PREV = { add_artifact = immortal_skull }
+	}
+	if = { # the reborn alexander the great
+		limit = {
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_alexander
+				founder = {
+					character = PREVPREV
+				}
+			}
+		}
+		PREV = { add_artifact = alexanders_skull }
+	}
+	if = { # Charlemagne, post-HRE
+		limit = {
+			character = 6392
+			has_landed_title = e_hre
+		}
+		PREV = { add_artifact = karl_skull2 }
+	}
+	if = { # a religious head
+		limit = {
+			controls_religion = yes
+		}
+		PREV = { add_artifact = great_priest_head }
+	}
+	else_if = { # roman successor emperor
+		limit = {
+			OR = {
+				has_landed_title = e_hre
+				has_landed_title = e_latin_empire
+				has_landed_title = e_byzantium
+			}
+		}
+		PREV = { add_artifact = roman_pretender_skull }
+	}
+	else_if = { # restored roman emperor
+		limit = {
+			has_landed_title = e_roman_empire
+		}
+		PREV = { add_artifact = true_roman_skull }
+	}
+	else_if = { # Charlemagne, pre-HRE
+		limit = {
+			character = 6392
+			NOT = {
+				has_landed_title = e_hre
+			}
+		}
+		PREV = { add_artifact = karl_skull1 }
+	}
+	else_if = { # William the Conqueror, so long as he's a king
+		limit = {
+			character = 140
+			higher_real_tier_than = DUKE
+		}
+		PREV = { add_artifact = williams_skull }
+	}
+	else_if = { # super famous
+		limit = {
+			prestige > 2000
+		}
+		PREV = { add_artifact = prestige2_skull }
+	}
+	else_if = { # porphyrogenitos
+		limit = {
+			has_trait = born_in_the_purple
+		}
+		PREV = { add_artifact = purple_skull }
+	}
+	else_if = { # pretty famous
+		limit = {
+			prestige > 1000
+		}
+		PREV = { artifact = prestige1_skull }
+	}
+	else = { # schmuck
+		PREV = { artifact = schmuck_skull }
+	}
 }

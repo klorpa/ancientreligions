@@ -333,3 +333,152 @@ silver_torque = {
 	
 	slot = neck
 }
+
+# heads
+
+immortal_skull = {
+	quality = 5
+	monthly_character_prestige = 0.4
+	combat_rating = 5
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull unique }
+	picture = GFX_immortal_skull
+}
+
+alexanders_skull = { # reborn alexander the great
+	quality = 4
+	monthly_character_prestige = 0.5
+	hellenic_pagan_opinion = -10
+	vassal_opinion = 15
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull unique }
+	picture = GFX_saintly_skull
+}
+
+karl_skull2 = { # emperor charlemagne
+	quality = 4
+	monthly_character_prestige = 0.25
+	vassal_opinion = 5
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull unique }
+	picture = GFX_saintly_skull
+}
+
+karl_skull1 = { # king karl
+	quality = 3
+	monthly_character_prestige = 0.20
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull unique }
+	picture = GFX_saintly_skull
+}
+
+great_priest_head = {
+	quality = 4
+	monthly_character_piety = 0.25
+	monthly_character_prestige = 0.25
+	temple_opinion = 10
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull }
+	picture = GFX_saintly_skull
+}
+
+roman_pretender_skull = {
+	quality = 3
+	monthly_character_prestige = 0.30
+	feudal_opinion = 5
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull }
+	picture = GFX_saintly_skull
+}
+
+true_roman_skull = {
+	quality = 4
+	monthly_character_prestige = 0.5
+	feudal_opinion = 10
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull }
+	picture = GFX_roman_skull
+}
+
+williams_skull = {
+	quality = 3
+	monthly_character_prestige = 0.25
+	feudal_opinion = 5
+	combat_rating = 5
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull unique }
+	picture = { GFX_skull }
+}
+
+purple_skull = {
+	quality = 3
+	monthly_character_prestige = 0.2
+	vassal_opinion = 5
+	sex_appeal_opinion = 10
+	stacking = no
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull }
+	picture = { purple_skull }
+}
+
+prestige2_skull = {
+	quality = 3
+	monthly_character_prestige = 0.2
+	feudal_vassal_opinion = 5
+	tribal_opinion = 5
+	combat_rating = 5
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull }
+	picture = { GFX_saintly_skull }
+}
+
+prestige1_skull = {
+	quality = 2
+	monthly_character_prestige = 0.15
+	tribal_opinion = 5
+	combat_rating = 3
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull }
+	picture = { GFX_skull }
+}
+
+schmuck_skull = {
+	quality = 1
+	monthly_character_prestige = 0.05
+	tribal_opinion = 5
+	allowed_gift = {
+		always = no
+	}
+	flags = { trophy skull }
+	picture = { GFX_skull }
+}
