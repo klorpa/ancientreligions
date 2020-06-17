@@ -1,0 +1,98 @@
+#######################################
+#
+# ANCIENT RELIGIONS
+# - Celtic Minor Titles Events
+#
+# Event ID celtic.2200 - celtic.2399 reserved
+# by Adam 'theStormWeaver/xirsoi' Chevalier
+#
+###################################
+
+namespace = celtic
+
+# things are going well, perhaps some of that money could be better spent elsewhere...
+character_event = {
+    id = celtic.2200
+    desc = celtic.2200.desc
+    picture = GFX_
+    border = GFX_event_normal_frame_war
+
+    religion_group = pagan
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_job_title = title_headsman
+        NOR = {
+            block_general_event_trigger = yes
+            had_character_flag = {
+                flag = ancrel_invested_in_administration
+                days = 730
+            }
+        }
+    }
+
+    weight_multiplier = {
+        days = 3650
+    }
+
+    option = { # invest it in the budget
+        name = celtic.2200.a
+        random_list = {
+            chance = 25
+            add_trait = honest
+        }
+
+        custom_tooltip = {
+            text = celtic.2200.a.tt
+            hidden_tooltip = {
+                set_character_flag = ancrel_invested_in_administration
+            }
+        }
+
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 2
+                trait = honest
+            }
+            modifier = {
+                factor = 2
+                trait = just
+            }
+        }
+    }
+
+    option = { # keep it
+        name = celtic.2200.b
+        random = {
+            chance = 25
+            add_trait = greedy
+        }
+        scaled_wealth = {
+            value = 0.05
+            min = 10
+            max = 100
+        }
+    }
+
+    option = { # give it to your liege
+        liege = {
+            character_event = { id = celtic.2021 }
+            opinion = {
+                modifier = ancrel_pleased
+                who = PREV
+                years = 2
+            }
+        }
+    }
+}
+
+# your headsman has sent you some extra cash from the budget
+
+# your headsman has done a very good job, perhaps they deserve a reward? (liege)
+
+# your liege has decided to reward you for your good work! (headsman)
+
+# your liege has praised you at court for your good work! (headsman)
+

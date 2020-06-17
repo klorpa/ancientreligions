@@ -1464,6 +1464,10 @@ prev_takes_this_head_as_trophy_effect = {
 			has_trait = immortal
 		}
 		PREV = { add_artifact = immortal_skull }
+		new_artifact = {
+			set_name = immortal_head_name
+			set_description = immortal_head_desc
+		}
 	}
 	if = { # the reborn alexander the great
 		limit = {
@@ -1475,6 +1479,10 @@ prev_takes_this_head_as_trophy_effect = {
 			}
 		}
 		PREV = { add_artifact = alexanders_skull }
+		new_artifact = {
+			set_name = alexander_head_name
+			set_description = alexander_head_desc
+		}
 	}
 	if = { # Charlemagne, post-HRE
 		limit = {
@@ -1487,7 +1495,11 @@ prev_takes_this_head_as_trophy_effect = {
 		limit = {
 			controls_religion = yes
 		}
-		PREV = { add_artifact = great_priest_head }
+		PREV = { add_artifact = great_priest_skull }
+		new_artifact = {
+			set_name = great_priest_head_name
+			set_description = great_priest_head_desc
+		}
 	}
 	else_if = { # roman successor emperor
 		limit = {
@@ -1498,21 +1510,20 @@ prev_takes_this_head_as_trophy_effect = {
 			}
 		}
 		PREV = { add_artifact = roman_pretender_skull }
+		new_artifact = {
+			set_name = roman_pretender_head_name
+			set_description = roman_pretender_head_desc
+		}
 	}
 	else_if = { # restored roman emperor
 		limit = {
 			has_landed_title = e_roman_empire
 		}
 		PREV = { add_artifact = true_roman_skull }
-	}
-	else_if = { # Charlemagne, pre-HRE
-		limit = {
-			character = 6392
-			NOT = {
-				has_landed_title = e_hre
-			}
+		new_artifact = {
+			set_name = roman_head_name
+			set_description = roman_head_desc
 		}
-		PREV = { add_artifact = karl_skull1 }
 	}
 	else_if = { # William the Conqueror, so long as he's a king
 		limit = {
@@ -1520,26 +1531,65 @@ prev_takes_this_head_as_trophy_effect = {
 			higher_real_tier_than = DUKE
 		}
 		PREV = { add_artifact = williams_skull }
-	}
-	else_if = { # super famous
-		limit = {
-			prestige > 2000
+		new_artifact = {
+			set_name = williams_head_name
+			set_description = williams_head_desc
 		}
-		PREV = { add_artifact = prestige2_skull }
+	}
+	else_if = { # super famous, Exalted
+		limit = {
+			prestige > 5000
+		}
+		PREV = { add_artifact = prestige_skull2 }
+		new_artifact = {
+			set_name = prestige_head2_name
+			set_description = prestige_head2_desc
+		}
+	}
+	else_if = {
+		limit = { # super pious, Sanctified
+			piety > 5000
+		}
+		PREV = { add_artifact = piety_skull2 }
+		new_artifact = {
+			set_name = piety_head2_name
+			set_description = piety_head2_desc
+		}
 	}
 	else_if = { # porphyrogenitos
 		limit = {
 			has_trait = born_in_the_purple
 		}
 		PREV = { add_artifact = purple_skull }
+		new_artifact = {
+			set_name = purple_head_name
+			set_description = purple_head_desc
+		}
 	}
 	else_if = { # pretty famous
 		limit = {
 			prestige > 1000
 		}
-		PREV = { artifact = prestige1_skull }
+		PREV = { add_artifact = prestige_skull1 }
+		new_artifact = {
+			set_name = prestige_head1_name
+			set_description = prestige_head1_desc
+		}
+	}
+	else_if = { # pretty pious
+		limit = {
+			piety > 1000
+		}
+		PREV = { add_artifact = piety_skull1 }
+		new_artifact ={
+			set_name = piety_head1_name
+			set_description = piety_head1_desc
+		}
 	}
 	else = { # schmuck
-		PREV = { artifact = schmuck_skull }
+		PREV = { add_artifact = schmuck_skull }
+		new_artifact = {
+			set_name = schmuck_head_name
+		}
 	}
 }
