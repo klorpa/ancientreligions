@@ -551,7 +551,7 @@ promethean_expansion = {
 					vassalize_or_take_under_title_destroy_duchies = {
 						title = PREV
 						enemy = FROM
-						is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
+						is_crusade = no # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
 						type = invasion
 					}
 				}
@@ -686,13 +686,14 @@ egyptian_reconquest = {
 	sort_priority = 1900
 
 	can_use_gui = {
-		check_if_crusader_trigger = yes
+		ROOT = {
+			has_landed_title = e_greater_egypt
+			religion_openly_in_egyptian_subgroup_trigger = yes
+		}
 	}
 
 	can_use = {
 		ROOT = {
-			has_landed_title = e_greater_egypt
-			independent = yes
 			religion_openly_in_egyptian_subgroup_trigger = yes
 			NOT = { same_realm = FROM }
 			mercenary = no

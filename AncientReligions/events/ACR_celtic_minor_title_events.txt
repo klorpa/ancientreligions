@@ -27,13 +27,37 @@ character_event = {
             block_general_event_trigger = yes
             had_character_flag = {
                 flag = ancrel_invested_in_administration
-                days = 730
+                years < 3
             }
         }
     }
 
     weight_multiplier = {
         days = 3650
+        modifier = {
+            factor = 2
+            stewardship = 10
+        }
+        modifier = {
+            factor = 2
+            stewardship = 12
+        }
+        modifier = {
+            factor = 2
+            stewardship = 14
+        }
+        modifier = {
+            factor = 2
+            stewardship = 16
+        }
+        modifier = {
+            factor = 2
+            stewardship = 18
+        }
+        modifier = {
+            factor = 2
+            trait = administrator
+        }
     }
 
     option = { # invest it in the budget
@@ -78,7 +102,7 @@ character_event = {
 
     option = { # give it to your liege
         liege = {
-            character_event = { id = celtic.2021 }
+            character_event = { id = celtic.2201 }
             opinion = {
                 modifier = ancrel_pleased
                 who = PREV
@@ -89,6 +113,24 @@ character_event = {
 }
 
 # your headsman has sent you some extra cash from the budget
+character_event = {
+    id = ancrel.2201
+    desc = ancrel.2201.desc
+    #picture = 
+    frame = GFX_event_normal_economy
+
+    is_triggered_only = yes
+
+    option = {
+        name = ancrel.2201.a
+        
+        scaled_wealth = {
+            value = 0.05
+            min = 10
+            max = 100
+        }
+    }
+}
 
 # your headsman has done a very good job, perhaps they deserve a reward? (liege)
 
@@ -96,3 +138,61 @@ character_event = {
 
 # your liege has praised you at court for your good work! (headsman)
 
+# your liege has snubbed you despite good work! (headsman)
+
+# an accident / bad oil shipment / etc. has increased costs (headsman)
+# - ask for more funds
+# - absorb the cost yourself
+# - cut corners
+
+# your headsman has requested extra funds to cover unexpected costs (liege)
+# - nope
+# - sure
+
+# your liege has denied your request! (headsman)
+# - absorb the cost
+# - cut corners
+
+# your liege has fulfilled your request! (headsman)
+
+# one of the workers stands out as excellent (headsman)
+# - i'll hire them as my own headsman!
+# - sniping them would be dishonorable
+
+# you find yourself getting along with one of the workers very well (headsman)
+# - new friends are great! (spawn character in *liege* court)
+# - you shall make an excellent spy... (hidden modifier)
+
+# you find that one of the workers is attracted to you... (headsman)
+# - have some fun (servant lover modifier)
+# - i feel the same! (actual factual lover)
+# - i must resist temptation! (chaste?)
+
+# you find yourself getting into arguments with one of the workers constantly (headsman)
+# - you have a rival at court!
+
+# you've learned some new management techniques in your work as headsman (headsman)
+# - +1/2/3 stewardship
+
+# you've learned how to snoop better during your work as headsman (headsman)
+# - +1/2/3 intrigue
+
+# you've learned some fighting techniques during your work as headsman (headsman)
+# - +1/2/3 martial
+
+# one of the heads has been spoiled due to some mistake/accident/etc. (headsman)
+# - be honest and report it to your liege
+# - say nothing and hope no one notices...? (someone's gonna notice!)
+# - replace the head with one of your own courtiers' (at least one cruel and NO kind traits, might get caught!)
+
+# (headsman and liege are, or were formally, rivals)
+# you've found an empty head jar in storage with your name on it! (headsman)
+# - the fucker! i'll kill them! (???)
+# - this has gotten out of hand... (try to end the rivalry?)
+# - ???
+
+# the stress has gotten to you, you can hear the heads talking to you, telling you to do terrible things!
+# - become insane
+
+# when insane?
+# Abi Normal?
