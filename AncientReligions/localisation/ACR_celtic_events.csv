@@ -630,6 +630,13 @@ celtic.1330.desc;The Red Dragon Knights have been expelled from [PrimaryTitle.Ge
 celtic.1330.a;Good riddance!;;;;;;;;;;;;;x
 celtic.1331.desc;[From.GetTitledFirstName] has sent a generous donation to your order, to help you in the fight against the infidels!;;;;;;;;;;;;;x
 celtic.1332.desc;[From.GetTitledFirstName] has graciously accepted your donation and has assured you it will be put to good use.;;;;;;;;;;;;;x
+##### Minor Titles Events;;;;;;;;;;;;;;x
+celtic.2200.desc;Your expenses as Headsman for [Root.Liege.GetTitledFirstName] have been lower than expected as of late, either due to good fortune or your skills as an administrator, who can say?\n\nWhat will you do with the funds?;;;;;;;;;;;;;x
+celtic.2200.a;There are some improvements I've been meaning to do.;;;;;;;;;;;;;x
+celtic.2200.b;I think I've earned a bonus!;;;;;;;;;;;;;x
+celtic.2200.c;Surely [Root.Liege.GetTitledFirstName] will welcome the surplus.;;;;;;;;;;;;;x
+celtic.2201.desc;Dear [Root.GetTitledFirstName],\n\nYou are [GetFromRootCompliment]. I can happily report a budget surplus from my office as Headsman. Along with this letter you will find the aforementioned sum of gold.;;;;;;;;;;;;;x
+celtic.2201.a;Excellent!;;;;;;;;;;;;;x
 celtic.256.title;The First Brythonic Emperor;;;;;;;;;;;;;x
 celtic.256.desc;Long have the Celtic peoples stood divided, easy pickings for conquerors over the millenia. From Julius Ceaser to Saxons and more, the land has been constantly ravaged by warfare. Worse still, most Celts had been robbed of their faith, taught the ways of the Roman's dead god. But the faith of the Druids has been brought back from the brink of destruction! Now, [Root.GetFullName], [Root.GetTitle] of the Britons, loyal adherent to [Root.Religion.GetScriptureName], has united much of The Isles and declared [Root.GetReflexivePronoun] the rightful ruler of all Prydain! Henceforth, [Root.GetSheHe] shall be known as 'Pendragon'!;;;;;;;;;;;;;x
 celtic.256.a;Long may [Root.GetSheHe] reign!;;;;;;;;;;;;;x

@@ -14,7 +14,7 @@ namespace = celtic
 character_event = {
     id = celtic.2200
     desc = celtic.2200.desc
-    picture = GFX_
+    picture = GFX_evt_scientist
     border = GFX_event_normal_frame_war
 
     religion_group = pagan
@@ -22,6 +22,7 @@ character_event = {
     is_triggered_only = yes
 
     trigger = {
+        always = no # disabled for now
         has_job_title = title_headsman
         NOR = {
             block_general_event_trigger = yes
@@ -113,10 +114,9 @@ character_event = {
 }
 
 # your headsman has sent you some extra cash from the budget
-character_event = {
+letter_event = {
     id = ancrel.2201
     desc = ancrel.2201.desc
-    #picture = 
     frame = GFX_event_normal_economy
 
     is_triggered_only = yes
