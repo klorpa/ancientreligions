@@ -19483,8 +19483,15 @@ defined_text = {
 	text = {
 		trigger = {
 			religion_group = pagan_group
+			NOT = { religion_openly_egyptian_or_reformed_trigger = yes }
 		}
 		localisation_key = string_blessed_ancestor
+	}
+	text = {
+		trigger = {
+			religion_openly_egyptian_or_reformed_trigger = yes
+		}
+		localisation_key = string_deified_ancestor
 	}
 }
 
@@ -19500,8 +19507,15 @@ defined_text = {
 	text = {
 		trigger = {
 			religion_group = pagan_group
+			religion_openly_egyptian_or_reformed_trigger = no
 		}
 		localisation_key = string_saint_view_title_pagan
+	}
+	text = {
+		trigger = {
+			religion_openly_egyptian_or_reformed_trigger = yes
+		}
+		localisation_key = string_saint_view_title_egyptian
 	}
 }
 

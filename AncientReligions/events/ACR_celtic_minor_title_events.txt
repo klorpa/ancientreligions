@@ -22,19 +22,18 @@ character_event = {
     is_triggered_only = yes
 
     trigger = {
-        always = no # disabled for now
-        has_job_title = title_headsman
+        has_minor_title = title_headsman
         NOR = {
             block_general_event_trigger = yes
             had_character_flag = {
-                flag = ancrel_invested_in_administration
+                flag = ancrel_good_headsman_admin
                 years < 3
             }
         }
     }
 
     weight_multiplier = {
-        days = 3650
+        days = 1
         modifier = {
             factor = 2
             stewardship = 10
@@ -64,14 +63,19 @@ character_event = {
     option = { # invest it in the budget
         name = celtic.2200.a
         random_list = {
-            chance = 25
-            add_trait = honest
+            15 = {
+                add_trait = honest
+            }
+            10 = {
+                add_trait = diligent
+            }
+            75 = { } # nothing
         }
 
         custom_tooltip = {
             text = celtic.2200.a.tt
             hidden_tooltip = {
-                set_character_flag = ancrel_invested_in_administration
+                set_character_flag = ancrel_good_headsman_admin
             }
         }
 
@@ -103,7 +107,7 @@ character_event = {
 
     option = { # give it to your liege
         liege = {
-            character_event = { id = celtic.2201 }
+            letter_event = { id = celtic.2201 }
             opinion = {
                 modifier = ancrel_pleased
                 who = PREV
@@ -117,7 +121,7 @@ character_event = {
 letter_event = {
     id = ancrel.2201
     desc = ancrel.2201.desc
-    frame = GFX_event_normal_economy
+    frame = GFX_event_normal_frame_economy
 
     is_triggered_only = yes
 
@@ -132,36 +136,585 @@ letter_event = {
     }
 }
 
+# your headsman has done a very good job, perhaps they deserve a reward? (headsman)
+character_event = {
+    id = celtic.2202
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_minor_title = title_headsman
+        OR = {
+            had_character_flag = {
+                flag = ancrel_celtic_2202
+                years > 5
+            }
+            NOT = {
+                has_character_flag = ancrel_celtic_2202
+            }
+        }
+        block_general_event_trigger = no
+    }
+
+    weight_multiplier = {
+        days = 1
+        modifier = {
+            factor = 2
+            had_character_flag = { 
+                flag = ancrel_invested_in_headsman_administration
+                days > 30
+            }
+            had_character_flag = {
+                flag = ancrel_invested_in_headsman_administration
+                years < 3
+            } 
+        }
+        modifier = {
+            factor = 0
+            stewardship < 5
+        }
+        modifier = {
+            factor = 0.9
+            stewardship < 6
+        }
+        modifier = {
+            factor = 0.9
+            stewardship < 7
+        }
+        modifier = {
+            factor = 0.9
+            stewardship < 8
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 8
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 10
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 12
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 14
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 16
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 18
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 20
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 22
+        }
+        modifier = {
+            factor = 1.1
+            stewardship = 24
+        }
+        modifier = {
+            factor = 1.5
+            trait = diligent
+        }
+    }
+
+    immediate = {
+        liege = { character_event = { id = celtic.2203 days = 1} }
+    }
+}
+
 # your headsman has done a very good job, perhaps they deserve a reward? (liege)
+character_event = {
+    id = celtic.2203
+    desc = celtic.2203.desc
+    picture = GFX_evt_emissary
+    border = GFX_event_normal_frame_economy
+
+    is_triggered_only = yes
+
+    immediate = {
+        # calculate money to transfer ahead of time, for localisation
+        export_to_variable = {
+            which = headsman_bonus
+            value = monthly_income
+        }
+
+        if = {
+            limit = {
+                check_variable = {
+                    which = headsman_bonus
+                    value < 5
+                }
+            }
+            set_variable = { which = headsman_bonus value = 5 }
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    which = headsman_bonus
+                    value > 50
+                }
+            }
+            set_variable = { which = headsman_bonus value = 50 }
+        }
+
+        multiply_variable = {
+            which = headsman_bonus
+            value = -1
+        }
+    }
+
+    option = { # cash bonus
+        name = celtic.2203.a
+
+        FROM = {
+            opinion = { modifier = ancrel_pleased who = PREV years = 3 }
+            letter_event = {
+                id = celtic.2204
+                days = 1
+                tooltip = celtic.2204.tt
+            }
+        }
+    }
+    option = { # praise at court
+        name = celtic.2203.b
+
+        prestige = -50
+
+        FROM = {
+            opinion = { modifier = ancrel_pleased who = PREV years = 3 }
+            character_event = {
+                id = celtic.2205
+                days = 1
+                tooltip = celtic.2205.tt
+            }
+        }
+    }
+    option = { # it's their job!
+        name = celtic.2203.c
+
+        FROM = {
+            opinion = { modifier = ancrel_dissapointed who = PREV years = 3 }
+        }
+    }
+}
 
 # your liege has decided to reward you for your good work! (headsman)
+letter_event = {
+    id = celtic.2204
+    desc = celtic.2204.desc
+
+    is_triggered_only = yes
+
+    option = {
+        name = ancrel.excellent
+
+        transfer_scaled_wealth = {
+            from = FROM
+            value = 0.083
+            min = 5
+            max = 50
+        }
+    }
+}
 
 # your liege has praised you at court for your good work! (headsman)
+character_event = {
+    id = celtic.2205
+    desc = celtic.2205.desc
+    picture = GFX_evt_courtiers
 
-# your liege has snubbed you despite good work! (headsman)
+    is_triggered_only = yes
+
+    option = {
+        name = ancrel.excellent
+
+        scaled_prestige = {
+            value = 0.083 # roughly one months worth
+            min = 50
+            max = 200
+        }
+    }
+}
 
 # an accident / bad oil shipment / etc. has increased costs (headsman)
 # - ask for more funds
 # - absorb the cost yourself
 # - cut corners
+character_event = {
+    id = celtic.2206
+    desc = celtic.2206.desc
+    picture = GFX_evt_scientist
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_minor_title = title_headsman
+        OR = {
+            NOT = { has_character_flag = ancrel_bad_headsman_admin }
+            had_character_flag = { flag = ancrel_bad_headsman_admin days > 60 }
+        }
+        block_general_event_trigger = no
+    }
+
+    weight_multiplier = {
+        days = 1
+        modifier = {
+            factor = 0
+            had_character_flag = { 
+                flag = ancrel_good_headsman_admin
+                days > 30
+            }
+            had_character_flag = {
+                flag = ancrel_good_headsman_admin
+                years < 3
+            } 
+        }
+        modifier = {
+            factor = 2
+            had_character_flag = { 
+                flag = ancrel_bad_headsman_admin
+                days > 30
+            }
+            had_character_flag = {
+                flag = ancrel_bad_headsman_admin
+                years < 3
+            } 
+        }
+        modifier = {
+            factor = 2
+            stewardship < 5
+        }
+        modifier = {
+            factor = 1.1
+            stewardship < 6
+        }
+        modifier = {
+            factor = 1.1
+            stewardship < 7
+        }
+        modifier = {
+            factor = 1.1
+            stewardship < 8
+        }
+        modifier = {
+            factor = 0.9
+            stewardship = 8
+        }
+        modifier = {
+            factor = 0.9
+            stewardship = 10
+        }
+        modifier = {
+            factor = 0.9
+            stewardship = 12
+        }
+        modifier = {
+            factor = 0.9
+            stewardship = 14
+        }
+        modifier = {
+            factor = 0.9
+            stewardship = 16
+        }
+        modifier = {
+            factor = 0.9
+            stewardship = 18
+        }
+        modifier = {
+            factor = 0.1
+            stewardship >= 20
+        }
+        modifier = {
+            factor = 0.5
+            trait = diligent
+        }
+    }
+
+    option = { # request more funds from your liege
+        name = celtic.2206.a
+
+        liege = {
+            opinion = {
+                who = PREV
+                modifier = ancrel_dissapointed
+                years = 2
+            }
+            character_event = {
+                id = celtic.2207
+                days = 1
+                tooltip = celtic.2207.tt
+            }
+        }
+    }
+    option = { # absorb the costs yourself
+        name = celtic.2206.b
+
+        scaled_wealth = {
+            value = -0.083 # one month
+            min = 5
+            max = 25
+        }
+    }
+    option = { # cut corners
+        name = celtic.2206.c
+        tooltip = celtic.2206.c.tt
+        
+        set_character_flag = ancrel_bad_headsman_admin
+    }
+}
 
 # your headsman has requested extra funds to cover unexpected costs (liege)
 # - nope
 # - sure
+character_event = {
+    id = celtic.2207
+    desc = celtic.2207.desc
+    picture = GFX_evt_emissary
+    frame = GFX_event_normal_frame_economy
+
+    is_triggered_only = yes
+
+    option = { # pay the expense
+        name = celtic.2207.a
+
+        scaled_wealth = {
+            value = -0.083
+            min = 5
+            max = 25
+        }
+
+        FROM = {
+            character_event = { id = celtic.2209 days = 3 tooltip = celtic.2209.tt }
+        }
+    }
+
+    option = { # refuse to pay the expense
+        name = celtic.2207.b
+
+        FROM = {
+            character_event = { id = celtic.2208 days = 3 tooltip = celtic.2208.tt }
+        }
+    }
+}
 
 # your liege has denied your request! (headsman)
 # - absorb the cost
 # - cut corners
+character_event = {
+    id = celtic.2208
+    desc = celtic.2208.desc
+    picture = GFX_evt_emissary
+
+    is_triggered_only = yes
+
+    option = { # absorb the costs yourself
+        name = celtic.2208.a
+
+        scaled_wealth = {
+            value = -0.083 # one month
+            min = 5
+            max = 25
+        }
+    }
+    option = { # cut corners
+        name = celtic.2208.b
+        tooltip = celtic.2206.8.tt
+        
+        set_character_flag = ancrel_bad_headsman_admin
+    }
+}
 
 # your liege has fulfilled your request! (headsman)
+character_event = {
+    id = celtic.2209
+    desc = celtic.2209.desc
+    picture = GFX_evt_emissary
+    border = GFX_event_normal_frame_economy
+
+    is_triggered_only = yes
+
+    option = {
+        name = OK
+    }
+}
 
 # one of the workers stands out as excellent (headsman)
 # - i'll hire them as my own headsman!
 # - sniping them would be dishonorable
+character_event = {
+    id = celtic.2210
+    desc = celtic.2210.desc
+    picture = GFX_evt_courtiers
+    border = GFX_event_normal_frame_diplomacy
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_minor_title = title_headsman
+        block_general_event_trigger = no
+    }
+
+    weight_multiplier = {
+        days = 1
+        modifier = {
+            factor = 1.2
+            trait = gregarious
+        }
+        modifier = {
+            factor = 1.2
+            stewardship > 7
+        }
+        modifier = {
+            factor = 1.2
+            diplomacy > 7
+        }
+    }
+
+    option = { # promote them
+        name = celtic.2210.a
+        tooltip = ancrel.good_admin
+
+        set_character_flag = ancrel_good_headsman_admin
+
+        random = {
+            chance = 20
+
+            add_trait = just
+        }
+    }
+
+    option = { # leave them where they are
+        name = celtic.2210.b
+
+        random = {
+            chance = 20
+
+            add_trait = content
+        }
+    }
+
+    option = { # hire them on as your own headsman
+        name = celtic.2210.c
+        trigger = {
+            can_grant_title = title_headsman
+        }
+
+        liege = {
+            prev = {
+                create_random_steward = {
+                    culture = prevprev
+                    religion = prevprev
+                    attributes = {
+                        martial = 4
+                        diplomacy = 9
+                        stewardship = 12
+                        intrigue = 9
+                        learning = 6
+                    }
+                    age = 29
+                    female = 40
+                    dynasty = none
+                    random_traits = yes
+                }
+                new_character = {
+                    opinion = {
+                        who = prev
+                        modifier = opinion_patron
+                        years = 10
+                    }
+
+                    give_minor_title = title_headsman
+                }
+            }
+
+
+        }
+    }
+}
 
 # you find yourself getting along with one of the workers very well (headsman)
 # - new friends are great! (spawn character in *liege* court)
 # - you shall make an excellent spy... (hidden modifier)
+character_event = {
+    id = celtic.2211
+    desc = celtic.2211.desc
+    picture = GFX_evt_courtiers
+    picture = GFX_event_normal_frame_diplomacy
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_minor_title = title_headsman
+        block_general_event_trigger = no
+    }
+
+    weight_multiplier = {
+        days = 1
+        modifier = {
+            factor = 1.2
+            trait = gregarious
+        }
+        modifier = {
+            factor = 1.2
+            intrigue > 7
+        }
+        modifier = {
+            factor = 1.2
+            diplomacy > 7
+        }
+    }
+
+    option = { # friends are great :)
+        name = celtic.2211.a
+
+        liege = {
+            create_random_intriguer = {
+                culture = prevprev
+                religion = prevprev
+                attributes = {
+                    martial = 4
+                    diplomacy = 6
+                    stewardship = 9
+                    intrigue = 12
+                    learning = 6
+                }
+                age = 29
+                female = 40
+                dynasty = none
+                random_traits = yes
+            }
+            new_character = {
+                opinion = {
+                    who = prev
+                    modifier = opinion_patron
+                    years = 1
+                }
+
+                add_friend = prevprev
+            }
+        }
+    }
+
+    option = { # perhaps you could keep an eye out for me <.<
+        name = celtic.2211.b
+
+        add_character_modifier = {
+            modifier = ancrel_friend_at_court
+            years = 10
+        }
+    }
+}
 
 # you find that one of the workers is attracted to you... (headsman)
 # - have some fun (servant lover modifier)

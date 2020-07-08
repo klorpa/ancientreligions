@@ -178,6 +178,8 @@ egyptian_leader_desc;This character is a master of desert terrain, lightning att
 blessed_ancestor_egyptian;Demigod;;;;;;;;;;;;;x
 blessed_ancestor_egyptian_desc;This character has been officially recognized as a demigod by the Kemetic Church.;;;;;;;;;;;;;x
 DEMIGOD_TITLE;Divine;;;;;;;;;;;;;x
+string_deified_ancestor;Deified Ancestor;;;;;;;;;;;;;x
+DEMIGODS_TITLE;Demigods;;;;;;;;;;;;;x
 ###### Coptic;;;;;;;;;;;;;;x 
 egyptian_coptic;Neo-Coptic;;;;;;;;;;;;;x
 egyptian_coptic_desc;Neo-Coptic represent a return to the ancient ways of the Egyptian people. The result of a revivalist movement in Egypt, elements of Ancient Egyptian language, customs, architecture, and art have all been adapted to serve the times.;;;;;;;;;;;;;x
