@@ -1,12 +1,13 @@
 # Changelog
 
-## 2020-07-04 v0.46.2 "Kamutef"
+## 2020-07-14 v0.46.2 "Kamutef"
 
 > Kamutef was an aspect of the minor god Min, himself an aspect of Horus. Kamutef represented the cycle of regeneration of gods and kings. Said to be both the son (as an indirect aspect of Horus) and consort of Isis, Kamutef is born by impregnating Isis who gives birth to Kamutef, who then creates himself again in a never ending cycle.
 
 General:
 
 - Fixed a bug preventing the Hellenic monastic societies from being joinable.
+- Fixed a bug that caused Kemetic and Reformed Hellenic to use Apostolic succession, even if you chose something other than Hierarchical Leadership.
 
 Celtic:
 
