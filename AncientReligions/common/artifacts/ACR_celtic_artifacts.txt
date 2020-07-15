@@ -440,7 +440,7 @@ williams_skull = { # william the conqueror
 		always = no
 	}
 	flags = { trophy skull unique }
-	picture = { GFX_skull }
+	picture = GFX_skull
 }
 
 purple_skull = { # born in the purple character
@@ -453,19 +453,19 @@ purple_skull = { # born in the purple character
 		always = no
 	}
 	flags = { trophy skull }
-	picture = { GFX_purple_skull }
+	picture = GFX_purple_skull
 }
 
 prestige_skull2 = { # 2000+ prestige
 	quality = 3
 	monthly_character_prestige = 0.15
-	feudal_vassal_opinion = 5
+	feudal_opinion = 5
 	tribal_opinion = 5
 	allowed_gift = {
 		always = no
 	}
 	flags = { trophy skull }
-	picture = { GFX_saintly_skull }
+	picture = GFX_saintly_skull
 }
 
 prestige_skull1 = { # 1000+ prestige
@@ -476,7 +476,7 @@ prestige_skull1 = { # 1000+ prestige
 		always = no
 	}
 	flags = { trophy skull }
-	picture = { GFX_skull }
+	picture = GFX_skull
 }
 
 schmuck_skull = { # a nobody
@@ -486,5 +486,5 @@ schmuck_skull = { # a nobody
 		always = no
 	}
 	flags = { trophy skull }
-	picture = { GFX_skull }
+	picture = GFX_skull
 }

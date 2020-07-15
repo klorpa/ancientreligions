@@ -17,7 +17,7 @@ character_event = {
     picture = GFX_evt_scientist
     border = GFX_event_normal_frame_war
 
-    religion_group = pagan
+    religion_group = pagan_group
 
     is_triggered_only = yes
 
@@ -73,7 +73,7 @@ character_event = {
         }
 
         custom_tooltip = {
-            text = celtic.2200.a.tt
+            text = ancrel.good_admin
             hidden_tooltip = {
                 set_character_flag = ancrel_good_headsman_admin
             }
@@ -119,14 +119,13 @@ character_event = {
 
 # your headsman has sent you some extra cash from the budget
 letter_event = {
-    id = ancrel.2201
-    desc = ancrel.2201.desc
-    frame = GFX_event_normal_frame_economy
+    id = celtic.2201
+    desc = celtic.2201.desc
 
     is_triggered_only = yes
 
     option = {
-        name = ancrel.2201.a
+        name = celtic.2201.a
         
         scaled_wealth = {
             value = 0.05
@@ -267,11 +266,6 @@ character_event = {
             }
             set_variable = { which = headsman_bonus value = 50 }
         }
-
-        multiply_variable = {
-            which = headsman_bonus
-            value = -1
-        }
     }
 
     option = { # cash bonus
@@ -337,7 +331,7 @@ character_event = {
     is_triggered_only = yes
 
     option = {
-        name = ancrel.excellent
+        name = ancrel.fantastic
 
         scaled_prestige = {
             value = 0.083 # roughly one months worth
@@ -450,7 +444,7 @@ character_event = {
                 modifier = ancrel_dissapointed
                 years = 2
             }
-            character_event = {
+            letter_event = {
                 id = celtic.2207
                 days = 1
                 tooltip = celtic.2207.tt
@@ -468,7 +462,7 @@ character_event = {
     }
     option = { # cut corners
         name = celtic.2206.c
-        tooltip = celtic.2206.c.tt
+        custom_tooltip = { text = celtic.2206.c.tt }
         
         set_character_flag = ancrel_bad_headsman_admin
     }
@@ -477,11 +471,9 @@ character_event = {
 # your headsman has requested extra funds to cover unexpected costs (liege)
 # - nope
 # - sure
-character_event = {
+letter_event = {
     id = celtic.2207
     desc = celtic.2207.desc
-    picture = GFX_evt_emissary
-    frame = GFX_event_normal_frame_economy
 
     is_triggered_only = yes
 
@@ -495,7 +487,7 @@ character_event = {
         }
 
         FROM = {
-            character_event = { id = celtic.2209 days = 3 tooltip = celtic.2209.tt }
+            letter_event = { id = celtic.2209 days = 3 tooltip = celtic.2209.tt }
         }
     }
 
@@ -503,7 +495,7 @@ character_event = {
         name = celtic.2207.b
 
         FROM = {
-            character_event = { id = celtic.2208 days = 3 tooltip = celtic.2208.tt }
+            letter_event = { id = celtic.2208 days = 3 tooltip = celtic.2208.tt }
         }
     }
 }
@@ -511,10 +503,9 @@ character_event = {
 # your liege has denied your request! (headsman)
 # - absorb the cost
 # - cut corners
-character_event = {
+letter_event = {
     id = celtic.2208
     desc = celtic.2208.desc
-    picture = GFX_evt_emissary
 
     is_triggered_only = yes
 
@@ -529,7 +520,7 @@ character_event = {
     }
     option = { # cut corners
         name = celtic.2208.b
-        tooltip = celtic.2206.8.tt
+        tooltip = celtic.2206.c.tt
         
         set_character_flag = ancrel_bad_headsman_admin
     }
@@ -583,7 +574,7 @@ character_event = {
 
     option = { # promote them
         name = celtic.2210.a
-        tooltip = ancrel.good_admin
+        custom_tooltip = { text = ancrel.good_admin }
 
         set_character_flag = ancrel_good_headsman_admin
 
@@ -650,7 +641,7 @@ character_event = {
     id = celtic.2211
     desc = celtic.2211.desc
     picture = GFX_evt_courtiers
-    picture = GFX_event_normal_frame_diplomacy
+    border = GFX_event_normal_frame_diplomacy
 
     is_triggered_only = yes
 
@@ -679,14 +670,14 @@ character_event = {
         name = celtic.2211.a
 
         liege = {
-            create_random_intriguer = {
+            create_random_steward = {
                 culture = prevprev
                 religion = prevprev
                 attributes = {
                     martial = 4
                     diplomacy = 6
-                    stewardship = 9
-                    intrigue = 12
+                    stewardship = 6
+                    intrigue = 9
                     learning = 6
                 }
                 age = 29
@@ -716,13 +707,59 @@ character_event = {
     }
 }
 
-# you find that one of the workers is attracted to you... (headsman)
-# - have some fun (servant lover modifier)
-# - i feel the same! (actual factual lover)
-# - i must resist temptation! (chaste?)
-
 # you find yourself getting into arguments with one of the workers constantly (headsman)
 # - you have a rival at court!
+character_event = {
+    id = celtic.2212
+    desc = celtic.2212.desc
+    picture = GFX_evt_poke_king_in_chest
+    frame = GFX_event_normal_frame_intrigue
+
+    is_triggered_only = yes
+
+    trigger = {
+        has_minor_title = title_headsman
+        block_general_event_trigger = no
+    }
+
+    weight_multiplier = {
+        days = 1
+        modifier = {
+            factor = 0.8
+            trait = gregarious
+        }
+        modifier = {
+            factor = 0.8
+            diplomacy > 7
+        }
+        modifier = {
+            factor = 0.8
+            diplomacy > 9
+        }
+        modifier = {
+            factor = 0.8
+            diplomacy > 11
+        }
+        modifier = {
+            factor = 0.8
+            diplomacy > 13
+        }
+    }
+
+    immediate = {
+        spawn_good_commander_effect = yes
+        new_character = {
+            save_event_target_as = work_rival
+        }
+    }
+
+    option = { # i hate them!
+        name = celtic.2212.a
+        event_target:work_rival = {
+            add_rival = ROOT
+        }
+    }
+}
 
 # you've learned some new management techniques in your work as headsman (headsman)
 # - +1/2/3 stewardship

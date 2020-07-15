@@ -1469,7 +1469,7 @@ prev_takes_this_head_as_trophy_effect = {
 			set_description = immortal_head_desc
 		}
 	}
-	if = { # the reborn alexander the great
+	else_if = { # the reborn alexander the great
 		limit = {
 			any_owned_bloodline = {
 				has_bloodline_flag = bloodline_alexander
@@ -1484,14 +1484,14 @@ prev_takes_this_head_as_trophy_effect = {
 			set_description = alexander_head_desc
 		}
 	}
-	if = { # Charlemagne, post-HRE
+	else_if = { # Charlemagne, post-HRE
 		limit = {
 			character = 6392
 			has_landed_title = e_hre
 		}
 		PREV = { add_artifact = karl_skull2 }
 	}
-	if = { # a religious head
+	else_if = { # a religious head
 		limit = {
 			controls_religion = yes
 		}
@@ -1546,8 +1546,8 @@ prev_takes_this_head_as_trophy_effect = {
 			set_description = prestige_head2_desc
 		}
 	}
-	else_if = {
-		limit = { # super pious, Sanctified
+	else_if = { # super pious, Sanctified
+		limit = {
 			piety > 5000
 		}
 		PREV = { add_artifact = piety_skull2 }
