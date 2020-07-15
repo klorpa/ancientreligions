@@ -184,6 +184,9 @@ character_event = {
 		}
 		NOT = { trait = head2 }
 		religion_openly_celtic_or_reformed_trigger = yes
+		NOT = {
+			has_religion_feature = religion_peaceful
+		}
 		had_character_flag = { flag = ancrel_headhunter days = 780 }
 	}
 	

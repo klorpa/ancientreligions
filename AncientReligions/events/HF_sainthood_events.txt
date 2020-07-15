@@ -833,7 +833,7 @@ character_event = {
                         religion = egyptian_pagan_reformed
                     }
                     add_trait = blessed_ancestor_egyptian
-                    set_special_character_title = DEMIGOD_TITLE
+                    set_special_character_title = BLESSED_TITLE
                 }
             }
             # Burial Site setting - Christian only
