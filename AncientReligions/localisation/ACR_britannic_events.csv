@@ -5,7 +5,7 @@ britannic.0.a;All hail [archdryad.GetTitledFirstName]!;;;;;;;;;;;;;x
 britannic.0.b;So they've decided on a head heretic?;;;;;;;;;;;;;x
 britannic.0.c;They're still heathens...;;;;;;;;;;;;;x
 britannic.3.desc;[FromFrom.GetFullName], [FromFrom.GetTitle] of [FromFrom.PrimaryTitle.GetName], has given birth to a child by [From.Father.GetFullName]. The baby, a [From.GetBoyGirl] named [From.GetFirstName] is truly a blessing from the Holy Mother herself.;;;;;;;;;;;;;x
-britannic.3.a;A joyous ocassion indeed!;;;;;;;;;;;;;x
+britannic.3.a;A joyous occasion indeed!;;;;;;;;;;;;;x
 britannic.5.desc;It has become apparent that [From.GetTitledFirstName] has been living a life unbecoming of a Dryad, and has been unable to keep it secret. Her wickedness is now public knowledge.;;;;;;;;;;;;;x
 britannic.5.a;Disgraceful;;;;;;;;;;;;;x
 britannic.7.desc;It has become public knowledge that the Archdryad, of all people, has been living a life of wickedness.;;;;;;;;;;;;;x
@@ -81,7 +81,7 @@ britannic.64.upgrade;A large caravan of builders and materiel have arrived in [a
 britannic.64.relief;A small caravan of priests and doctors have arrived in [afflicted_province.GetName]. The leader informs you they've been sent under orders from [From.GetTitledFirstName] herself to [afflicted_province.GetName] to provide relief from the plague there.;;;;;;;;;;;;;x
 britannic.64.build;A large caravan of builders and materiel have arrived in [afflicted_province.GetName]. The leader informs you they've been sent under orders from [From.GetTitledFirstName] herself to build a hospital in [afflicted_province.GetName] to provide relief from the plague there.;;;;;;;;;;;;;x
 britannic.64.a;We'll take whatever help you can give.;;;;;;;;;;;;;x
-britannic.109.desc;Dear [Root.GetTitledFirstName],\nI would be honored to officate [the_child.GetFirstName]'s Thumoideachais\n\n-[From.GetTitledFirstName];;;;;;;;;;;;;x
+britannic.109.desc;Dear [Root.GetTitledFirstName],\nI would be honored to officiate [the_child.GetFirstName]'s Thumoideachais\n\n-[From.GetTitledFirstName];;;;;;;;;;;;;x
 britannic.109.b;I've changed my mind.;;;;;;;;;;;;;x
 britannic.108.desc;Dear [Root.GetTitledFirstName],\nI will not officiate [the_child.GetFirstName]'s Thumoideachais. You will have to find another Dryad.;;;;;;;;;;;;;x
 britannic.101.desc;Your party, including [the_dryad.GetTitledFirstName] and little [the_child.GetFirstName], have arrived in the small inlet on the sea coast where the Thumoideachais will be held. The preparations have been made and the ceremony will begin in the morning.;;;;;;;;;;;;;x
@@ -111,7 +111,7 @@ britannic.153.b;I will leave an offering of gold.;;;;;;;;;;;;;x
 britannic.154.desc;As you wait in line for your turn to leave an offering at the well for the Imbolg, you notice [From.GetTitledFirstName] ahead of you. [From.GetSheHe] ties a clootie to the well's post. While this is an acceptable, even traditional, offering, it's a bit cheap for someone of [From.GetHerHis] station.;;;;;;;;;;;;;x
 britannic.154.a;Very frugal!;;;;;;;;;;;;;x
 britannic.154.b;Shameful, just shameful...;;;;;;;;;;;;;x
-britannic.155.desc;As you wait in line for your turn to leave an offering at the well for the Imbolg, you notice [From.GetTitledFirstName] ahead of you. [From.GetSheHe] tosses a handful of duccats into the well. While not a traditional one, it is a generous offering, suiting someone of [From.GetHerHis] rank.;;;;;;;;;;;;;x
+britannic.155.desc;As you wait in line for your turn to leave an offering at the well for the Imbolg, you notice [From.GetTitledFirstName] ahead of you. [From.GetSheHe] tosses a handful of ducats into the well. While not a traditional one, it is a generous offering, suiting someone of [From.GetHerHis] rank.;;;;;;;;;;;;;x
 britannic.155.a;Very pious of [From.GetHerHim];;;;;;;;;;;;;x
 britannic.155.b;A waste of good coin!;;;;;;;;;;;;;x
 britannic.156.desc;You've heard rumors that [From.GetFullName] has been speaking well of you. Specifically they've been praising you for your choice of offering at the well.;;;;;;;;;;;;;x
@@ -123,9 +123,9 @@ britannic.159.a;We should have done this years go!;;;;;;;;;;;;;x
 britannic.160.desc;You've been sitting with [From.GetTitledFirstName] around one of the bonfires for the Imbolg. Before long, you've been talking for hours and having a wonderful time.;;;;;;;;;;;;;x
 britannic.160.a;We should have done this years go!;;;;;;;;;;;;;x
 britannic.160.tt;You and [From.GetTitledFirstName] are now close friends!;;;;;;;;;;;;;x
-britannic.161.desc;You've been sitting with [the_vassal.GetTitledFirstName] around one of the bonfires for the Imbolg. Before long your conversation gets heated. After hours of arguing you both leave angrily, shouting at eachother over your shoulders.;;;;;;;;;;;;;x
+britannic.161.desc;You've been sitting with [the_vassal.GetTitledFirstName] around one of the bonfires for the Imbolg. Before long your conversation gets heated. After hours of arguing you both leave angrily, shouting at each other over your shoulders.;;;;;;;;;;;;;x
 britannic.161.a;Ass!;;;;;;;;;;;;;x
-britannic.162.desc;You've been sitting with [From.GetTitledFirstName] around one of the bonfires for the Imbolg. Before long your conversation gets heated. After hours of arguing you both leave angrily, shouting at eachother over your shoulders.;;;;;;;;;;;;;x
+britannic.162.desc;You've been sitting with [From.GetTitledFirstName] around one of the bonfires for the Imbolg. Before long your conversation gets heated. After hours of arguing you both leave angrily, shouting at each other over your shoulders.;;;;;;;;;;;;;x
 britannic.162.a;Ass!;;;;;;;;;;;;;x
 britannic.162.tt;You and [From.GetTitledFirstName] are now bitter rivals!;;;;;;;;;;;;;x
 britannic.163.desc;Hundreds of people fill the streets, each with a lit candle in hand. The procession slowly moves down the road as all sing hymns to Saint Brigid and The Holy Mother.;;;;;;;;;;;;;x
@@ -134,10 +134,10 @@ britannic.164.a;Surely, they are doing no harm?;;;;;;;;;;;;;x
 britannic.164.b;We cannot allow this blasphemy to continue!;;;;;;;;;;;;;x
 britannic.165.desc;Word has quickly spread throughout the city, a prominent local merchant has given birth! The dryads are calling this a sign of good favor from The Holy Mother and a bountiful year.;;;;;;;;;;;;;x
 britannic.165.a;Britannia smiles on us this day!;;;;;;;;;;;;;x
-britannic.165.b;Superstitious nonesense.;;;;;;;;;;;;;x
+britannic.165.b;Superstitious nonsense.;;;;;;;;;;;;;x
 britannic.166.desc;Word has quickly spread through the city like a dark cloud. A prominent local merchant has had a still born child! The dryads are warning all that it is a sign of Britannia's ire and that a bad year is ahead.;;;;;;;;;;;;;x
 britannic.166.a;May Britannia forgive us for our sins...;;;;;;;;;;;;;x
-britannic.166.b;Superstitious nonesense.;;;;;;;;;;;;;x
+britannic.166.b;Superstitious nonsense.;;;;;;;;;;;;;x
 britannic.169.desc;As you walk down the street admiring the festivities, you feel a light touch brushing your shoulder. "Be the conduit of Britannia's blessing," a voice whispers. You recognize [From.GetTitledFirstName] as you turn to face her. "I want you," she says, desire in her eyes.;;;;;;;;;;;;;x
 britannic.169.a;You have no idea how long I've waited for this!;;;;;;;;;;;;;x
 britannic.169.b;I do this for Britannia.;;;;;;;;;;;;;x
