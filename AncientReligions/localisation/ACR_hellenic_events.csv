@@ -9,7 +9,7 @@ opinion_forced_hellenic_state_religion;Enforced a Hellenic state religion;A forc
 opinion_adopted_hellenic_state_religion;Adopted the Hellenic state religion;A adoptù l'hellùnisme d'ùtat;;;;;;;;;;;;x
 opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;A rejetù l'hellùnisme d'ùtat;;;;;;;;;;;;x
 ancrel_streamlined_court;Streamlined Court;;;;;;;;;;;;;x
-ancrel_streamlined_court_desc;This character's court policies have recently been overhauled, streamlining the beaurocracy of the realm and making it more efficient.;;;;;;;;;;;;;x
+ancrel_streamlined_court_desc;This character's court policies have recently been overhauled, streamlining the bureaucracy of the realm and making it more efficient.;;;;;;;;;;;;;x
 ancrel_platonic_curriculum;Neoplatonic Curriculum;;;;;;;;;;;;;x
 ancrel_platonic_curriculum_desc;A curriculum heavy in Neoplatonic Philosophy and emphasizing exploration of new ideas is currently in place at Universities in this province.;;;;;;;;;;;;;x
 ancrel_imperial_chronicle;Imperial Chronicle;;;;;;;;;;;;;x
@@ -36,13 +36,13 @@ hellenic.12.desc;You are discussing politics with [From.GetBestName] over dinner
 hellenic.12.a;Tell me more about Plato's wisdom...;;;;;;;;;;;;;x
 hellenic.13.tt;[From.GetFirstNameWithNick] begins work on the chronicle.;;;;;;;;;;;;;x
 hellenic.13.desc;[FromFrom.GetFirstNameWithNick] has completed [FromFrom.GetHerHis] Imperial Chronicle, and it's been distributed throughout the Empire. You can already see the change in your court and vassals. Some hail you as the greatest emperor in a century. Even your detractors are saying you could be a worse emperor.;;;;;;;;;;;;;x
-hellenic.13.a;Truth is muteable...;;;;;;;;;;;;;x
-hellenic.15.desc;[From.GetTitledFirstName] is advising you on an issue at court when he becomes quiet. After a pensive moment he speaks, "My [Root.GetTitle], I believe the root of this issue lies with the complexity in the rules of the court. The beaurocracy has become quite tangled. If you give me some time, I can come up with a revised structure and set of codes to streamline the court. It will require political capital to inact, however.";;;;;;;;;;;;;x
+hellenic.13.a;Truth is mutable...;;;;;;;;;;;;;x
+hellenic.15.desc;[From.GetTitledFirstName] is advising you on an issue at court when he becomes quiet. After a pensive moment he speaks, "My [Root.GetTitle], I believe the root of this issue lies with the complexity in the rules of the court. The bureaucracy has become quite tangled. If you give me some time, I can come up with a revised structure and set of codes to streamline the court. It will require political capital to enact, however.";;;;;;;;;;;;;x
 hellenic.15.a;If it frees me from these petty issues, do it!;;;;;;;;;;;;;x
 hellenic.15.b;I'll endure these headaches and save my influence for greater problems.;;;;;;;;;;;;;x
 hellenic.16.tt;[From.GetFirstName] begins his work.;;;;;;;;;;;;;x
-hellenic.16.desc;After a grueling 3 months, with much complaining from the clerks and palace officials, [FromFrom.GetBestName] has completed the restructuring of the beaurocracy. Although far from working like a well-oiled machine, the palace is running much more smoothly. You've found management of the Imperial Estates easier; so much so that you could consider adding another province to the estates...;;;;;;;;;;;;;x
-hellenic.16.a;Perhaps one with islands, where the beaurocrats can't reach me...;;;;;;;;;;;;;x
+hellenic.16.desc;After a grueling 3 months, with much complaining from the clerks and palace officials, [FromFrom.GetBestName] has completed the restructuring of the bureaucracy. Although far from working like a well-oiled machine, the palace is running much more smoothly. You've found management of the Imperial Estates easier; so much so that you could consider adding another province to the estates...;;;;;;;;;;;;;x
+hellenic.16.a;Perhaps one with islands, where the bureaucrats can't reach me...;;;;;;;;;;;;;x
 hellenic.19.desc;You are pacing through the palace thinking of how to foil your rival, [From.GetTitledFirstName], when you nearly collide with [FromFrom.GetFirstNameWithNick]. "[From.GetTitle], might I offer some of Epicurious' wisdom on friendships? I think it will show the futility of this rivalry. Perhaps even [From.GetTitledFirstName] will find it convincing.";;;;;;;;;;;;;x
 hellenic.19.a;Anything to end this feud my friend.;;;;;;;;;;;;;x
 hellenic.19.b;I would rather die than make amends with that fool!;;;;;;;;;;;;;x
@@ -102,16 +102,16 @@ hellenic.104.title;Return of the Pontificate Maxima;;;;;;;;;;;;;x
 hellenic.104.desc;After an interlude lasting a few centuries following the adoption of Christianity in Rome, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;;x
 hellenic.104.a;Rejoice!;Rùjouissons-nous !;Frohlocket!;;ùRegocijaos!;;;;;;;;;x
 hellenic.104.b;Heathens!;Paùens !;Ketzer!;;ùPaganos!;;;;;;;;;x
-###### Mani Penninsula;;;;;;;;;;;;;;x
-hellenic.105.desc;You have heard rumours about a group of Hellenic peasants on the Mani Penninsula who continue to practice their old ways. There is much debate at court on how large that group is, and how much their practices may have evolved since the old times...;;;;;;;;;;;;;x
+###### Mani Peninsula;;;;;;;;;;;;;;x
+hellenic.105.desc;You have heard rumours about a group of Hellenic peasants on the Mani Peninsula who continue to practice their old ways. There is much debate at court on how large that group is, and how much their practices may have evolved since the old times...;;;;;;;;;;;;;x
 hellenic.105.a;This is an opportunity to better know my realm.;;;;;;;;;;;;;x
 hellenic.105.b;How stupid, the Hellenic faith is long dead !;;;;;;;;;;;;;x
-travel_penninsula;You travel to the penninsula...;;;;;;;;;;;;;x
-hellenic.106.desc;Reaching the tip of the penninsula, you discover in the hills a waterless and innaccesible place where the Maniots live. As you approach, you notice an old [Root.target_maniot_priest.GetManWoman] who seems to be waiting for you. [Root.target_maniot_priest.GetSheHeCap] explains that the gods have sent signs of your arrival.;;;;;;;;;;;;;x
-hellenic.106.a;An augur, how facinating!;;;;;;;;;;;;;x
+travel_penninsula;You travel to the peninsula...;;;;;;;;;;;;;x
+hellenic.106.desc;Reaching the tip of the peninsula, you discover in the hills a waterless and inaccessible place where the Maniots live. As you approach, you notice an old [Root.target_maniot_priest.GetManWoman] who seems to be waiting for you. [Root.target_maniot_priest.GetSheHeCap] explains that the gods have sent signs of your arrival.;;;;;;;;;;;;;x
+hellenic.106.a;An augur, how fascinating!;;;;;;;;;;;;;x
 listen_to_maniot;Listen to the story of the augur;;;;;;;;;;;;;x
 hellenic.106.b;Enough, imprison [Root.target_maniot_priest.GetHerHim] and fetch a [Root.Religion.GetPriestTitle] to convert those pagans.;;;;;;;;;;;;;x
-hellenic.107.desc;The augur describes how the Maniots managed to keep the knowledge of the old Hellenic practices. [Root.target_maniot_priest.GetSheHeCap] has forseen that a ruler would one day restore the old faith, and build a mighty Empire that would last centuries.;;;;;;;;;;;;;x
+hellenic.107.desc;The augur describes how the Maniots managed to keep the knowledge of the old Hellenic practices. [Root.target_maniot_priest.GetSheHeCap] has foreseen that a ruler would one day restore the old faith, and build a mighty Empire that would last centuries.;;;;;;;;;;;;;x
 hellenic.107.a;Obviously the gods have spoken, I shall embrace my destiny!;;;;;;;;;;;;;x
 hellenic.107.b;Funny how augurs always tell you what you want to hear...;;;;;;;;;;;;;x
 ###### Hellenic Legion;;;;;;;;;;;;;;x

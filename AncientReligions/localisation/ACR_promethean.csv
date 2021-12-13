@@ -8,7 +8,7 @@ GOD_ASIA;Asia;;;;;;;;;;;;;x
 THE_DIALOGUES;The Dialogues;The Dialogues;The Dialogues;;The Dialogues;;;;;;;;;x
 PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
-promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary.;;;;;;;;;;;;;x
+promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is occasionally necessary.;;;;;;;;;;;;;x
 promethean_pagan_FEATURES;§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.;;;;;;;;;;;;;x
 promethean_expansion_desc;Independent Promethean rulers, with sufficient population (meaning no Depopulated provinces), may invade a neighboring kingdom to expand the realm.;;;;;;;;;;;;;x
 CB_NAME_EXPANSION;Expansion into [Title.GetBaseName];;;;;;;;;;;;;x
@@ -75,7 +75,7 @@ depopulated_province_desc;This province was recently invaded and is severely dep
 request_resettlement;Request Resettlement;;;;;;;;;;;;;x
 request_resettlement_desc;Request that [Root.GetTitledFirstName] send settlers to your lands.;;;;;;;;;;;;;x
 prepare_settlers;Prepare Settlers;;;;;;;;;;;;;x
-prepare_settlers_desc;You order local authorities in this county to begin preperations to relocate the peasants to another province.;;;;;;;;;;;;;x
+prepare_settlers_desc;You order local authorities in this county to begin preparations to relocate the peasants to another province.;;;;;;;;;;;;;x
 not_already_preparing_settlers;Cannot be preparing settlers in another province.;;;;;;;;;;;;;x
 stop_preparing_settlers;Stop Preparing Settlers;;;;;;;;;;;;;x
 stop_preparing_settlers_desc;Order the local authorities to stop preparing the peasants for resettlement.;;;;;;;;;;;;;x
@@ -102,7 +102,7 @@ acr_local_festival_desc;This province recently had one of it's local festivals s
 acr_open_settlement;Open Settlement;;;;;;;;;;;;x
 acr_open_settlement_desc;This province has been opened to settlement by anyone willing to make the journey.;;;;;;;;;;;;x
 acr_infrastructure_investment;Infrastructure Investment;;;;;;;;;;;;x
-acr_infrastructure_investment_desc;This province's infrasture recently received a large amount of investment, improving roads, dams, irrigation, etc.;;;;;;;;;;;;x
+acr_infrastructure_investment_desc;This province's infrastructure recently received a large amount of investment, improving roads, dams, irrigation, etc.;;;;;;;;;;;;x
 infrastructure_projects_tt;[Root.GetName] will get infrastructure related events over time that increase it's prosperity.;;;;;;;;;;;;x
 acr_foreign_influence;Foreign Influence: [foreign_influence.GetValue];;;;;;;;;;;;x
 acr_foreign_influence_desc;This represents the level of foreign cultural and religious influence on the province. Higher values increase the risk of tension.;;;;;;;;;;;;x

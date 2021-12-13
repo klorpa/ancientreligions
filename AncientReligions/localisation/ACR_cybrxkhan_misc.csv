@@ -467,7 +467,7 @@ hellenic.612.a;I think I know my savior...;;;;;;;;;;;;;x
 hellenic.613.desc;Diana offers her aid in taking care of this highwayman, on one condition - that the two of you take care of the problem yourselves. She says that it will be just like the hunts you two often partake... except this time, the prey shall be a human! You can't help but grin.;;;;;;;;;;;;;x
 hellenic.613.a;“Bloodthirsty like Mars today, are we?”;;;;;;;;;;;;;x
 hellenic.613.tt;Diana chuckles at your remark.;;;;;;;;;;;;;x
-hellenic.614.desc;You and Diana find the highwayman and manage to capture him alive.  It was a quick hunt and tame in comparison to some of your other adventures. Diana seems to notice your dissapointment. “He didn't expect a goddess on your side,” she explains.\n\nTo your amazement, you recognize the highwayman. He is a local nobleman, the last heir of an old family that has since fallen on hard times.;;;;;;;;;;;;;x
+hellenic.614.desc;You and Diana find the highwayman and manage to capture him alive.  It was a quick hunt and tame in comparison to some of your other adventures. Diana seems to notice your disappointment. “He didn't expect a goddess on your side,” she explains.\n\nTo your amazement, you recognize the highwayman. He is a local nobleman, the last heir of an old family that has since fallen on hard times.;;;;;;;;;;;;;x
 hellenic.614.title;Highwayman;;;;;;;;;;;;;x
 hellenic.614.a;I am not without mercy, he may earn his freedom.;;;;;;;;;;;;;x
 hellenic.614.b;Nobility must be held to a higher standard!;;;;;;;;;;;;;x
@@ -489,10 +489,10 @@ hellenic.618.a;I shall castrate myself, for you!;;;;;;;;;;;;;x
 hellenic.618.b;I will follow your example.;;;;;;;;;;;;;x
 hellenic.618.c;Perhaps some self-control would be good...;;;;;;;;;;;;;x
 hellenic.618.d;I think I shall remain chaste, then.;;;;;;;;;;;;;x
-hellenic.618.e;Thank you for explaining, I shant mention it again.;;;;;;;;;;;;;x
+hellenic.618.e;Thank you for explaining, I shan't mention it again.;;;;;;;;;;;;;x
 hellenic.619.title;The Value of Chastity;;;;;;;;;;;;;x
 hellenic.619.desc;Diana seems impatient with your outburst and rubs the bridge of her nose.\n\n"Please... don't. Mutilating yourself will not impress me. I do not value blind zeal like Mars, nor do I find madness an appealing quality in my companions.";;;;;;;;;;;;;x
-hellenic.619.a;Ah, well, then I shall follow you into celebacy.;;;;;;;;;;;;;x
+hellenic.619.a;Ah, well, then I shall follow you into celibacy.;;;;;;;;;;;;;x
 hellenic.619.b;Yes, maybe self-control is something I should work on...;;;;;;;;;;;;;x
 VIET_nyx_devotee;Blessed by Nox;;;;;;;;;;;x
 VIET_nyx_devotee_desc;There are those who say that this person, whether they like it or not, has received the blessing of the deity Nox, also known as Nyx to the Greeks.;;;;;;;;;;;x
@@ -576,7 +576,7 @@ hellenic.545.a;An interesting tale! And thank you for the pomegranates.;;;;;;;;;
 VIET_opinion_egypt_maid_loyal;Loyal Maid;;;;;;;;;;;;;x
 VIET_opinion_egypt_maid;Loyal Maid;;;;;;;;;;;;;x
 VIET_creepy_courtier_caught;Imprisoned Me for My Dark Magic;;;;;;;;;;;;;x
-VIET_creepy_courtier_publically_humiliated;Publically Denounced My Dark Magic;;;;;;;;;;;;;x
+VIET_creepy_courtier_publically_humiliated;Publicly Denounced My Dark Magic;;;;;;;;;;;;;x
 VIET_creepy_courtier_successful_bribe;Accepted Bribe;;;;;;;;;;;;;x
 VIET_creepy_courtier_successful_ignore;Ignored Dark Magic;;;;;;;;;;;;;x
 VIET_egypt_meal_horny_onion;Delicious Onion;;;;;;;;;;;;;x
@@ -617,7 +617,7 @@ egyptian.175.b;Reprimand and humiliate him in public.;;;;;;;;;;;;;x
 egyptian.175.c;These accusations of sorcery are unfounded.;;;;;;;;;;;;;x
 egyptian.175.d;This is beneath my attention.;;;;;;;;;;;;;x
 VIET_creepy_courtier_imprison;\nWe cannot allow such an evil sorcerer in our midst.\n;;;;;;;;;;;x
-VIET_creepy_courtier_humiliate;\nNow that he is publically humiliated, he will leave the girl alone - otherwise, he could face worse.\n;;;;;;;;;;;x
+VIET_creepy_courtier_humiliate;\nNow that he is publicly humiliated, he will leave the girl alone - otherwise, he could face worse.\n;;;;;;;;;;;x
 VIET_creepy_courtier_bribe;\n[target_creepy_egyptian_courtier.GetFirstName] is a good man, I’m sure of it! It’s not like he paid me or anything!\n;;;;;;;;;;;x
 VIET_creepy_courtier_ignore;\nMy courtiers may not approve, but seriously now, I have better things to do than deal with a silly drama.\n;;;;;;;;;;;x
 egyptian.176.desc;The maid who was the object of [target_creepy_egyptian_courtier.GetFirstName]’s obsession has gone missing. A few concerned courtiers searched for her, but found no sign of her. Eventually, at your court’s insistence, you search [target_creepy_egyptian_courtier.GetFirstName]’s quarters, and find magic charms and other suspicious scrolls, but nothing to make a good case on. She might have just ran away, but she’ll be back… right?;;;;;;;;;;;x

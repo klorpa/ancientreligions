@@ -6,7 +6,7 @@ promethean.103.desc;The people of [Root.GetName] have seen greater crop yields s
 promethean.104.desc;The farms of [Root.GetName] are producing more crops than ever before, due to greatly improved irrigation throughout the province.;;;;;;;;;;;;;x
 promethean.105.desc;The trade routes in [Root.GetName] have been made more efficient through the repair of old bridges and the construction of new ones.;;;;;;;;;;;;;x
 promethean.110.desc;A group of a few dozen settlers have arrived in [Root.GetName] from the neighboring province of [origin.GetName], having heard of your invitation for settlement.;;;;;;;;;;;;;x
-promethean.111.desc;A large carvan of foreign settlers have arrived from [origin.GetName] looking to settle. While they speak a strange language and have odd customs, technically the province is open for settlement to all comers.;;;;;;;;;;;;;x
+promethean.111.desc;A large caravan of foreign settlers have arrived from [origin.GetName] looking to settle. While they speak a strange language and have odd customs, technically the province is open for settlement to all comers.;;;;;;;;;;;;;x
 promethean.111.a;All are welcome in [Root.GetName]!;;;;;;;;;;;;;x
 promethean.111.b;Keep them away from the good land, and under watch.;;;;;;;;;;;;;x.
 promethean.111.c;No, tell them to go back.;;;;;;;;;;;;;x
@@ -30,8 +30,8 @@ promethean.400.a;Let it shine as a beacon of enlightenment!;;;;;;;;;;;;;x
 promethean.400.b;Let its holy fires never darken!;;;;;;;;;;;;;x
 promethean.400.c;Distressing...;;;;;;;;;;;;;x
 CHRONICLE_FIRST_ACADEMY;[Root.GetFullName] rebuilt The First Academy and established a new Scholarch to lead the Promethean Faith.;;;;;;;;;;;;;x
-promethean.402.desc;The province of [From.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
-promethean.402.desc.reapers;Preperations in [donor_province.GetName] are nearly complete, the only question is how large this resettlement effort should be. The more you send to [receiver_province.GetName], the more likely it is the settlers will dominate the region for generations. Of course, this will also have a negative impact on the economy in [donor_province.GetName].\n\nWhat is your decision?;;;;;;;;;;;;;x
+promethean.402.desc;The province of [From.GetName], devastated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
+promethean.402.desc.reapers;Preparations in [donor_province.GetName] are nearly complete, the only question is how large this resettlement effort should be. The more you send to [receiver_province.GetName], the more likely it is the settlers will dominate the region for generations. Of course, this will also have a negative impact on the economy in [donor_province.GetName].\n\nWhat is your decision?;;;;;;;;;;;;;x
 promethean.402.b;Resettle a village from [donor_province.GetName].;;;;;;;;;;;;;x
 promethean.402.b.tt;[donor_province.GetName] loses one level of prosperity, [receiver_province.GetName] loses a level of depopulation.;;;;;;;;;;;;;x
 promethean.402.c;Resettle several villages from [donor_province.GetName].;;;;;;;;;;;;;x
@@ -40,7 +40,7 @@ promethean.402.d;I will order a mass migration from [donor_province.GetName]!;;;
 promethean.402.d.tt;[donor_province.GetName] loses all of its prosperity, [receiver_province.GetName] loses all of its depopulation.;;;;;;;;;;;;;x
 promethean.402.e;Send a request to [Root.Liege.GetTitledFirstName] for settlers.;;;;;;;;;;;;;x
 promethean.402.e.tt;[Root.Liege.GetTitledFirstName] will get your request.;;;;;;;;;;;;;x
-promethean.405.desc;[receiver_province.Owner.GetTitledFirstName] has requested assisstance in settling [donor_province.GetName], as it is currently depopulated.;;;;;;;;;;;;;x
+promethean.405.desc;[receiver_province.Owner.GetTitledFirstName] has requested assistance in settling [donor_province.GetName], as it is currently depopulated.;;;;;;;;;;;;;x
 promethean.405.a;I don't want to deal with this, forward the request to [Root.Liege.GetTitledFirstName];;;;;;;;;;;;;x
 promethean.405.a.tt;[Root.Liege.GetTitledFirstName] will get your request.;;;;;;;;;;;;;x
 promethean.405.b;That land is [receiver_province.Owner.GetFirstName]'s responsibility!;;;;;;;;;;;;;x
@@ -73,7 +73,7 @@ promethean.414.a;Glory to the Brothers!;;;;;;;;;;;;;x
 promethean.414.b;This is troubling...;;;;;;;;;;;;;x
 # Unbinding Festival Events ;;;;;;;;;;;;;;x
 promethean.450.desc;The Unbinding Festival is a time for all Prometheans to come together and celebrate their shared philosophy. To put aside their differences and celebrate the release of Prometheus, the Enlightened One. Soon people from all across [Root.PrimaryTitle.GetBaseName] will be traveling to the capitol for your festival.;;;;;;;;;;;;;x
-promethean.450.a;We must begin preperations at once!;;;;;;;;;;;;;x
+promethean.450.a;We must begin preparations at once!;;;;;;;;;;;;;x
 promethean.451.desc;The first decision you must make is how much to spend on the opening ceremony? Obviously, the more expensive the ceremony the more prestigious it will be for you.;;;;;;;;;;;;;x
 promethean.451.a;Lets not waste, simply rent a theatre.;;;;;;;;;;;;;x
 promethean.451.b;Build a nice stage in the city square.;;;;;;;;;;;;;x
@@ -122,18 +122,18 @@ promethean.466.a;Execute all of the firedancers!;;;;;;;;;;;;;x
 promethean.466.b;Remove the firedancers from the city, we can't have accidents like this.;;;;;;;;;;;;;x
 promethean.466.c;You're overreacting, it was just an accident.;;;;;;;;;;;;;x
 promethean.467.desc;One of your vassals, [From.GetTitledName], was maimed by a firedancer during an act. It appears to be an accident, and [From.GetFirstName] is requesting that you show leniency in light of this fact.;;;;;;;;;;;;;x
-promethean.467.a;Leniency? Nonesense! Execute them all!;;;;;;;;;;;;;x
+promethean.467.a;Leniency? Nonsense! Execute them all!;;;;;;;;;;;;;x
 promethean.467.b;Fine, I will merely imprison them.;;;;;;;;;;;;;x
 promethean.467.c;Agreed, accidents happen.;;;;;;;;;;;;;x
 ancrel.remove_firedancers;This decision will mean that we will have no firedancers for the rest of this festival. It may upset the commoners, who are fond of the spectacle.\n;;;;;;;;;;;;;x
-promethean.470.desc;A troup of actors are performing the story of Prometheus and Epimetheus creating the worlds creatures from clay. The narrator is explaining how the nature of these first people, that of clay, meant they could only excel at manual labors when you hear [cynic.GetTitledFirstName] shout "That's absurd!" It seems [cynic.GetTitledFirstName]'s is arguing with [zealot.GetTitledFirstName] over the literal interpretation of the story. They both look to you to resolve the argument.;;;;;;;;;;;;;x
+promethean.470.desc;A troupe of actors are performing the story of Prometheus and Epimetheus creating the worlds creatures from clay. The narrator is explaining how the nature of these first people, that of clay, meant they could only excel at manual labors when you hear [cynic.GetTitledFirstName] shout "That's absurd!" It seems [cynic.GetTitledFirstName]'s is arguing with [zealot.GetTitledFirstName] over the literal interpretation of the story. They both look to you to resolve the argument.;;;;;;;;;;;;;x
 promethean.470.a;It's clearly a metaphor, to teach school children.;;;;;;;;;;;;;x
 promethean.470.b;It was Plato, I think, who once said...;;;;;;;;;;;;;x
 promethean.470.c;Um, I... gotta go!;;;;;;;;;;;;;x
 promethean.470.d;Of course it's literal!;;;;;;;;;;;;;x
 promethean.471.desc;You are watching a rather poor re-enactment of Prometheus' binding when the actor playing Prometheus begins to wail and beg for his freedom. This grave insult to their god, and terrible acting, whips the crowd into a fury. They can barely be kept from charging the stage. They pour into the streets and begin a small riot!;;;;;;;;;;;;;x
 promethean.471.a;[Root.Religion.GetRandomGodName] protect us...;;;;;;;;;;;;;x
-promethean.472.desc;A troup of actors are doing a re-enactment of Duecalion's Flood, and it's wonderful. While no one actor truly stood out, the troup as a whole performed amazingly. You can really feel the deep sadness of Duecalion and Pyrrha over the loss of their people and everything they knew, and the great joy of landfall and the creation of a new race of men. The crowds applause is deafening when the actors take their bows. The whole realm will be talking about this for months!;;;;;;;;;;;;;x
+promethean.472.desc;A troupe of actors are doing a re-enactment of Duecalion's Flood, and it's wonderful. While no one actor truly stood out, the troupe as a whole performed amazingly. You can really feel the deep sadness of Duecalion and Pyrrha over the loss of their people and everything they knew, and the great joy of landfall and the creation of a new race of men. The crowds applause is deafening when the actors take their bows. The whole realm will be talking about this for months!;;;;;;;;;;;;;x
 promethean.472.a;Amazing! Truly wonderful!;;;;;;;;;;;;;x
 promethean.473.desc;During the entire festival you have heard rumors about a particularly brilliant actor, one with exceptional people skills and a disturbing knack for deception. Such an individual could be very useful in your court.;;;;;;;;;;;;;x
 promethean.473.a;Better they work for me than someone else.;;;;;;;;;;;;;x
@@ -151,7 +151,7 @@ promethean.476.desc;You got a line wrong, and your acting was so-so. Not everyon
 promethean.476.a;Guess I shouldn't quit my day job...;;;;;;;;;;;;;x
 promethean.477.desc;You skip several lines and speak two of them out of order, your acting is rather bad. The crowd seems like it would boo at you if it wasn't so embarrassed.;;;;;;;;;;;;;x
 promethean.477.a;Oh, the shame!;;;;;;;;;;;;;x
-promethean.478.desc;Your improvised lines meet with booing and the ocassional piece of produce. The lead gently suggests you retire to the dressing rooms so he can take over.;;;;;;;;;;;;;x
+promethean.478.desc;Your improvised lines meet with booing and the occasional piece of produce. The lead gently suggests you retire to the dressing rooms so he can take over.;;;;;;;;;;;;;x
 promethean.478.a;Uncultured heathens!;;;;;;;;;;;;;x
 promethean.479.desc;Your improvised lines meet with roaring applause! The actors all fall into your new performance as if it were planned, and the lot of you craft an entire new scene on stage. Afterwards the only thing anyone can talk about is your amazing performance!;;;;;;;;;;;;;x
 promethean.479.a;I was born for the stage!;;;;;;;;;;;;;x
@@ -162,7 +162,7 @@ promethean.481.desc;While roaming the square, you find a [Root.Religion.GetPries
 promethean.481.a;I always liked that story...;;;;;;;;;;;;;x
 promethean.482.desc;As you wander through the fair you come upon a [Root.Religion.GetPriestTitle] speaking of Enlightenment. They talk of moving beyond the shadow of this world and finding Oneness, true enlightenment where this world will seem as real as a child's drawing does to us.;;;;;;;;;;;;;x
 promethean.482.a;I hope to reach CHIM someday...;;;;;;;;;;;;;x
-promethean.482.b;What a bunch of nonesense!;;;;;;;;;;;;;x
+promethean.482.b;What a bunch of nonsense!;;;;;;;;;;;;;x
 promethean.483.desc;During the festival you've heard talk of a brilliant speaker and philosopher. Apparently they've bested many of your own [Root.Religion.GetPriestTitle] in matters of philosophy and won their grudging respect. Several of them are strongly encouraging you to invite this philosopher to your court.;;;;;;;;;;;;;x
 promethean.483.a;Bring this great philosopher to me.;;;;;;;;;;;;;x
 promethean.483.b;I have no need for know-it-alls in my court!;;;;;;;;;;;;;x
@@ -172,7 +172,7 @@ promethean.484.b;They look nothing like me!;;;;;;;;;;;;;x
 promethean.484.c;I will not be made a fool of! Imprison this charlatan!;;;;;;;;;;;;;x
 promethean.485.desc;A sculptor has crafted a masterful statue of Prometheus giving fire to humanity. Crowds have gathered to marvel at it, and several nobles are already starting a bidding war. Such a statue would look quite impressive in a courtyard or entrance hall...;;;;;;;;;;;;;x
 promethean.485.a;It's marvelous, but I have the realm to look after.;;;;;;;;;;;;;x
-promethean.485.b;It is but a cheap immitation of the real thing.;;;;;;;;;;;;;x
+promethean.485.b;It is but a cheap imitation of the real thing.;;;;;;;;;;;;;x
 promethean.485.c;Shut up and take my ducats!;;;;;;;;;;;;;x
 promethean.487.desc;You are discussing the weather with [From.GetTitledFirstName] when you notice the sculptor behind [From.GetHerHim] has lost their balance and knocked their statue over. It is about to fall on you both!;;;;;;;;;;;;;x
 promethean.487.a;"Get out of the way [From.GetFirstName]!";;;;;;;;;;;;;x
@@ -205,7 +205,7 @@ promethean.549.a;Now, to begin planning for the next one in three years...;;;;;;
 promethean.550.title;Men of Steel;;;;;;;;;;;;;x
 promethean.550.desc;In response to a growing need to defend Promethean interests against the 'un-enlightened', [From.GetTitledName] has created an elite fighting force, the Men of Steel. In Promethean society, the military caste is known as the 'Men of Iron', the Men of Steel are formed from the elite members of the Iron caste. Forged in the heat of battle, these warriors of Prometheus will face any foe that threatens their ways with cunning and bravery.;;;;;;;;;;;;;x
 promethean.550.a;Make our Father proud...;;;;;;;;;;;;;x
-promethean.550.b;Englightenment cannot be stopped!;;;;;;;;;;;;;x
-promethean.550.c;Thats not good...;;;;;;;;;;;;;x
+promethean.550.b;Enlightenment cannot be stopped!;;;;;;;;;;;;;x
+promethean.550.c;That's not good...;;;;;;;;;;;;;x
 CHRONICLE_STEEL;On this day, [Root.GetTitledFirstName] established the Men of Steel and charged them with keeping safe the holy fires of Prometheus.;;;;;;;;;;;;;x
 CHRONICLE_CROTONE;On this day, [Root.GetTitledFirstName] dedicated the rebuilt Academy of Crotone to The Brothers and their divine light. May it's fire never be extinguished again.;;;;;;;;;;;;;x
